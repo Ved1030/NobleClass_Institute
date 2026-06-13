@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "studentName": "Rahul Sharma",
+    "percentage": "95%",
+    "year": "2026",
+    "image": "/images/results/rahul-sharma.jpg",
+    "exam": "CBSE Class 10",
+    "rank": "1",
+    "subject": "All Subjects",
+    "createdAt": "2026-03-01T00:00:00.000Z",
+    "updatedAt": "2026-03-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "studentName": "Priya Patel",
+    "percentage": "92%",
+    "year": "2026",
+    "image": "/images/results/priya-patel.jpg",
+    "exam": "CBSE Class 12",
+    "rank": "3",
+    "subject": "Science",
+    "createdAt": "2026-03-01T00:00:00.000Z",
+    "updatedAt": "2026-03-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "studentName": "Arjun Mehta",
+    "percentage": "89%",
+    "year": "2025",
+    "image": null,
+    "exam": "CBSE Class 10",
+    "rank": "5",
+    "subject": "Mathematics",
+    "createdAt": "2025-03-01T00:00:00.000Z",
+    "updatedAt": "2025-03-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "studentName": "Neha Singh",
+    "percentage": "96%",
+    "year": "2025",
+    "image": "/images/results/neha-singh.jpg",
+    "exam": "CBSE Class 10",
+    "rank": "1",
+    "subject": "All Subjects",
+    "createdAt": "2025-03-01T00:00:00.000Z",
+    "updatedAt": "2025-03-01T00:00:00.000Z"
+  }
+]

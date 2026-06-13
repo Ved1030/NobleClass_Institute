@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "/images/gallery/classroom.jpg",
+    "category": "Classroom",
+    "alt": "Modern classroom with students",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "image": "/images/gallery/library.jpg",
+    "category": "Facilities",
+    "alt": "Institute library with study area",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "image": "/images/gallery/event.jpg",
+    "category": "Events",
+    "alt": "Annual function celebration",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "image": "/images/gallery/lab.jpg",
+    "category": "Facilities",
+    "alt": "Science laboratory",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "image": "/images/gallery/seminar.jpg",
+    "category": "Events",
+    "alt": "Guest lecture session",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  }
+]

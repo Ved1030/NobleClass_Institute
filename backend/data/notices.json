@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Summer Batch 2026 Starting Soon",
+    "content": "Summer batches for Classes 8-12 will commence from 1st April 2026. Early bird registrations are now open with special discounts.",
+    "category": "Admission",
+    "isNew": true,
+    "createdAt": "2026-03-01T00:00:00.000Z",
+    "updatedAt": "2026-03-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Board Exam Schedule 2026 Released",
+    "content": "Class 10 and 12 board exam schedules have been released. Download your timetable from the notice board.",
+    "category": "Exam",
+    "isNew": true,
+    "createdAt": "2026-02-15T00:00:00.000Z",
+    "updatedAt": "2026-02-15T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "title": "PTM Schedule for March 2026",
+    "content": "Parent-Teacher Meeting scheduled for 20th March 2026. All parents are requested to attend.",
+    "category": "Event",
+    "isNew": false,
+    "createdAt": "2026-02-10T00:00:00.000Z",
+    "updatedAt": "2026-02-10T00:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "Scholarship Test Results",
+    "content": "Scholarship test results for academic year 2026-27 have been declared. Check the results section for details.",
+    "category": "Result",
+    "isNew": false,
+    "createdAt": "2026-01-20T00:00:00.000Z",
+    "updatedAt": "2026-01-20T00:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "title": "Winter Break Schedule",
+    "content": "Institute will remain closed from 25th December 2025 to 5th January 2026 for winter break.",
+    "category": "Holiday",
+    "isNew": false,
+    "createdAt": "2025-12-20T00:00:00.000Z",
+    "updatedAt": "2025-12-20T00:00:00.000Z"
+  }
+]
