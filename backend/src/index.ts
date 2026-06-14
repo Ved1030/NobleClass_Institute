@@ -14,6 +14,7 @@ import noticeRoutes from './routes/noticeRoutes';
 import courseRoutes from './routes/courseRoutes';
 import testimonialRoutes from './routes/testimonialRoutes';
 import dashboardRoutes from './routes/dashboardRoutes';
+import chatRoutes from './routes/chat';
 
 const app = express();
 
@@ -33,6 +34,7 @@ app.use('/api/notices', noticeRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/testimonials', testimonialRoutes);
 app.use('/api/admin', dashboardRoutes);
+app.use('/api/chat', chatRoutes);
 
 app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });

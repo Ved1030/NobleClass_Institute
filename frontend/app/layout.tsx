@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import AppShell from "@/components/AppShell";
+import SplashScreen from "@/components/SplashScreen";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -74,9 +75,11 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning>
-        <Providers>
-          <AppShell>{children}</AppShell>
-        </Providers>
+        <SplashScreen>
+          <Providers>
+            <AppShell>{children}</AppShell>
+          </Providers>
+        </SplashScreen>
       </body>
     </html>
   );

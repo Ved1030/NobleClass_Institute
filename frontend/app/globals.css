@@ -2,6 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #CBD5E1 transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #CBD5E1;
+    border-radius: 20px;
+  }
+
+  .prose-custom {
+    word-break: break-word;
+  }
+
+  .prose-custom p:first-child {
+    margin-top: 0;
+  }
+
+  .prose-custom ul:first-child,
+  .prose-custom ol:first-child,
+  .prose-custom h1:first-child,
+  .prose-custom h2:first-child,
+  .prose-custom h3:first-child,
+  .prose-custom blockquote:first-child {
+    margin-top: 0;
+  }
+
+  .prose-custom p:last-child,
+  .prose-custom ul:last-child,
+  .prose-custom ol:last-child,
+  .prose-custom blockquote:last-child {
+    margin-bottom: 0;
+  }
+
+  .prose-custom ul li::marker {
+    color: #005DAA;
+  }
+
+  .prose-custom a {
+    word-break: break-all;
+  }
+}
+
 @layer base {
   :root {
     --background: 210 40% 98%;

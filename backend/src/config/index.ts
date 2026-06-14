@@ -11,4 +11,8 @@ export const config = {
   cors: {
     origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
   },
+  sarvam: {
+    apiKey: process.env.SARVAM_API_KEY || '',
+    model: process.env.SARVAM_MODEL || 'sarvam-30b',
+  },
 };
