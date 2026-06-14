@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, GraduationCap, Send, X, Phone, MapPin } from 'lucide-react';
+import { Sparkles, GraduationCap, Send, X, Phone, MapPin, RefreshCw } from 'lucide-react';
 import { sendChatMessage } from '@/services/chatService';
 import MarkdownRenderer from './MarkdownRenderer';
 
@@ -33,19 +33,52 @@ const QUESTION_MAP: Record<string, string> = {
 const WELCOME_MESSAGE =
   "Hello! I'm Noble AI, your virtual admission counselor. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about Noble Classes.";
 
+const UNAVAILABLE_MESSAGE =
+  "Noble AI is currently unavailable.\n\nPlease call Noble Classes directly:\n\n**9820023732**\n**9930890499**";
+
+const LOADING_MESSAGES = {
+  initial: 'Connecting to Noble AI...',
+  slow: 'Waking up Noble AI...',
+  slowDetail: 'This may take a few moments.',
+};
+
+const REQUEST_TIMEOUT = 60000;
+const SLOW_WARNING_DELAY = 2000;
+
+async function fetchWithTimeout<T>(
+  promise: Promise<T>,
+  timeoutMs: number
+): Promise<T> {
+  let timeoutHandle: ReturnType<typeof setTimeout>;
+  const timeoutPromise = new Promise<never>((_, reject) => {
+    timeoutHandle = setTimeout(
+      () => reject(new Error('Request timed out')),
+      timeoutMs
+    );
+  });
+  return Promise.race([
+    promise.finally(() => clearTimeout(timeoutHandle!)),
+    timeoutPromise,
+  ]);
+}
+
 export default function NobleAI() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [loadingStage, setLoadingStage] = useState<'initial' | 'slow'>('initial');
   const [visible, setVisible] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
   const [tooltipText, setTooltipText] = useState('Need help choosing a course?');
   const [showTooltip, setShowTooltip] = useState(true);
   const [pulseActive, setPulseActive] = useState(false);
+  const [retryCount, setRetryCount] = useState(0);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const slowTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const retryTriggeredRef = useRef(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 300);
@@ -85,6 +118,74 @@ export default function NobleAI() {
     }
   }, [isOpen, messages.length]);
 
+  useEffect(() => {
+    if (isLoading) {
+      slowTimerRef.current = setTimeout(() => {
+        setLoadingStage('slow');
+      }, SLOW_WARNING_DELAY);
+    } else {
+      if (slowTimerRef.current) {
+        clearTimeout(slowTimerRef.current);
+        slowTimerRef.current = null;
+      }
+      setLoadingStage('initial');
+    }
+    return () => {
+      if (slowTimerRef.current) {
+        clearTimeout(slowTimerRef.current);
+      }
+    };
+  }, [isLoading]);
+
+  const doSend = useCallback(
+    async (msgs: Message[], isRetry: boolean) => {
+      setIsLoading(true);
+      setLoadingStage('initial');
+      retryTriggeredRef.current = false;
+
+      try {
+        const { reply } = await fetchWithTimeout(
+          sendChatMessage(
+            msgs.map((m) => ({
+              role: m.role,
+              content: m.content,
+            }))
+          ),
+          REQUEST_TIMEOUT
+        );
+
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: (Date.now() + 1).toString(),
+            role: 'assistant',
+            content: reply,
+          },
+        ]);
+      } catch (err) {
+        const isTimeout = err instanceof Error && err.message === 'Request timed out';
+
+        if (isTimeout && !isRetry && !retryTriggeredRef.current) {
+          retryTriggeredRef.current = true;
+          setRetryCount((c) => c + 1);
+          return doSend(msgs, true);
+        }
+
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: (Date.now() + 1).toString(),
+            role: 'assistant',
+            content: UNAVAILABLE_MESSAGE,
+          },
+        ]);
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    []
+  );
+
   const handleSend = useCallback(
     async (text: string) => {
       const content = text.trim();
@@ -99,40 +200,11 @@ export default function NobleAI() {
       const updatedMessages = [...messages, userMessage];
       setMessages(updatedMessages);
       setInput('');
-      setIsLoading(true);
       setHasInteracted(true);
 
-      try {
-        const { reply } = await sendChatMessage(
-          updatedMessages.map((m) => ({
-            role: m.role,
-            content: m.content,
-          }))
-        );
-
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: (Date.now() + 1).toString(),
-            role: 'assistant',
-            content: reply,
-          },
-        ]);
-      } catch {
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: (Date.now() + 1).toString(),
-            role: 'assistant',
-            content:
-              "Sorry, I'm currently unavailable. Please call Noble Classes at 9820023732.",
-          },
-        ]);
-      } finally {
-        setIsLoading(false);
-      }
+      doSend(updatedMessages, false);
     },
-    [messages, isLoading]
+    [messages, isLoading, doSend]
   );
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -167,6 +239,10 @@ export default function NobleAI() {
       'reach us',
     ];
     return keywords.some((k) => lower.includes(k));
+  }
+
+  function hasUnavailableMessage(content: string): boolean {
+    return content.includes('Noble AI is currently unavailable');
   }
 
   return (
@@ -261,14 +337,21 @@ export default function NobleAI() {
                   {message.role === 'assistant' ? (
                     <div className="max-w-[88%] px-4 py-3 rounded-2xl bg-gray-100 text-gray-800 rounded-bl-md">
                       <MarkdownRenderer content={message.content} />
-                      {hasContactInfo(message.content) && (
+                      {(hasContactInfo(message.content) || hasUnavailableMessage(message.content)) && (
                         <div className="flex gap-2 mt-3 pt-3 border-t border-gray-200">
                           <a
                             href="tel:9820023732"
                             className="flex items-center gap-1.5 text-xs font-medium text-white bg-green-600 px-3 py-2 rounded-lg hover:bg-green-700 transition-colors"
                           >
                             <Phone className="w-3.5 h-3.5" />
-                            Call Now
+                            Call 9820023732
+                          </a>
+                          <a
+                            href="tel:9930890499"
+                            className="flex items-center gap-1.5 text-xs font-medium text-white bg-green-600 px-3 py-2 rounded-lg hover:bg-green-700 transition-colors"
+                          >
+                            <Phone className="w-3.5 h-3.5" />
+                            Call 9930890499
                           </a>
                           <a
                             href="https://maps.google.com/?q=517+Suchita+Business+Park+Patel+Chawl+Ghatkopar+East+Mumbai+400077"
@@ -292,12 +375,24 @@ export default function NobleAI() {
               {isLoading && (
                 <div className="flex justify-start">
                   <div className="bg-gray-100 rounded-2xl rounded-bl-md px-4 py-3 text-sm text-gray-500">
-                    <span>Noble AI is typing</span>
-                    <span className="inline-flex gap-0.5 ml-1">
-                      <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                      <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                      <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                    </span>
+                    {loadingStage === 'initial' ? (
+                      <>
+                        <span>{LOADING_MESSAGES.initial}</span>
+                        <span className="inline-flex gap-0.5 ml-1">
+                          <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                          <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                          <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                        </span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="flex items-center gap-2">
+                          <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                          <span>{LOADING_MESSAGES.slow}</span>
+                        </span>
+                        <p className="text-xs text-gray-400 mt-1">{LOADING_MESSAGES.slowDetail}</p>
+                      </>
+                    )}
                   </div>
                 </div>
               )}

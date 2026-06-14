@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Send, Phone, Mail, User, GraduationCap, BookOpen } from 'lucide-react';
 import { toast } from 'react-toastify';
+import { inquiryService } from '@/services/inquiries';
 
 const inquirySchema = z.object({
   studentName: z.string().min(2, 'Enter student name'),
@@ -33,20 +34,15 @@ const InquiryForm: React.FC<InquiryFormProps> = ({ className = '' }) => {
 
   const onSubmit = async (data: InquiryFormData) => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api'}/inquiries`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          studentName: data.studentName,
-          parentName: data.parentName,
-          mobile: data.mobile,
-          email: data.email,
-          class: data.className,
-          course: data.course,
-          message: data.message || '',
-        }),
+      await inquiryService.create({
+        studentName: data.studentName,
+        parentName: data.parentName,
+        mobile: data.mobile,
+        email: data.email,
+        class: data.className,
+        course: data.course,
+        message: data.message || '',
       });
-      if (!res.ok) throw new Error('Failed to submit');
       toast.success('Thank you! We will contact you shortly.');
       reset();
     } catch {
