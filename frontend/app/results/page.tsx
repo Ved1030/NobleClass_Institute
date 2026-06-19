@@ -16,7 +16,7 @@ const resultsData = [
 const Results: React.FC = () => {
   return (
     <>
-      <PageHero title="Results & Achievements" subtitle="Celebrating academic excellence and outstanding achievements of our students at Labbdhis Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Results' }]} />
+      <PageHero title="Results & Achievements" subtitle="Celebrating academic excellence and outstanding achievements of our students at Labbdhi's Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Results' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">

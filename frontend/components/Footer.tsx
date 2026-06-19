@@ -15,12 +15,12 @@ const Footer: React.FC = () => {
                 <GraduationCap className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="font-heading font-bold text-xl text-white">Labbdhis Academy</span>
+                <span className="font-heading font-bold text-xl text-white">Labbdhi's Academy</span>
                 <span className="block text-[9px] tracking-[0.15em] uppercase text-blue-300">Where learning is Journey</span>
               </div>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-sm">
-              Labbdhis Academy has been guiding students since 2007 in Ghatkopar West, Mumbai, providing expert coaching for Std 8th, 9th & 10th (State Board & CBSE) with concept-based learning, personal attention, and academic excellence.
+              Labbdhi's Academy has been guiding students since 2007 in Ghatkopar West, Mumbai, providing expert coaching for Std 8th, 9th & 10th (State Board & CBSE) with concept-based learning, personal attention, and academic excellence.
             </p>
             <div className="flex items-center gap-3">
               <span className="text-white/50 text-sm">+91 99208 59870</span>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-xs">&copy; {new Date().getFullYear()} Labbdhis Academy. All rights reserved.</p>
+          <p className="text-white/40 text-xs">&copy; {new Date().getFullYear()} Labbdhi's Academy. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" prefetch className="text-white/40 hover:text-white text-xs transition-colors">Privacy Policy</Link>
             <Link href="/terms" prefetch className="text-white/40 hover:text-white text-xs transition-colors">Terms of Use</Link>

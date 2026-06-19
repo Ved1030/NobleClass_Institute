@@ -16,7 +16,7 @@ const stories = [
 const SuccessStories: React.FC = () => {
   return (
     <>
-      <PageHero title="Success Stories" subtitle="Read inspiring stories from our students about their journey with Labbdhis Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Success Stories' }]} />
+      <PageHero title="Success Stories" subtitle="Read inspiring stories from our students about their journey with Labbdhi's Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Success Stories' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

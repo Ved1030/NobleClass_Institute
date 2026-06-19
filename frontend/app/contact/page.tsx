@@ -34,7 +34,7 @@ const contactInfo = [
 const Contact: React.FC = () => {
   return (
     <>
-      <PageHero title="Contact Us" subtitle="We're here to help. Reach out to Labbdhis Academy for admissions, inquiries, or any questions about our coaching programs." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
+      <PageHero title="Contact Us" subtitle="We're here to help. Reach out to Labbdhi's Academy for admissions, inquiries, or any questions about our coaching programs." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Labbdhis Academy Location"
+                    title="Labbdhi's Academy Location"
                   />
                 </div>
                 <div className="p-4 flex items-center justify-between gap-3 flex-wrap">

@@ -39,7 +39,7 @@ const AdminLogin: React.FC = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 border border-white/20"><GraduationCap className="w-8 h-8 text-white" /></div>
-          <h1 className="font-heading text-2xl font-bold text-white">Labbdhis Academy</h1>
+          <h1 className="font-heading text-2xl font-bold text-white">Labbdhi's Academy</h1>
           <p className="text-white/60 text-sm mt-1">Admin Dashboard</p>
         </div>
         <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8">

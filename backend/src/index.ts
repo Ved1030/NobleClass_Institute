@@ -51,7 +51,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 app.get('/', (_req, res) => {
-  res.json({ success: true, message: 'Labbdhis Academy API Running' });
+  res.json({ success: true, message: 'Labbdhi's Academy API Running' });
 });
 
 app.get('/health', (_req, res) => {

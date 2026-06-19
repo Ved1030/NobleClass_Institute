@@ -41,7 +41,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({ children, title }) => {
       <aside className={`fixed inset-y-0 left-0 z-50 w-64 bg-noble-navy transform transition-transform duration-300 lg:translate-x-0 lg:static lg:inset-auto ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex items-center gap-3 p-6 border-b border-white/10">
           <div className="w-9 h-9 bg-noble-blue rounded-xl flex items-center justify-center"><GraduationCap className="w-4 h-4 text-white" /></div>
-          <div><span className="font-heading font-bold text-white text-sm">Labbdhis Academy</span><span className="block text-white/40 text-[10px]">Admin Panel</span></div>
+          <div><span className="font-heading font-bold text-white text-sm">Labbdhi's Academy</span><span className="block text-white/40 text-[10px]">Admin Panel</span></div>
         </div>
         <nav className="p-4 space-y-1 overflow-y-auto h-[calc(100vh-80px)]">
           {navItems.map((item) => (

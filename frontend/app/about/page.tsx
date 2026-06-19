@@ -8,7 +8,7 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const timeline = [
-  { year: '2007', title: 'Foundation', desc: 'Labbdhis Academy was founded with a vision to provide quality education and academic guidance to students in Ghatkopar West, Mumbai with a small batch of dedicated learners.' },
+  { year: '2007', title: 'Foundation', desc: 'Labbdhi's Academy was founded with a vision to provide quality education and academic guidance to students in Ghatkopar West, Mumbai with a small batch of dedicated learners.' },
   { year: '2015', title: 'Expansion & Growth', desc: 'Expanded programs to include comprehensive academic support across multiple subjects, growing to serve over 200 students annually.' },
   { year: '2020', title: 'Expanded Academic Programs', desc: 'Strengthened coaching programs across all standards with enhanced curriculum, assessments, and student support systems.' },
   { year: '2026', title: '500+ Students Mentored', desc: 'Proud milestone of mentoring over 500 students with a continued focus on academic excellence, personalized guidance, and student success.' },
@@ -32,7 +32,7 @@ const team = [
 const About: React.FC = () => {
   return (
     <>
-      <PageHero title="About Labbdhis Academy" subtitle="A trusted coaching academy since 2007 in Ghatkopar West, Mumbai, providing expert coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning and personal attention." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
+      <PageHero title="About Labbdhi's Academy" subtitle="A trusted coaching academy since 2007 in Ghatkopar West, Mumbai, providing expert coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning and personal attention." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -40,13 +40,13 @@ const About: React.FC = () => {
               <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Story</span>
               <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Where learning is Journey</h2>
               <div className="space-y-4 text-noble-navy/70 leading-relaxed">
-                <p>Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.</p>
+                <p>Labbdhi's Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.</p>
                 <p>Our approach focuses on understanding each student's unique learning style, addressing their weaknesses, strengthening their fundamentals, and building the confidence they need to excel in school examinations.</p>
                 <p>We believe in providing quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic success.</p>
               </div>
             </div>
             <div className="relative">
-                <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="Labbdhis Academy - coaching classroom" width={600} height={450} className="rounded-3xl object-cover w-full shadow-2xl shadow-noble-blue/10" />
+                <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="Labbdhi's Academy - coaching classroom" width={600} height={450} className="rounded-3xl object-cover w-full shadow-2xl shadow-noble-blue/10" />
               <div className="absolute -bottom-6 -left-6 bg-noble-blue text-white rounded-2xl p-6 shadow-xl">
                 <div className="font-heading text-4xl font-bold">2007</div>
                 <div className="text-white/70 text-sm">Founded</div>

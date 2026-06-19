@@ -38,7 +38,7 @@ const Notices: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Notices & Announcements" subtitle="Stay informed about new batches, schedules, and important announcements from Labbdhis Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Notices' }]} />
+      <PageHero title="Notices & Announcements" subtitle="Stay informed about new batches, schedules, and important announcements from Labbdhi's Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Notices' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row gap-4 mb-8">

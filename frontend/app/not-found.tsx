@@ -28,7 +28,7 @@ const NotFound: React.FC = () => {
         <h1 className="mb-4 text-3xl font-bold text-white sm:text-4xl">OOPS! Page Not Found</h1>
         <p className="mb-8 text-base text-white/60 sm:text-lg">We can't seem to find the page you are looking for!</p>
         <Link href="/" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">Back to homepage</Link>
-        <div className="mt-16"><p className="text-sm text-gray-600">© {new Date().getFullYear()} - Labbdhis Academy</p></div>
+        <div className="mt-16"><p className="text-sm text-gray-600">© {new Date().getFullYear()} - Labbdhi's Academy</p></div>
       </div>
       <div className="absolute inset-0 bg-[url(https://meku.dev/images/grain.png)] bg-cover bg-center opacity-60 mix-blend-soft-light z-20"></div>
       <div className="absolute bottom-0 left-0 right-0 z-10">

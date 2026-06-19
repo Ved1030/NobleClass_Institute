@@ -122,7 +122,7 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                   transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
                   className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-noble-blue text-center"
                 >
-                  Labbdhis Academy
+                  Labbdhi's Academy
                 </motion.h1>
                 <motion.div
                   className="absolute inset-0 pointer-events-none overflow-hidden rounded"
