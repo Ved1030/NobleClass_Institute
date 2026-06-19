@@ -26,7 +26,7 @@ function containsForbiddenContent(text: string): boolean {
 }
 
 const ACADEMY_INFO = {
-  name: 'Labbdhi's Academy',
+  name: 'Labbdhi\'s Academy',
   established: '2007',
   location: 'Near Shreyas Cinema, Ghatkopar West, Mumbai',
   courses: ['Std 8th Coaching (State Board & CBSE)', 'Std 9th Coaching (State Board & CBSE)', 'Std 10th Coaching (State Board & CBSE)'],
@@ -36,7 +36,7 @@ const HARDCODED_RESPONSES: Record<string, string> = {
   courses:
     "We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence.",
   location:
-    "Labbdhi's Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
+    "Labbdhi\'s Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
   contact:
     "Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.",
   fees:
@@ -52,14 +52,14 @@ function getHardcodedResponse(userMessage: string): string | null {
   return null;
 }
 
-const SYSTEM_PROMPT = `You are Labbdhi's AI. You represent Labbdhi's Academy only.
+const SYSTEM_PROMPT = `You are Labbdhi\'s AI. You represent Labbdhi\'s Academy only.
 
 ## Tagline
 Where learning is Journey
 
 ## Academy Details
 
-Name: Labbdhi's Academy
+Name: Labbdhi\'s Academy
 
 Location:
 Near Shreyas Cinema,
@@ -96,7 +96,7 @@ If user asks about courses:
 "We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence."
 
 If user asks about location or address:
-"Labbdhi's Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai."
+"Labbdhi\'s Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai."
 
 If user asks for phone number, email, or contact details:
 "Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you."
@@ -110,7 +110,7 @@ User: What courses do you offer?
 Assistant: We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence.
 
 User: Where are you located?
-Assistant: Labbdhi's Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.
+Assistant: Labbdhi\'s Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.
 
 User: What is your phone number?
 Assistant: Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.
@@ -122,7 +122,7 @@ User: What is your email?
 Assistant: Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.
 
 User: What is your address?
-Assistant: Labbdhi's Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.`;
+Assistant: Labbdhi\'s Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.`;
 
 router.post('/', async (req: Request, res: Response) => {
   try {
