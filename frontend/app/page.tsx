@@ -37,7 +37,6 @@ const stats = [
 ];
 
 const courses = [
-  { icon: BookOpen, name: 'Std 8th Coaching', badge: 'FOUNDATION', tag: 'Academic', color: '#005DAA', desc: 'Strong foundation building in Mathematics, Science, English, and core academic subjects with concept-based learning.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Expert Teachers', material: 'Study Material' } },
   { icon: BookOpen, name: 'Std 8th Coaching', badge: 'POPULAR', tag: 'Academic', color: '#2563EB', desc: 'Concept-focused learning with regular assessments, doubt-solving sessions, and performance tracking to ensure steady progress.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Subject Experts', material: 'Practice Sheets' } },
   { icon: Target, name: 'Std 9th Coaching', badge: 'ADVANCED', tag: 'Academic', color: '#C62828', desc: 'Advanced preparation with detailed subject understanding, exam strategies, and comprehensive coverage of the academic curriculum.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Advanced Prep', faculty: 'Senior Faculty', material: 'Exam Kit' } },
   { icon: Trophy, name: 'Std 10th Coaching', badge: 'BOARD FOCUS', tag: 'Board Prep', color: '#16A34A', desc: 'Board exam-focused preparation, revision programs, intensive practice sessions, and mock tests for academic excellence.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Board Prep', faculty: 'Exam Experts', material: 'Board Kit' } },
