@@ -87,7 +87,7 @@ export default function VSAI() {
 
   useEffect(() => {
     if (hasInteracted) return;
-    const timer = setTimeout(() => setTooltipText('Ask VS AI'), 8000);
+    const timer = setTimeout(() => setTooltipText('Ask Labbdhis AI'), 8000);
     return () => clearTimeout(timer);
   }, [hasInteracted]);
 
@@ -240,7 +240,7 @@ export default function VSAI() {
   }
 
   function hasUnavailableMessage(content: string): boolean {
-    return content.includes('VS AI is currently unavailable');
+    return content.includes('Labbdhis AI is currently unavailable');
   }
 
   return (
