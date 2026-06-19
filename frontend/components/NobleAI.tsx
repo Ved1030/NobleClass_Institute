@@ -6,6 +6,35 @@ import { Sparkles, GraduationCap, Send, X, Phone, MapPin, RefreshCw } from 'luci
 import { sendChatMessage } from '@/services/chatService';
 import MarkdownRenderer from './MarkdownRenderer';
 
+const FORBIDDEN_PHRASES = [
+  'vs tutorials', 'excellence educare', 'drushti sapphire', 'pant nagar',
+  'shop no. 11', 'ghatkopar east', 'shivaji technical',
+];
+const FORBIDDEN_PATTERNS = [/97691\d{5}/, /99208\d{5}/, /4\.9.*52.*Review/i];
+
+const HARDCODED_RESPONSES: Record<string, string> = {
+  courses: "We offer coaching for Std 7th, 8th, 9th and 10th students. Our teaching focuses on concept clarity, regular practice, and academic excellence.",
+  location: "Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
+  contact: "Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.",
+  fees: "Fee details are currently being updated. Please submit an enquiry form on our website for fee information.",
+};
+
+function containsForbiddenContent(text: string): boolean {
+  const lower = text.toLowerCase();
+  if (FORBIDDEN_PHRASES.some(p => lower.includes(p))) return true;
+  if (FORBIDDEN_PATTERNS.some(p => p.test(text))) return true;
+  return false;
+}
+
+function getHardcodedFallback(userMessage: string): string | null {
+  const lower = userMessage.toLowerCase();
+  if (/\bcourses?\b|\bprograms?\b|\bclasses?\b|\bcoaching\b|\boffer\b|\bstudy\b|\bteach\b/.test(lower)) return HARDCODED_RESPONSES.courses;
+  if (/\blocation\b|\baddress\b|\bwhere\b|\blocated\b|\bcome\b|\bplace\b|\bnear\b|\breach\b/.test(lower)) return HARDCODED_RESPONSES.location;
+  if (/\bphone\b|\bcontact\b|\bemail\b|\bnumber\b|\bcall\b|\breach us\b|\bwhatsapp\b|\bmobile\b|\btel\b/.test(lower)) return HARDCODED_RESPONSES.contact;
+  if (/\bfee\b|\bfees\b|\bcost\b|\bprice\b|\bcharge\b|\bpayment\b|\btuition\b/.test(lower)) return HARDCODED_RESPONSES.fees;
+  return null;
+}
+
 interface Message {
   id: string;
   role: 'user' | 'assistant';
@@ -154,12 +183,21 @@ export default function NobleAI() {
           REQUEST_TIMEOUT
         );
 
+        // Client-side safety filter: replace forbidden content with hardcoded response
+        let safeReply = reply;
+        const lastUserMsg = [...msgs].reverse().find(m => m.role === 'user');
+        const userText = lastUserMsg?.content || '';
+        if (containsForbiddenContent(safeReply)) {
+          const fallback = getHardcodedFallback(userText);
+          safeReply = fallback || "I'm sorry, I encountered an error. Please try rephrasing your question or submit an enquiry form on our website.";
+        }
+
         setMessages((prev) => [
           ...prev,
           {
             id: (Date.now() + 1).toString(),
             role: 'assistant',
-            content: reply,
+            content: safeReply,
           },
         ]);
       } catch (err) {
