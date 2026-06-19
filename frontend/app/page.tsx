@@ -119,7 +119,7 @@ const Home: React.FC = () => {
                 }}
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=620&fit=crop"
+                  src="/images/hero/herosection.webp"
                   alt="Labbdhi\'s Academy Classroom"
                   fill
                   className="object-cover"
