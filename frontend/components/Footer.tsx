@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <span className="font-heading font-bold text-xl text-white">Labbdhis Academy</span>
-                <span className="block text-[9px] tracking-[0.15em] uppercase text-blue-300">Building Strong Foundations For Academic Excellence</span>
+                <span className="block text-[9px] tracking-[0.15em] uppercase text-blue-300">Where learning is Journey</span>
               </div>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-sm">

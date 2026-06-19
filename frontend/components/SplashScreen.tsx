@@ -144,7 +144,7 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                 transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
                 className="text-base sm:text-lg md:text-xl text-[#64748B] font-medium tracking-wide mb-8 sm:mb-10"
               >
-                Building Strong Foundations For Academic Excellence
+                Where learning is Journey
               </motion.p>
 
               <motion.div

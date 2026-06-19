@@ -63,7 +63,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
               name: "Labbdhis Academy",
-              description: "Building Strong Foundations For Academic Excellence",
+              description: "Where learning is Journey",
               url: "https://labbdhisacademy.in",
               address: {
                 "@type": "PostalAddress",

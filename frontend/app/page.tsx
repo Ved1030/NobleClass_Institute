@@ -188,7 +188,7 @@ const Home: React.FC = () => {
 
                 {/* Tagline */}
                 <p className="font-heading text-2xl lg:text-3xl xl:text-[40px] leading-[1.15] font-medium mt-[20px] animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards', color: '#374151' }}>
-                  Building Strong Foundations For Academic Excellence
+                  Where learning is Journey
                 </p>
 
                 {/* Description */}

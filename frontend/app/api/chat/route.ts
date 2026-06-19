@@ -15,7 +15,7 @@ const SAFE_RESPONSES = {
   fees: "Fee details are currently being updated. Please submit an enquiry form on our website for fee information.",
 };
 
-const TAGLINE = "Building Strong Foundations For Academic Excellence";
+const TAGLINE = "Where learning is Journey";
 
 function containsForbidden(text: string): boolean {
   const lower = text.toLowerCase();

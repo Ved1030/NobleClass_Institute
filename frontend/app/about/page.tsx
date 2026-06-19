@@ -38,7 +38,7 @@ const About: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Story</span>
-              <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Building Strong Foundations For Academic Excellence</h2>
+              <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Where learning is Journey</h2>
               <div className="space-y-4 text-noble-navy/70 leading-relaxed">
                 <p>Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.</p>
                 <p>Our approach focuses on understanding each student's unique learning style, addressing their weaknesses, strengthening their fundamentals, and building the confidence they need to excel in school examinations.</p>

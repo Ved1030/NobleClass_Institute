@@ -57,7 +57,7 @@ const Header: React.FC = () => {
                   Labbdhis Academy
                 </span>
                 <span className="block text-[9px] tracking-[0.15em] uppercase text-noble-blue">
-                  Building Strong Foundations For Academic Excellence
+                  Where learning is Journey
                 </span>
               </div>
             </Link>

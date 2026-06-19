@@ -55,7 +55,7 @@ function getHardcodedResponse(userMessage: string): string | null {
 const SYSTEM_PROMPT = `You are Labbdhis AI. You represent Labbdhis Academy only.
 
 ## Tagline
-Building Strong Foundations For Academic Excellence
+Where learning is Journey
 
 ## Academy Details
 
