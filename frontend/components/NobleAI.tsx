@@ -338,7 +338,7 @@ export default function VSAI() {
                         {(hasContactInfo(message.content) || hasUnavailableMessage(message.content)) && (
                         <div className="flex gap-2 mt-3 pt-3 border-t border-gray-200">
                           <a
-                            href="https://maps.google.com/?q=19.085946,72.914451"
+                            href="https://www.google.com/maps/place/VS+TUTORIALS/@19.0850138,72.9107628,18z/data=!4m10!1m2!2m1!1sShop+No.+11,+Ground+Floor,+Building+No.+185,+Drushti+Sapphire,+Opp.+Shivaji+Technical+School,+Gaurishankar+Wadi,+Pant+Nagar,+Ghatkopar+East,+Mumbai+-+400075!3m6!1s0x3be7c633b3536911:0x573755102c273c49!8m2!3d19.0850138!4d72.9131446!15sCpwBU2hvcCBOby4gMTEsIEdyb3VuZCBGbG9vciwgQnVpbGRpbmcgTm8uIDE4NSwgRHJ1c2h0aSBTYXBwaGlyZSwgT3BwLiBTaGl2YWppIFRlY2huaWNhbCBTY2hvb2wsIEdhdXJpc2hhbmthciBXYWRpLCBQYW50IE5hZ2FyLCBHaGF0a29wYXIgRWFzdCwgTXVtYmFpIC0gNDAwMDc1WpIBIo8Bc2hvcCBubyAxMSBncm91bmQgZmxvb3IgYnVpbGRpbmcgbm8gMTg1IGRydXNodGkgc2FwcGhpcmUgb3BwIHNoaXZhamkgdGVjaG5pY2FsIHNjaG9vbCBnYXVyaXNoYW5rYXIgd2FkaSBwYW50IG5hZ2FyIGdoYXRrb3BhciBlYXN0IG11bWJhaSA0MDAwNzWSARBlZHVjYXRpb25fY2VudGVymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJwR1ZGTlZNWEJUUlVaSlpEQjBkV05zWkRWTmVrSXlXbTFHTms1SFl4QULgAQD6AQQITBBD!16s%2Fg%2F11gbnk_bds?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-1.5 text-xs font-medium text-noble-blue bg-noble-blue/10 px-3 py-2 rounded-lg hover:bg-noble-blue/20 transition-colors"
