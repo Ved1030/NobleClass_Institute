@@ -20,8 +20,8 @@ const inquirySchema = z.object({
 
 type InquiryFormData = z.infer<typeof inquirySchema>;
 
-const classOptions = ['Class 5', 'Class 6', 'Class 7', 'Class 8', 'Class 9', 'Class 10', 'Class 11 Science', 'Class 12 Science', 'Class 11 Commerce', 'Class 12 Commerce', 'Foundation', 'Competitive Exams'];
-const courseOptions = ['All Subjects', 'Mathematics', 'Science', 'Physics', 'Chemistry', 'Biology', 'English', 'Accountancy', 'Economics', 'Business Studies'];
+const classOptions = ['Class 11 Science', 'Class 12 Science', 'Foundation', 'Competitive Exams'];
+const courseOptions = ['All Subjects', 'Mathematics', 'Science', 'Physics', 'Chemistry', 'Biology', 'English'];
 
 interface InquiryFormProps {
   className?: string;

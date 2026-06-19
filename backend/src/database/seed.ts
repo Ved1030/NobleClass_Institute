@@ -23,7 +23,7 @@ async function seed(): Promise<void> {
     {
       id: 1,
       name: 'Admin',
-      email: 'admin@nobleclasses.in',
+      email: 'admin@vstutorials.in',
       password: adminPassword,
       role: 'admin',
       createdAt: new Date().toISOString(),

@@ -25,7 +25,7 @@ const InquiryForm = dynamic(() => import('@/components/InquiryForm'), {
 });
 
 const steps = [
-  { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form or visit our center in Ghatkopar.', icon: FileText },
+  { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form or visit our center in Ghatkopar East.', icon: FileText },
   { step: '02', title: 'Free Counseling', desc: 'Our academic counselors will guide you on the best course for your child.', icon: Users },
   { step: '03', title: 'Diagnostic Test', desc: 'Optional assessment to identify learning gaps and customize the learning plan.', icon: CheckCircle },
   { step: '04', title: 'Enrollment', desc: 'Complete admission formalities, pay fees, and join your batch.', icon: ArrowRight },

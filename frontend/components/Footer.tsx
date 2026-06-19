@@ -15,12 +15,12 @@ const Footer: React.FC = () => {
                 <GraduationCap className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="font-heading font-bold text-xl text-white">Noble Classes</span>
-                <span className="block text-[9px] tracking-[0.15em] uppercase text-blue-300">Shaping The Future</span>
+                <span className="font-heading font-bold text-xl text-white">VS Tutorials</span>
+                <span className="block text-[9px] tracking-[0.15em] uppercase text-blue-300">Building Strong Concepts & Academic Excellence</span>
               </div>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-sm">
-              Empowering students since 2010 with quality education. We provide comprehensive coaching for Classes VIII to XII, focusing on academic excellence and holistic development.
+              VS Tutorials is a trusted coaching institute dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results.
             </p>
             <div className="flex items-center gap-3">
               {[
@@ -43,11 +43,11 @@ const Footer: React.FC = () => {
             <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-white/80 mb-5">Courses</h3>
             <ul className="space-y-2.5">
               {[
-                { label: 'Class VIII - X', path: '/courses' },
-                { label: 'Science (XI - XII)', path: '/courses' },
-                { label: 'Commerce (XI - XII)', path: '/courses' },
-                { label: 'JEE Preparation', path: '/courses' },
-                { label: 'NEET Preparation', path: '/courses' },
+                { label: 'JEE Main', path: '/courses' },
+                { label: 'JEE Advanced', path: '/courses' },
+                { label: 'NEET UG', path: '/courses' },
+                { label: 'MHT-CET', path: '/courses' },
+                { label: 'XI & XII Science', path: '/courses' },
               ].map(link => (
                 <li key={link.label}>
                   <Link href={link.path} prefetch className="text-white/50 hover:text-white text-sm transition-colors">{link.label}</Link>
@@ -77,18 +77,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-noble-accent mt-0.5 shrink-0" />
-                <span className="text-white/50 text-sm">LBS Marg, Ghatkopar (W), Mumbai - 400086</span>
+                <span className="text-white/50 text-sm">Shop No. 11, Ground Floor, Building No. 185, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai - 400075</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-noble-accent shrink-0" />
-                <div>
-                  <a href="tel:+919820023732" className="text-white/50 hover:text-white text-sm transition-colors block">98200 23732</a>
-                  <a href="tel:+919930890499" className="text-white/50 hover:text-white text-sm transition-colors block">99308 90499</a>
-                </div>
+                <span className="text-white/50 text-sm">+91 97691 13425</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-noble-accent shrink-0" />
-                <a href="mailto:info@nobleclasses.in" className="text-white/50 hover:text-white text-sm transition-colors">info@nobleclasses.in</a>
+                <span className="text-white/50 text-sm">info@vstutorials.in</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-noble-accent shrink-0" />
@@ -100,7 +97,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-xs">&copy; {new Date().getFullYear()} Noble Classes. All rights reserved.</p>
+          <p className="text-white/40 text-xs">&copy; {new Date().getFullYear()} VS Tutorials. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" prefetch className="text-white/40 hover:text-white text-xs transition-colors">Privacy Policy</Link>
             <Link href="/terms" prefetch className="text-white/40 hover:text-white text-xs transition-colors">Terms of Use</Link>

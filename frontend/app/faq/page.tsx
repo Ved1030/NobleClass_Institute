@@ -7,7 +7,7 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const faqData = [
-  { q: 'What is the batch size at Noble Classes?', a: 'We maintain a maximum of 25 students per batch to ensure personalized attention and quality learning.' },
+  { q: 'What is the batch size at VS Tutorials?', a: 'We maintain a maximum of 25 students per batch to ensure personalized attention and quality learning.' },
   { q: 'Do you provide study material?', a: 'Yes, we provide comprehensive, exam-focused study material prepared by our expert faculty at no extra cost.' },
   { q: 'Are there any scholarships available?', a: 'Yes, we offer merit-based scholarships for students who score above 90% in their previous exams.' },
   { q: 'What are the timings for batches?', a: 'We offer morning (7–9 AM), afternoon (2–4 PM), and evening (5–7 PM) batches to suit different schedules.' },
@@ -24,7 +24,7 @@ const FAQ: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Frequently Asked Questions" subtitle="Find answers to common questions about Noble Classes, our programs, admissions, and more." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'FAQ' }]} />
+      <PageHero title="Frequently Asked Questions" subtitle="Find answers to common questions about VS Tutorials, our programs, admissions, and more." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'FAQ' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="relative mb-10">

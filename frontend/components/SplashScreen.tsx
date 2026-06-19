@@ -122,7 +122,7 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                   transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
                   className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-noble-blue text-center"
                 >
-                  Noble Classes
+                  VS Tutorials
                 </motion.h1>
                 <motion.div
                   className="absolute inset-0 pointer-events-none overflow-hidden rounded"
@@ -144,7 +144,7 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
                 transition={{ duration: 0.4, delay: 0.5, ease: "easeOut" }}
                 className="text-base sm:text-lg md:text-xl text-[#64748B] font-medium tracking-wide mb-8 sm:mb-10"
               >
-                Shaping The Future
+                Building Strong Concepts & Academic Excellence
               </motion.p>
 
               <motion.div

@@ -9,7 +9,7 @@ import BackToTop from './BackToTop';
 import WhatsAppButton from './WhatsAppButton';
 import AdminLayout from './AdminLayout';
 
-const NobleAI = dynamic(() => import('./NobleAI'), { ssr: false });
+const VSAI = dynamic(() => import('./NobleAI'), { ssr: false });
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -25,7 +25,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <main>{children}</main>
       <Footer />
       <BackToTop />
-      <NobleAI />
+      <VSAI />
       <WhatsAppButton />
     </div>
   );

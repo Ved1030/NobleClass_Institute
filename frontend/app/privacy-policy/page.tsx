@@ -17,7 +17,7 @@ const PrivacyPolicy: React.FC = () => {
           <h2 className="font-heading text-2xl font-bold text-noble-navy mb-4">3. Data Security</h2>
           <p className="text-noble-navy/70 mb-6">We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.</p>
           <h2 className="font-heading text-2xl font-bold text-noble-navy mb-4">4. Contact</h2>
-          <p className="text-noble-navy/70 mb-6">For any questions regarding this privacy policy, please contact us at info@nobleclasses.in.</p>
+           <p className="text-noble-navy/70 mb-6">For any questions regarding this privacy policy, please contact us through our inquiry form.</p>
         </div>
       </SectionWrapper>
     </>

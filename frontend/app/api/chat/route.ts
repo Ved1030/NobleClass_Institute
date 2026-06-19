@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Chat proxy error:', error);
     return NextResponse.json(
-      { reply: "Sorry, I'm currently unavailable. Please call Noble Classes at 9820023732." },
+      { reply: "Sorry, I'm currently unavailable. Please visit our center in Ghatkopar East or submit an inquiry form." },
       { status: 500 }
     );
   }

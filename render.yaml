@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: noble-classes-backend
+    name: vs-tutorials-backend
     runtime: node
     region: singapore
     plan: free

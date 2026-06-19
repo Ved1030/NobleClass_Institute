@@ -15,30 +15,30 @@ interface Message {
 const SUGGESTED_QUESTIONS = [
   'Admission Process',
   'Courses Offered',
-  'JEE Preparation',
-  'NEET Preparation',
+  'Academic Programs',
   'Contact Details',
   'Faculty Information',
+  'Fee Structure',
 ];
 
 const QUESTION_MAP: Record<string, string> = {
-  'Admission Process': 'Can you tell me about the admission process at Noble Classes?',
-  'Courses Offered': 'What courses do you offer at Noble Classes?',
-  'JEE Preparation': 'Tell me about JEE preparation at Noble Classes.',
-  'NEET Preparation': 'Tell me about NEET preparation at Noble Classes.',
-  'Contact Details': 'What are the contact details for Noble Classes?',
-  'Faculty Information': 'Tell me about the faculty at Noble Classes.',
+  'Admission Process': 'Can you tell me about the admission process at VS Tutorials?',
+  'Courses Offered': 'What courses do you offer at VS Tutorials?',
+  'Academic Programs': 'What academic programs are available at VS Tutorials?',
+  'Contact Details': 'What are the contact details for VS Tutorials?',
+  'Faculty Information': 'Tell me about the faculty at VS Tutorials.',
+  'Fee Structure': 'What is the fee structure at VS Tutorials?',
 };
 
 const WELCOME_MESSAGE =
-  "Hello! I'm Noble AI, your virtual admission counselor. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about Noble Classes.";
+  "Hello! I'm VS AI, your virtual admission counselor. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about VS Tutorials.";
 
 const UNAVAILABLE_MESSAGE =
-  "Noble AI is currently unavailable.\n\nPlease call Noble Classes directly:\n\n**9820023732**\n**9930890499**";
+  "VS AI is currently unavailable.\n\nPlease contact us through our inquiry form or visit us at our Ghatkopar East center.";
 
 const LOADING_MESSAGES = {
-  initial: 'Connecting to Noble AI...',
-  slow: 'Waking up Noble AI...',
+  initial: 'Connecting to VS AI...',
+  slow: 'Waking up VS AI...',
   slowDetail: 'This may take a few moments.',
 };
 
@@ -62,7 +62,7 @@ async function fetchWithTimeout<T>(
   ]);
 }
 
-export default function NobleAI() {
+export default function VSAI() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
@@ -87,7 +87,7 @@ export default function NobleAI() {
 
   useEffect(() => {
     if (hasInteracted) return;
-    const timer = setTimeout(() => setTooltipText('Ask Noble AI'), 8000);
+    const timer = setTimeout(() => setTooltipText('Ask VS AI'), 8000);
     return () => clearTimeout(timer);
   }, [hasInteracted]);
 
@@ -228,8 +228,6 @@ export default function NobleAI() {
   function hasContactInfo(content: string): boolean {
     const lower = content.toLowerCase();
     const keywords = [
-      '9820023732',
-      '9930890499',
       '📞',
       '📍',
       'phone',
@@ -242,7 +240,7 @@ export default function NobleAI() {
   }
 
   function hasUnavailableMessage(content: string): boolean {
-    return content.includes('Noble AI is currently unavailable');
+    return content.includes('VS AI is currently unavailable');
   }
 
   return (
@@ -267,7 +265,7 @@ export default function NobleAI() {
             onClick={openChat}
             className="fixed bottom-[96px] right-6 md:bottom-[104px] md:right-6 z-[9999] w-14 h-14 md:w-16 md:h-16 bg-[#005DAA] text-white rounded-[20px] flex items-center justify-center cursor-pointer"
             style={{ boxShadow: '0 10px 25px rgba(0,93,170,0.25)' }}
-            aria-label="Ask Noble AI"
+            aria-label="Ask VS AI"
           >
             <Sparkles className="w-7 h-7 md:w-8 md:h-8" />
           </motion.button>
@@ -311,7 +309,7 @@ export default function NobleAI() {
                 <GraduationCap className="w-5 h-5" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-base">Noble AI</h3>
+                <h3 className="font-semibold text-base">VS AI</h3>
                 <p className="text-xs text-white/80 truncate">
                   Your Virtual Admission Counselor
                 </p>
@@ -337,24 +335,10 @@ export default function NobleAI() {
                   {message.role === 'assistant' ? (
                     <div className="max-w-[88%] px-4 py-3 rounded-2xl bg-gray-100 text-gray-800 rounded-bl-md">
                       <MarkdownRenderer content={message.content} />
-                      {(hasContactInfo(message.content) || hasUnavailableMessage(message.content)) && (
+                        {(hasContactInfo(message.content) || hasUnavailableMessage(message.content)) && (
                         <div className="flex gap-2 mt-3 pt-3 border-t border-gray-200">
                           <a
-                            href="tel:9820023732"
-                            className="flex items-center gap-1.5 text-xs font-medium text-white bg-green-600 px-3 py-2 rounded-lg hover:bg-green-700 transition-colors"
-                          >
-                            <Phone className="w-3.5 h-3.5" />
-                            Call 9820023732
-                          </a>
-                          <a
-                            href="tel:9930890499"
-                            className="flex items-center gap-1.5 text-xs font-medium text-white bg-green-600 px-3 py-2 rounded-lg hover:bg-green-700 transition-colors"
-                          >
-                            <Phone className="w-3.5 h-3.5" />
-                            Call 9930890499
-                          </a>
-                          <a
-                            href="https://maps.google.com/?q=517+Suchita+Business+Park+Patel+Chawl+Ghatkopar+East+Mumbai+400077"
+                            href="https://maps.google.com/?q=19.1147,72.9293"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-1.5 text-xs font-medium text-noble-blue bg-noble-blue/10 px-3 py-2 rounded-lg hover:bg-noble-blue/20 transition-colors"

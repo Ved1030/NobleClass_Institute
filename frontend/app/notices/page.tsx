@@ -8,13 +8,13 @@ import SectionWrapper from '@/components/SectionWrapper';
 
 const allNotices = [
   { id: 1, title: 'New Batch Starting for Class 10 – June 2026', date: '15 May 2026', category: 'Batch', excerpt: 'Admissions open for the new academic batch starting June 2026. Limited seats available. Register now to secure your spot. The batch will cover complete SSC syllabus with weekly tests.', isNew: true },
-  { id: 2, title: 'SSC Board Results 2026 – Noble Classes Shines Again', date: '10 May 2026', category: 'Result', excerpt: '98% of our students passed with distinction. 12 students scored above 95%. Congratulations to all achievers! Special felicitation ceremony on 20th May.', isNew: true },
+  { id: 2, title: 'Academic Year 2025-26 Results', date: '10 May 2026', category: 'Result', excerpt: 'Our students achieved excellent academic results. Congratulations to all achievers!', isNew: true },
   { id: 3, title: 'Summer Crash Course for Class 9 & 10', date: '5 May 2026', category: 'Batch', excerpt: 'Intensive 45-day crash course covering complete syllabus with daily tests and doubt sessions. Starting 1st June 2026.', isNew: false },
   { id: 4, title: 'Holiday Notice – Eid Al-Adha', date: '1 May 2026', category: 'Holiday', excerpt: 'Institute will remain closed on 17th June 2026 on account of Eid Al-Adha. Classes will resume on 18th June.', isNew: false },
   { id: 5, title: 'JEE Mains 2026 – Preparation Strategy Session', date: '28 Apr 2026', category: 'Exam', excerpt: 'Free strategy session for JEE Mains 2026 aspirants on 5th May. Expert faculty will guide on time management and exam strategy.', isNew: false },
   { id: 6, title: 'Parent-Teacher Meeting – May 2026', date: '25 Apr 2026', category: 'General', excerpt: 'Monthly PTM scheduled for 12th May 2026 from 10 AM to 1 PM. All parents are requested to attend.', isNew: false },
   { id: 7, title: 'Scholarship Test – June 2026', date: '20 Apr 2026', category: 'Exam', excerpt: 'Annual scholarship test for new admissions. Students scoring 90%+ in previous exams are eligible for up to 50% fee waiver.', isNew: false },
-  { id: 8, title: 'New Commerce Batch – July 2026', date: '15 Apr 2026', category: 'Batch', excerpt: 'New batch for Class 11 Commerce starting July 2026. Subjects: Accountancy, Economics, Business Studies, Mathematics.', isNew: false },
+  { id: 8, title: 'New MHT-CET Batch – July 2026', date: '15 Apr 2026', category: 'Batch', excerpt: 'New batch for MHT-CET preparation starting July 2026. Subjects: Physics, Chemistry, Mathematics.', isNew: false },
 ];
 
 const categories = ['All', 'Batch', 'Exam', 'Result', 'Holiday', 'General'];
@@ -38,7 +38,7 @@ const Notices: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Notices & Announcements" subtitle="Stay informed about upcoming batches, exam schedules, results, and important announcements from Noble Classes." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Notices' }]} />
+      <PageHero title="Notices & Announcements" subtitle="Stay informed about upcoming batches, exam schedules, results, and important announcements from VS Tutorials." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Notices' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row gap-4 mb-8">

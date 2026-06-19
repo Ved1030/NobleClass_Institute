@@ -7,16 +7,16 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const positions = [
-  { title: 'Mathematics Teacher', type: 'Full-time', location: 'Ghatkopar, Mumbai', exp: '3+ years', desc: 'We are looking for an experienced Mathematics teacher for Classes 8–12, including JEE and NEET preparation.' },
-  { title: 'Physics Teacher', type: 'Full-time', location: 'Ghatkopar, Mumbai', exp: '3+ years', desc: 'Seeking a passionate Physics teacher with JEE/NEET coaching experience.' },
-  { title: 'Chemistry Teacher', type: 'Full-time', location: 'Ghatkopar, Mumbai', exp: '3+ years', desc: 'Looking for a Chemistry specialist to join our growing faculty team.' },
-  { title: 'Administrative Assistant', type: 'Full-time', location: 'Ghatkopar, Mumbai', exp: '1+ years', desc: 'Handle day-to-day administrative tasks, student records, and parent communications.' },
+  { title: 'Mathematics Teacher', type: 'Full-time', location: 'Ghatkopar East, Mumbai', exp: '3+ years', desc: 'We are looking for an experienced Mathematics teacher for academic and competitive exam preparation.' },
+  { title: 'Physics Teacher', type: 'Full-time', location: 'Ghatkopar East, Mumbai', exp: '3+ years', desc: 'Seeking a passionate Physics teacher with coaching experience.' },
+  { title: 'Chemistry Teacher', type: 'Full-time', location: 'Ghatkopar East, Mumbai', exp: '3+ years', desc: 'Looking for a Chemistry specialist to join our growing faculty team.' },
+  { title: 'Administrative Assistant', type: 'Full-time', location: 'Ghatkopar East, Mumbai', exp: '1+ years', desc: 'Handle day-to-day administrative tasks, student records, and parent communications.' },
 ];
 
 const Careers: React.FC = () => {
   return (
     <>
-      <PageHero title="Careers at Noble Classes" subtitle="Join a team of passionate educators and professionals dedicated to shaping the future of students." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
+      <PageHero title="Careers at VS Tutorials" subtitle="Join a team of passionate educators and professionals dedicated to shaping the future of students." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
@@ -37,7 +37,7 @@ const Careers: React.FC = () => {
                     </div>
                     <p className="text-noble-navy/60 text-sm">{pos.desc}</p>
                   </div>
-                  <a href="mailto:careers@nobleclasses.in" className="flex items-center gap-2 text-noble-blue text-sm font-semibold whitespace-nowrap hover:gap-3 transition-all">Apply Now <ArrowRight className="w-4 h-4" /></a>
+                  <span className="flex items-center gap-2 text-noble-blue text-sm font-semibold whitespace-nowrap">Apply Now <ArrowRight className="w-4 h-4" /></span>
                 </div>
               </motion.div>
             ))}
@@ -46,7 +46,7 @@ const Careers: React.FC = () => {
             <Mail className="w-8 h-8 text-noble-blue mx-auto mb-4" />
             <h3 className="font-heading text-xl font-bold text-noble-navy mb-2">Don't see a fitting role?</h3>
             <p className="text-noble-navy/60 text-sm mb-4">Send us your resume and we'll keep you in mind for future opportunities.</p>
-            <a href="mailto:careers@nobleclasses.in" className="inline-flex items-center gap-2 bg-noble-blue text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-noble-navy transition-colors">Send Resume <ArrowRight className="w-4 h-4" /></a>
+            <span className="inline-flex items-center gap-2 bg-noble-blue text-white px-6 py-3 rounded-full text-sm font-semibold opacity-70">info@vstutorials.in <ArrowRight className="w-4 h-4" /></span>
           </div>
         </div>
       </SectionWrapper>

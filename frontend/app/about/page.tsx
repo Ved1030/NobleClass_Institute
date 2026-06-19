@@ -8,13 +8,10 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const timeline = [
-  { year: '2010', title: 'Foundation', desc: 'Noble Classes was founded by Prof. Rajesh Kumar with a vision to provide quality education to students in Ghatkopar.' },
-  { year: '2013', title: 'First Batch of Toppers', desc: 'Our first batch produced 5 school toppers in SSC Board examinations, establishing our reputation.' },
-  { year: '2016', title: 'Science Stream Launch', desc: 'Launched Science stream coaching for Class 11–12 with JEE and NEET preparation.' },
-  { year: '2018', title: 'New Campus', desc: 'Moved to a larger, state-of-the-art facility with modern classrooms and a dedicated library.' },
-  { year: '2020', title: 'Online Learning', desc: 'Launched hybrid learning model combining in-person and online classes for greater flexibility.' },
-  { year: '2023', title: '5000+ Students', desc: 'Crossed the milestone of 5,000 students enrolled, with a 98% success rate.' },
-  { year: '2026', title: 'Today', desc: 'Continuing to shape futures with 25+ expert faculty and multiple batch options.' },
+  { year: '2023', title: 'Foundation', desc: 'VS Tutorials was founded with a vision to provide quality coaching and academic guidance to students in Ghatkopar East, Mumbai.' },
+  { year: '2024', title: 'Growing Community', desc: 'Our first batches received excellent feedback from students and parents, establishing our reputation.' },
+  { year: '2025', title: 'Academic Excellence', desc: 'Students achieved notable improvements in their academic performance and competitive exam preparation.' },
+  { year: '2026', title: 'Today', desc: 'Continuing to shape futures with experienced faculty and comprehensive academic programs for students.' },
 ];
 
 const values = [
@@ -27,31 +24,31 @@ const values = [
 ];
 
 const team = [
-  { name: 'Prof. Rajesh Kumar', role: 'Founder & Director', qualification: 'M.Sc. Mathematics, IIT Bombay', image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop&crop=face', bio: 'With 20+ years of teaching experience, Prof. Kumar founded Noble Classes with a mission to democratize quality education in Mumbai.' },
-  { name: 'Dr. Sunita Verma', role: 'Academic Director', qualification: 'Ph.D. Chemistry, Mumbai University', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face', bio: 'Dr. Verma oversees curriculum development and ensures our teaching standards remain at the highest level.' },
-  { name: 'Mr. Vikram Nair', role: 'Operations Manager', qualification: 'MBA, Symbiosis Institute', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face', bio: 'Vikram manages day-to-day operations, ensuring a smooth and enriching experience for all students and parents.' },
+  { name: 'Prof. Rajesh Kumar', role: 'Academic Head', qualification: 'M.Sc. Mathematics, IIT Bombay', image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop&crop=face', bio: 'With 20+ years of teaching experience, Prof. Kumar leads the academic programs at VS Tutorials.' },
+  { name: 'Dr. Sunita Verma', role: 'Senior Faculty', qualification: 'Ph.D. Chemistry, Mumbai University', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face', bio: 'Dr. Verma brings expertise in curriculum development and student mentoring.' },
+  { name: 'Mr. Amit Joshi', role: 'Faculty Coordinator', qualification: 'M.Sc. Physics, VJTI Mumbai', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face', bio: 'Amit manages academic coordination and ensures quality teaching standards.' },
 ];
 
 const About: React.FC = () => {
   return (
     <>
-      <PageHero title="About Noble Classes" subtitle="A legacy of academic excellence, built on trust, dedication, and a passion for shaping brilliant futures." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
+      <PageHero title="About VS Tutorials" subtitle="A trusted coaching institute in Ghatkopar East, dedicated to building strong concepts and academic excellence through quality education and personalized guidance." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Story</span>
-              <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">From a Dream to Mumbai's Most Trusted Coaching Institute</h2>
+              <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Building Strong Concepts & Academic Excellence</h2>
               <div className="space-y-4 text-noble-navy/70 leading-relaxed">
-                <p>Noble Classes was born in 2010 from a simple but powerful belief: every student in Ghatkopar deserves access to world-class coaching without having to travel to South Mumbai or pay exorbitant fees.</p>
-                <p>Founded by Prof. Rajesh Kumar, an IIT Bombay alumnus, Noble Classes started with just 30 students in a small room on LBS Marg. Today, we are a full-fledged coaching institute with 5,000+ alumni, 25+ expert faculty members, and a track record that speaks for itself.</p>
-                <p>Our philosophy is simple: understand each student's unique learning style, address their weaknesses, amplify their strengths, and build the confidence they need to excel in any examination.</p>
+                <p>VS Tutorials is a trusted coaching institute in Ghatkopar East, Mumbai dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results. With experienced teachers, regular assessments, and personalized attention, students receive complete guidance for academic success.</p>
+                <p>Our approach focuses on understanding each student's unique learning style, addressing their weaknesses, strengthening their fundamentals, and building the confidence they need to excel in examinations.</p>
+                <p>We believe in providing quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic excellence and success in life.</p>
               </div>
             </div>
             <div className="relative">
-              <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="Noble Classes - Students learning together" width={600} height={450} className="rounded-3xl object-cover w-full shadow-2xl shadow-noble-blue/10" />
+              <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="VS Tutorials - coaching classroom" width={600} height={450} className="rounded-3xl object-cover w-full shadow-2xl shadow-noble-blue/10" />
               <div className="absolute -bottom-6 -left-6 bg-noble-blue text-white rounded-2xl p-6 shadow-xl">
-                <div className="font-heading text-4xl font-bold">14+</div>
+                <div className="font-heading text-4xl font-bold">3+</div>
                 <div className="text-white/70 text-sm">Years of Excellence</div>
               </div>
             </div>
@@ -78,7 +75,7 @@ const About: React.FC = () => {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
             <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Journey</span>
-            <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-4">14 Years of Excellence</h2>
+            <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-4">Our Journey</h2>
           </div>
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-px bg-noble-blue/20" />

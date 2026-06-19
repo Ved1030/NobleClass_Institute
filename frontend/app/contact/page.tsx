@@ -25,10 +25,10 @@ const InquiryForm = dynamic(() => import('@/components/InquiryForm'), {
 });
 
 const contactInfo = [
-  { icon: MapPin, title: 'Visit Us', lines: ['517, Suchita Business Park,', 'Patel Chawl, Ghatkopar East,', 'Mumbai – 400077'] },
-  { icon: Phone, title: 'Call Us', lines: ['+91 98765 43210', '+91 98765 43211'] },
-  { icon: Mail, title: 'Email Us', lines: ['info@nobleclasses.in', 'admissions@nobleclasses.in'] },
-  { icon: Clock, title: 'Office Hours', lines: ['Mon – Sat: 8:00 AM – 8:00 PM', 'Sunday: 10:00 AM – 2:00 PM'] },
+  { icon: MapPin, title: 'Visit Us', lines: ['Shop No. 11, Ground Floor,', 'Building No. 185, Drushti Sapphire,', 'Opp. Shivaji Technical School,', 'Gaurishankar Wadi, Pant Nagar,', 'Ghatkopar East, Mumbai – 400075'] },
+  { icon: Phone, title: 'Call Us', lines: ['+91 97691 13425'] },
+  { icon: Mail, title: 'Email Us', lines: ['info@vstutorials.in'] },
+  { icon: Clock, title: 'Office Hours', lines: ['Mon – Sat: 7:00 AM – 9:00 PM', 'Sunday: 10:00 AM – 2:00 PM'] },
 ];
 
 const Contact: React.FC = () => {
@@ -53,23 +53,23 @@ const Contact: React.FC = () => {
               <div className="bg-white rounded-[24px] shadow-lg overflow-hidden border border-gray-200">
                 <div className="w-full h-[300px]">
                   <iframe
-                    src="https://www.google.com/maps?q=517+Suchita+Business+Park+Noble+Classes+Patel+Chawl+Ghatkopar+East+Mumbai+400077&output=embed"
+                    src="https://www.google.com/maps?q=19.1147,72.9293&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Noble Classes Location"
+                    title="VS Tutorials Location"
                   />
                 </div>
                 <div className="p-4 flex items-center justify-between gap-3 flex-wrap">
                   <div className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 text-noble-blue shrink-0 mt-0.5" />
-                    <p className="text-noble-dark/60 text-sm">517, Suchita Business Park, Ghatkopar East, Mumbai 400077</p>
+                    <p className="text-noble-dark/60 text-sm">Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai 400075</p>
                   </div>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=517+Suchita+Business+Park+Noble+Classes+Patel+Chawl+Ghatkopar+East+Mumbai+400077"
+                    href="https://www.google.com/maps/search/?api=1&query=19.1147,72.9293"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 bg-noble-blue text-white px-4 py-2 rounded-xl font-semibold text-xs hover:bg-noble-blue-dark transition-all duration-200 shrink-0"
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="mt-6"><a href="https://wa.me/919876543210?text=Hello%20Noble%20Classes%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-[#25D366] text-white px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-[#20b858] transition-colors duration-200 w-fit"><MessageCircle className="w-4 h-4" />Chat on WhatsApp</a></div>
+              <div className="mt-6"><a href="https://wa.me/919769113425" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-[#25D366] text-white px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-[#20b858] transition-colors duration-200 w-fit"><MessageCircle className="w-4 h-4" />Chat on WhatsApp</a></div>
             </div>
             <div>
               <div className="bg-white rounded-3xl border border-noble-blue/10 p-8 shadow-xl shadow-noble-blue/5">

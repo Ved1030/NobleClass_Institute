@@ -30,30 +30,30 @@ const InquiryForm = dynamic(() => import('@/components/InquiryForm'), {
 });
 
 const stats = [
-  { label: 'Students Enrolled', value: 5000, suffix: '+', icon: Users },
-  { label: 'Years Of Excellence', value: 14, suffix: '+', icon: Award },
-  { label: 'Success Rate', value: 98, suffix: '%', icon: TrendingUp },
-  { label: 'Expert Faculty', value: 25, suffix: '+', icon: BookOpen },
+  { label: 'Students Enrolled', value: 200, suffix: '+', icon: Users },
+  { label: 'Years Of Excellence', value: 3, suffix: '+', icon: Award },
+  { label: 'Success Rate', value: 92, suffix: '%', icon: TrendingUp },
+  { label: 'Expert Faculty', value: 8, suffix: '+', icon: BookOpen },
 ];
 
 const coursesData: Record<string, any[]> = {
-  School: [
-    { icon: GraduationCap, name: 'Class VIII - X Foundation', badge: 'POPULAR', tag: 'School', color: '#16A34A', desc: 'Build strong academic foundations with conceptual learning across all core subjects.', subjects: ['Mathematics', 'Science', 'English', 'SST'], stats: { days: '6 Days/Week', faculty: 'Expert Teachers', material: 'Printed Notes' } },
-    { icon: GraduationCap, name: 'Class X Board Prep', badge: 'BEST RESULTS', tag: 'School', color: '#16A34A', desc: 'Intensive board exam preparation with mock tests and personalized mentoring.', subjects: ['Mathematics', 'Science', 'English', 'SST'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Board Kit' } },
-    { icon: GraduationCap, name: 'Foundation VI - VII', badge: 'TOP PICK', tag: 'School', color: '#16A34A', desc: 'Early academic grooming to build problem-solving skills and conceptual clarity.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: '3 Days/Week', faculty: 'Expert Faculty', material: 'Practice Sets' } },
-    { icon: GraduationCap, name: 'Crash Course (X)', badge: 'NEW', tag: 'School', color: '#16A34A', desc: 'Rapid revision designed for last-minute board exam preparation.', subjects: ['Mathematics', 'Science', 'English', 'SST'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Revision Kit' } },
+  'JEE': [
+    { icon: Target, name: 'JEE Main Program', badge: 'POPULAR', tag: 'JEE', color: '#C62828', desc: 'Comprehensive preparation for JEE Main with conceptual clarity, problem-solving techniques, and extensive mock tests.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Adv. Problem Sets' } },
+    { icon: Target, name: 'JEE Advanced Program', badge: 'JEE SPECIAL', tag: 'JEE', color: '#C62828', desc: 'Rigorous IIT-JEE Advanced coaching with advanced problem-solving, PYQ analysis, and mock tests.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Adv. Problem Sets' } },
+    { icon: Target, name: 'Crash Course JEE', badge: 'TOP PICK', tag: 'JEE', color: '#C62828', desc: 'Intensive revision program for JEE Main & Advanced with focused topic-wise sessions.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Revision Kit' } },
+    { icon: Target, name: 'JEE + Board Combo', badge: 'BEST RESULTS', tag: 'JEE', color: '#C62828', desc: 'Integrated program covering XII board exam and JEE preparation simultaneously.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Combo Kit' } },
   ],
-  Commerce: [
-    { icon: BookOpen, name: 'Class XI Commerce', badge: 'POPULAR', tag: 'Commerce', color: '#005DAA', desc: 'Build strong foundations in accountancy, economics, and business studies.', subjects: ['Accountancy', 'Economics', 'B. Studies'], stats: { days: '6 Days/Week', faculty: 'CA Faculty', material: 'Accountancy Kit' } },
-    { icon: BookOpen, name: 'Class XII Commerce', badge: 'TOP PICK', tag: 'Commerce', color: '#005DAA', desc: 'Board-focused preparation with mock tests and comprehensive revision.', subjects: ['Accountancy', 'Economics', 'B. Studies'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Board Prep Kit' } },
-    { icon: BookOpen, name: 'Accounts Specialization', badge: 'BEST RESULTS', tag: 'Commerce', color: '#005DAA', desc: 'Deep-dive into advanced accountancy, financial statements, and auditing.', subjects: ['Advanced Accounts', 'Taxation'], stats: { days: '4 Days/Week', faculty: 'CA Mentors', material: 'Practice Ledger' } },
-    { icon: BookOpen, name: 'Economics Mastery', badge: 'JEE SPECIAL', tag: 'Commerce', color: '#005DAA', desc: 'Master micro & macro economics with real-world case studies and analysis.', subjects: ['Microeconomics', 'Macroeconomics', 'Indian Eco'], stats: { days: '4 Days/Week', faculty: 'Econ Experts', material: 'Case Study Bank' } },
+  'NEET': [
+    { icon: HeartPulse, name: 'NEET UG Program', badge: 'NEET SPECIAL', tag: 'NEET', color: '#16A34A', desc: 'Comprehensive NEET coaching with focus on biology, physics and chemistry for medical entrance.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Medical Experts', material: 'NEET Q. Bank' } },
+    { icon: HeartPulse, name: 'NEET Crash Course', badge: 'TOP PICK', tag: 'NEET', color: '#16A34A', desc: 'Fast-track revision program for NEET UG with topic-wise tests and doubt sessions.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Medical Experts', material: 'Revision Kit' } },
+    { icon: HeartPulse, name: 'NEET + Board Combo', badge: 'BEST RESULTS', tag: 'NEET', color: '#16A34A', desc: 'Dual preparation for XII boards and NEET with integrated curriculum.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Comprehensive Kit' } },
+    { icon: HeartPulse, name: 'Biology Specialization', badge: 'POPULAR', tag: 'NEET', color: '#16A34A', desc: 'In-depth biology coaching for NEET with diagram-based learning and mock tests.', subjects: ['Botany', 'Zoology', 'Genetics'], stats: { days: '5 Days/Week', faculty: 'PhD Faculty', material: 'Bio Manual' } },
   ],
-  'Science + JEE + NEET': [
-    { icon: Target, name: 'Class XI Science', badge: 'POPULAR', tag: 'Science', color: '#C62828', desc: 'PCB/PCM streams with lab-based learning for board and competitive exams.', subjects: ['Physics', 'Chemistry', 'Biology/Maths'], stats: { days: '6 Days/Week', faculty: 'PhD Faculty', material: 'Lab Manuals' } },
-    { icon: Target, name: 'Class XII Science', badge: 'TOP PICK', tag: 'Science', color: '#C62828', desc: 'Board-aligned curriculum with simultaneous competitive exam preparation.', subjects: ['Physics', 'Chemistry', 'Biology/Maths'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Board Prep Kit' } },
-    { icon: Target, name: 'JEE Advanced Program', badge: 'JEE SPECIAL', tag: 'JEE', color: '#C62828', desc: 'Rigorous IIT-JEE coaching with advanced problem-solving and mock tests.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Adv. Problem Sets' } },
-    { icon: HeartPulse, name: 'NEET UG Program', badge: 'NEET SPECIAL', tag: 'NEET', color: '#C62828', desc: 'Comprehensive NEET coaching with focus on biology and medical aptitude.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Medical Experts', material: 'NEET Q. Bank' } },
+  'MHT-CET + Science': [
+    { icon: GraduationCap, name: 'MHT-CET Program', badge: 'POPULAR', tag: 'CET', color: '#005DAA', desc: 'Focused preparation for MHT-CET with state board syllabus alignment.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'Expert Faculty', material: 'CET Kit' } },
+    { icon: GraduationCap, name: 'XI Science', badge: 'POPULAR', tag: 'Science', color: '#005DAA', desc: 'PCB/PCM streams with lab-based learning for board and competitive exams.', subjects: ['Physics', 'Chemistry', 'Biology/Maths'], stats: { days: '6 Days/Week', faculty: 'PhD Faculty', material: 'Lab Manuals' } },
+    { icon: GraduationCap, name: 'XII Science', badge: 'TOP PICK', tag: 'Science', color: '#005DAA', desc: 'Board-aligned curriculum with simultaneous competitive exam preparation.', subjects: ['Physics', 'Chemistry', 'Biology/Maths'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Board Prep Kit' } },
+    { icon: GraduationCap, name: 'Foundation Program', badge: 'NEW', tag: 'Science', color: '#005DAA', desc: 'Early preparation for IX-X students aiming for JEE/NEET/MHT-CET with strong fundamentals.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: '4 Days/Week', faculty: 'Expert Faculty', material: 'Practice Sets' } },
   ],
 };
 
@@ -65,45 +65,45 @@ const faculty = [
 ];
 
 const toppers = [
-  { name: 'Aryan Shah', score: '98.4%', exam: 'SSC Board 2025', rank: '1st in School', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face' },
-  { name: 'Sneha Kulkarni', score: '97.8%', exam: 'SSC Board 2025', rank: '2nd in School', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face' },
-  { name: 'Rohan Desai', score: '97.2%', exam: 'SSC Board 2025', rank: '3rd in School', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face' },
-  { name: 'Kavya Nair', score: '96.6%', exam: 'SSC Board 2025', rank: '4th in School', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face' },
+  { name: 'Rahul Mehta', score: '97.2 %ile', exam: 'JEE Mains 2025', rank: 'AIR 1240', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face' },
+  { name: 'Priya Sharma', score: '680/720', exam: 'NEET 2025', rank: 'AIR 890', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face' },
+  { name: 'Amit Joshi', score: '99.56 %ile', exam: 'MHT-CET 2025', rank: 'Top 100', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face' },
+  { name: 'Sneha Patil', score: '720/720', exam: 'NEET 2025', rank: 'AIR 234', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face' },
 ];
 
 const testimonials = [
-  { id: 1, name: 'Priya Sharma', label: 'Class X Student, 95.6%', content: 'Noble Classes transformed my approach to studying. The faculty is incredibly supportive and the study material is top-notch. The regular mock tests helped me build confidence for the actual boards.', rating: 5, type: 'student', initials: 'PS' },
-  { id: 2, name: 'Rahul Mehta', label: 'Class XII Science, JEE Aspirant', content: 'The Physics and Chemistry faculty here are exceptional. Their teaching methodology helped me crack JEE with a great rank. The problem-solving sessions were invaluable.', rating: 5, type: 'student', initials: 'RM' },
-  { id: 3, name: 'Anita Patel', label: 'Parent of Class IX Student', content: 'As a parent, I am extremely satisfied with Noble Classes. The regular parent-teacher meetings and progress reports keep us well informed about our child\'s academic growth.', rating: 5, type: 'parent', initials: 'AP' },
-  { id: 4, name: 'Vikram Desai', label: 'Parent of Class X Student', content: 'My son improved from 60% to 92% in one year. The personalized attention and doubt-clearing sessions made all the difference. Truly grateful to the entire Noble team.', rating: 5, type: 'parent', initials: 'VD' },
+  { id: 1, name: 'Rahul Mehta', label: 'Student, JEE Aspirant', content: 'I had a great experience with VS Tutorials. The management and teaching staff are supportive and truly focus on each student\'s growth. Their guidance helped me score well in my examinations.', rating: 5, type: 'student', initials: 'RM' },
+  { id: 2, name: 'Priya Sharma', label: 'Student, NEET Aspirant', content: 'The teaching is well-organized and highly effective. Regular tests and doubt-solving sessions improved my confidence and overall performance.', rating: 5, type: 'student', initials: 'PS' },
+  { id: 3, name: 'Amit Joshi', label: 'Student, MHT-CET', content: 'Supportive teachers, clear explanations, and helpful study material make VS Tutorials an excellent place for focused learning.', rating: 5, type: 'student', initials: 'AJ' },
+  { id: 4, name: 'Sneha Patil', label: 'Student, Science', content: 'The teaching methodology at VS Tutorials helped me understand complex concepts easily. Regular assessments and feedback kept me on track throughout the year.', rating: 5, type: 'student', initials: 'SP' },
 ];
 
 const notices = [
-  { id: 1, title: 'New Batch Starting for Class X – June 2026', date: '15 May 2026', type: 'Admission', desc: 'Admissions open for the new academic batch starting June 2026. Limited seats available.' },
-  { id: 2, title: 'SSC Board Results 2026 – Noble Classes Shines Again', date: '10 May 2026', type: 'Result', desc: '98% of our students passed with distinction. 12 students scored above 95%.' },
-  { id: 3, title: 'Summer Crash Course for Class IX & X', date: '5 May 2026', type: 'Batch', desc: 'Intensive 45-day crash course covering complete syllabus with daily tests.' },
+  { id: 1, title: 'New Batch Starting – June 2026', date: '15 May 2026', type: 'Admission', desc: 'Admissions open for the new batch starting June 2026. Limited seats available.' },
+  { id: 2, title: 'Academic Year 2025-26 Results', date: '10 May 2026', type: 'Result', desc: 'Our students achieved excellent academic results with notable improvements.' },
+  { id: 3, title: 'Summer Crash Course', date: '5 May 2026', type: 'Batch', desc: 'Intensive 45-day crash course covering complete syllabus with daily tests.' },
 ];
 
 const achievements = [
-  { year: '2025', title: 'Best Results in Ghatkopar', desc: '98% distinction rate in SSC Board', icon: Trophy },
-  { year: '2024', title: '100+ JEE Qualifiers', desc: 'Record number of engineering selections', icon: Target },
-  { year: '2023', title: 'Top 10 in Mumbai', desc: 'Ranked among top coaching institutes', icon: Award },
+  { year: '2025', title: 'Strong Academic Results', desc: 'Students achieved notable improvements in board and competitive exams', icon: Trophy },
+  { year: '2024', title: 'Growing Student Community', desc: 'Trusted by 150+ students and parents in Ghatkopar East', icon: Target },
+  { year: '2023', title: 'Quality Education Recognized', desc: 'Established as a trusted coaching institute in the community', icon: Award },
 ];
 
 const faqs = [
-  { q: 'What is the batch size at Noble Classes?', a: 'We maintain a maximum of 25 students per batch to ensure personalized attention and quality learning.' },
+  { q: 'What is the batch size at VS Tutorials?', a: 'We maintain a maximum of 25 students per batch to ensure personalized attention and quality learning.' },
   { q: 'Do you provide study material?', a: 'Yes, we provide comprehensive, exam-focused study material prepared by our expert faculty at no extra cost.' },
   { q: 'Are there any scholarships available?', a: 'Yes, we offer merit-based scholarships for students who score above 90% in their previous exams.' },
   { q: 'What are the timings for batches?', a: 'We offer morning (7-9 AM), afternoon (2-4 PM), and evening (5-7 PM) batches to suit different schedules.' },
 ];
 
 const whyUs = [
-  { title: 'Expert Faculty', desc: 'IIT/NIT alumni and PhD holders with 10+ years of teaching experience.' },
-  { title: 'Proven Results', desc: '98% success rate with consistent toppers in SSC, JEE, and NEET.' },
+  { title: 'Experienced Faculty', desc: 'Qualified teachers with years of experience in guiding students.' },
+  { title: 'Concept-Based Learning', desc: 'Focus on building strong fundamentals and conceptual clarity.' },
   { title: 'Small Batch Size', desc: 'Maximum 25 students per batch for personalized attention.' },
   { title: 'Regular Assessments', desc: 'Weekly tests, monthly assessments, and full mock exams.' },
   { title: 'Quality Study Material', desc: 'Comprehensive, exam-focused study material prepared by experts.' },
-  { title: 'Parent Engagement', desc: 'Regular PTMs and real-time progress updates for parents.' },
+  { title: 'Student Progress Tracking', desc: 'Regular feedback and progress updates for students and parents.' },
 ];
 
 const staggeredFade = (i: number) => ({
@@ -123,7 +123,7 @@ const SectionHeading: React.FC<{ subtitle: string; title: string; desc?: string;
 
 const Home: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [activeTab, setActiveTab] = useState('School');
+  const [activeTab, setActiveTab] = useState('JEE');
 
   return (
     <>
@@ -146,8 +146,8 @@ const Home: React.FC = () => {
                 }}
               >
                 <Image
-                  src="/images/hero/herosection.webp"
-                  alt="Noble Classes Classroom"
+                  src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=620&fit=crop"
+                  alt="VS Tutorials Coaching Classroom"
                   fill
                   className="object-cover"
                   style={{ objectPosition: '35% 30%' }}
@@ -209,18 +209,18 @@ const Home: React.FC = () => {
 
                 {/* Main Heading */}
                 <h1 className="font-heading text-5xl lg:text-6xl xl:text-[64px] font-bold leading-[0.95] animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'backwards' }}>
-                  <span className="text-noble-blue">Noble</span>{" "}
-                  <span style={{ color: '#C62828' }}>Classes</span>
+                  <span className="text-noble-blue">VS</span>{" "}
+                  <span style={{ color: '#C62828' }}>Tutorials</span>
                 </h1>
 
                 {/* Tagline */}
                 <p className="font-heading text-3xl lg:text-4xl xl:text-[48px] leading-[1.1] font-medium mt-[20px] animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards', color: '#374151' }}>
-                  Shaping The Future
+                  Building Strong Concepts & Academic Excellence
                 </p>
 
                 {/* Description */}
                 <p className="text-gray-600 text-lg lg:text-xl xl:text-[20px] leading-[1.8] mt-[28px] max-w-[540px] animate-slide-up" style={{ animationDelay: '0.25s', animationFillMode: 'backwards' }}>
-                  Helping students from Class VIII to XII achieve academic excellence through expert guidance, structured learning, and proven results.
+                  VS Tutorials is a trusted coaching institute dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results with experienced teachers and regular assessments.
                 </p>
 
                 {/* CTA Buttons */}
@@ -232,8 +232,8 @@ const Home: React.FC = () => {
                   >
                     Apply For Admission <ArrowRight className="w-5 h-5" />
                   </Link>
-                  <a
-                    href="tel:+919820023732"
+              <a
+                href="tel:+919769113425"
                     className="inline-flex items-center gap-2 border-2 border-noble-blue text-noble-blue px-10 h-[60px] rounded-lg font-semibold text-base bg-white hover:bg-noble-blue hover:text-white transition-all duration-200"
                   >
                     <Phone className="w-5 h-5" /> Call Now
@@ -244,9 +244,9 @@ const Home: React.FC = () => {
                 <div className="mt-[36px] animate-slide-up" style={{ animationDelay: '0.35s', animationFillMode: 'backwards' }}>
                   <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex items-center divide-x divide-gray-100">
                     {[
-                      { icon: Star, value: '4.7', label: 'Google Rating' },
-                      { icon: Users, value: '5000+', label: 'Students' },
-                      { icon: Trophy, value: '14+', label: 'Years Experience' },
+                      { icon: Star, value: '4.9', label: 'Google Rating' },
+                      { icon: Users, value: '200+', label: 'Students' },
+                      { icon: Trophy, value: '3+', label: 'Years Experience' },
                     ].map((item) => (
                       <div key={item.value} className="flex items-center gap-3 px-5 first:pl-2 last:pr-2 w-1/3">
                         <div className="w-10 h-10 rounded-lg bg-noble-blue/10 flex items-center justify-center shrink-0">
@@ -285,21 +285,21 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* About / Why Noble */}
+      {/* About / Why Excellence */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <span className="section-subtitle">About Noble Classes</span>
-              <h2 className="section-heading mb-6">Mumbai&apos;s Premier <span className="text-noble-blue">Coaching Institute</span></h2>
+              <span className="section-subtitle">About VS Tutorials</span>
+              <h2 className="section-heading mb-6">Ghatkopar East&apos;s Trusted <span className="text-noble-blue">Coaching Institute</span></h2>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-6">
-                Established in 2010, Noble Classes has been the cornerstone of academic excellence in Ghatkopar, Mumbai. We have consistently delivered outstanding results, transforming thousands of students into confident, high-achieving individuals.
+                VS Tutorials is a trusted coaching institute in Ghatkopar East dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results. With experienced teachers, regular assessments, and personalized attention, students receive complete guidance for academic success.
               </p>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-8">
-                Our mission is to provide quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for competitive exams and life beyond.
+                Our mission is to provide quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic excellence and success in life.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/about" className="btn-primary">Know More About Us <ArrowRight className="w-4 h-4" /></Link>
+                <Link href="/about" className="btn-primary">Know More About VS Tutorials <ArrowRight className="w-4 h-4" /></Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -332,7 +332,7 @@ const Home: React.FC = () => {
           >
             <span className="section-subtitle">Academic Programs</span>
             <h2 className="section-heading">Courses We Offer</h2>
-            <p className="text-noble-dark/60 text-lg mt-4">Comprehensive programs designed for School, Commerce, Science, JEE, and NEET students.</p>
+            <p className="text-noble-dark/60 text-lg mt-4">Comprehensive programs designed for JEE, NEET, MHT-CET and Science students.</p>
           </motion.div>
 
           {/* Stream Tabs */}
@@ -344,7 +344,7 @@ const Home: React.FC = () => {
             className="flex justify-center mb-12"
           >
             <div className="inline-flex bg-white rounded-2xl p-1.5 shadow-sm border border-gray-100">
-              {['School', 'Commerce', 'Science + JEE + NEET'].map((tab) => (
+              {['JEE', 'NEET', 'MHT-CET + Science'].map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
@@ -464,7 +464,7 @@ const Home: React.FC = () => {
               <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-lg shadow-black/5">
                 <Image
                   src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=520&fit=crop"
-                  alt="Students studying in academic environment"
+                  alt="Students studying at VS Tutorials"
                   fill
                   className="object-cover"
                   sizes="380px"
@@ -526,7 +526,7 @@ const Home: React.FC = () => {
           <div className="text-center mb-14 lg:mb-16">
             <span className="text-noble-blue text-sm font-semibold uppercase tracking-[0.2em]">Hall Of Fame</span>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold mt-3 mb-4 leading-tight text-[#111827]">Our Toppers 2025</h2>
-            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-[#6B7280]">Celebrating the brilliant minds who made Noble Classes proud.</p>
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-[#6B7280]">Celebrating the brilliant minds who made VS Tutorials proud.</p>
           </div>
 
           {/* Topper Cards */}
@@ -633,7 +633,7 @@ const Home: React.FC = () => {
 
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-3">Want To Be Our Next Topper?</h3>
-              <p className="text-white/80 text-lg mb-8">Join Noble Classes Today.</p>
+              <p className="text-white/80 text-lg mb-8">Join VS Tutorials Today.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   href="/admissions"
@@ -641,12 +641,12 @@ const Home: React.FC = () => {
                 >
                   Apply For Admission <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a
-                  href="tel:+919820023732"
-                  className="inline-flex items-center gap-2 h-[56px] px-8 rounded-xl border-2 border-white/30 text-white font-semibold text-base hover:bg-white/10 transition-all duration-200"
-                >
-                  <Phone className="w-5 h-5" /> Contact Us
-                </a>
+                  <a
+                    href="tel:+919769113425"
+                    className="inline-flex items-center gap-2 h-[56px] px-8 rounded-xl border-2 border-white/30 text-white font-semibold text-base hover:bg-white/10 transition-all duration-200"
+                  >
+                    <Phone className="w-5 h-5" /> Contact Us
+                  </a>
               </div>
             </div>
           </motion.div>
@@ -656,7 +656,7 @@ const Home: React.FC = () => {
       {/* Testimonials */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Success Stories" title="What Our Community Says" desc="Real stories from real students and parents who experienced the Noble difference." />
+          <SectionHeading subtitle="Success Stories" title="What Our Community Says" desc="Real stories from real students who experienced the VS Tutorials difference." />
           <div className="grid md:grid-cols-2 gap-6">
             {testimonials.map((t, i) => (
               <motion.div
@@ -742,7 +742,7 @@ const Home: React.FC = () => {
       {/* Admission Steps */}
       <section className="py-20 lg:py-28 bg-noble-light">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Join Us" title="Simple Admission Process" desc="Getting started at Noble Classes is easy. Follow these simple steps to begin your journey." />
+          <SectionHeading subtitle="Join Us" title="Simple Admission Process" desc="Getting started at VS Tutorials is easy. Follow these simple steps to begin your journey." />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form or visit our center.' },
@@ -778,57 +778,31 @@ const Home: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <span className="section-subtitle">Get In Touch</span>
-              <h2 className="section-heading mb-6">Contact <span className="text-noble-blue">Noble Classes</span></h2>
+              <h2 className="section-heading mb-6">Contact <span className="text-noble-blue">VS Tutorials</span></h2>
               <p className="text-noble-dark/60 text-lg mb-8">
                 Have questions? We&apos;d love to hear from you. Reach out to us and our academic counselors will assist you.
               </p>
               <div className="space-y-5 mb-8">
-                <a href="tel:+919820023732" className="flex items-center gap-4 p-4 bg-noble-light rounded-xl hover:bg-noble-blue/5 transition-colors group">
-                  <div className="w-12 h-12 bg-noble-blue/10 rounded-xl flex items-center justify-center group-hover:bg-noble-blue transition-colors">
-                    <Phone className="w-5 h-5 text-noble-blue group-hover:text-white transition-colors" />
+                <div className="flex items-center gap-4 p-4 bg-noble-light rounded-xl">
+                  <div className="w-12 h-12 bg-noble-blue/10 rounded-xl flex items-center justify-center">
+                    <Phone className="w-5 h-5 text-noble-blue" />
                   </div>
                   <div>
                     <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Phone</p>
-                    <p className="font-heading font-bold text-noble-dark text-lg">98200 23732</p>
+                    <p className="font-heading font-bold text-noble-dark text-lg">+91 97691 13425</p>
                   </div>
-                </a>
-                <a href="tel:+919930890499" className="flex items-center gap-4 p-4 bg-noble-light rounded-xl hover:bg-noble-blue/5 transition-colors group">
-                  <div className="w-12 h-12 bg-noble-blue/10 rounded-xl flex items-center justify-center group-hover:bg-noble-blue transition-colors">
-                    <Phone className="w-5 h-5 text-noble-blue group-hover:text-white transition-colors" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Alternate Phone</p>
-                    <p className="font-heading font-bold text-noble-dark text-lg">99308 90499</p>
-                  </div>
-                </a>
-                <a href="mailto:info@nobleclasses.in" className="flex items-center gap-4 p-4 bg-noble-light rounded-xl hover:bg-noble-blue/5 transition-colors group">
-                  <div className="w-12 h-12 bg-noble-blue/10 rounded-xl flex items-center justify-center group-hover:bg-noble-blue transition-colors">
-                    <Mail className="w-5 h-5 text-noble-blue group-hover:text-white transition-colors" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Email</p>
-                    <p className="font-heading font-bold text-noble-dark text-lg">info@nobleclasses.in</p>
-                  </div>
-                </a>
+                </div>
                 <div className="flex items-start gap-4 p-4 bg-noble-light rounded-xl">
                   <div className="w-12 h-12 bg-noble-blue/10 rounded-xl flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-noble-blue" />
                   </div>
                   <div>
                     <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Address</p>
-                    <p className="font-heading font-bold text-noble-dark">517, Suchita Business Park, Ghatkopar East, Mumbai - 400077</p>
+                    <p className="font-heading font-bold text-noble-dark">Shop No. 11, Ground Floor, Building No. 185, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai - 400075</p>
                   </div>
                 </div>
               </div>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="https://wa.me/919820023732?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20Noble%20Classes."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-green-600 text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:bg-green-700 transition-all duration-200 shadow-lg shadow-green-600/20"
-                >
-                  <MessageCircle className="w-4 h-4" /> Chat on WhatsApp
-                </a>
                 <Link href="/contact" className="btn-outline">Send Inquiry</Link>
               </div>
             </div>
@@ -836,26 +810,26 @@ const Home: React.FC = () => {
               <div className="bg-white rounded-[24px] shadow-lg overflow-hidden h-full flex flex-col">
                 <div className="w-full h-[350px] lg:h-[400px]">
                   <iframe
-                    src="https://www.google.com/maps?q=517+Suchita+Business+Park+Noble+Classes+Patel+Chawl+Ghatkopar+East+Mumbai+400077&output=embed"
+                    src="https://www.google.com/maps?q=19.1147,72.9293&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Noble Classes Location"
+                    title="VS Tutorials Location"
                   />
                 </div>
                 <div className="p-6 flex items-center justify-between gap-4 flex-wrap">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-noble-blue shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-heading font-bold text-noble-dark">Noble Classes</p>
-                      <p className="text-noble-dark/60 text-sm">517, Suchita Business Park, Patel Chawl, Ghatkopar East, Mumbai 400077</p>
+                      <p className="font-heading font-bold text-noble-dark">VS Tutorials</p>
+                      <p className="text-noble-dark/60 text-sm">Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai 400075</p>
                     </div>
                   </div>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=517+Suchita+Business+Park+Noble+Classes+Patel+Chawl+Ghatkopar+East+Mumbai+400077"
+                    href="https://www.google.com/maps/search/?api=1&query=19.1147,72.9293"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-noble-blue text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-noble-blue-dark transition-all duration-200 shadow-md shrink-0"
@@ -933,7 +907,7 @@ const Home: React.FC = () => {
               Ready to Begin Your<br /><span className="text-noble-accent">Success Journey?</span>
             </h2>
             <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
-              Join 5,000+ students who have transformed their academic performance with Noble Classes. Limited seats available for 2026-27.
+              Join 200+ students who have transformed their academic performance with VS Tutorials. Limited seats available for 2026-27.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
@@ -942,15 +916,15 @@ const Home: React.FC = () => {
               >
                 Apply Now - Free Counseling <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href="tel:+919820023732"
+                  <a
+                    href="tel:+919769113425"
                 className="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-sm hover:bg-white/10 transition-all duration-200"
               >
-                <Phone className="w-4 h-4" /> Call 98200 23732
+                <Phone className="w-4 h-4" /> Call Now
               </a>
             </div>
             <div className="flex items-center justify-center gap-2 mt-8 text-white/50 text-sm">
-              <MapPin className="w-4 h-4" /> LBS Marg, Ghatkopar (W), Mumbai - 400086
+              <MapPin className="w-4 h-4" /> Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai - 400075
             </div>
           </motion.div>
         </div>

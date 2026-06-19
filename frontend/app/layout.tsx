@@ -19,30 +19,31 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Noble Classes | Shaping The Future",
-    template: "%s | Noble Classes",
+    default: "VS Tutorials | Coaching Classes in Ghatkopar East",
+    template: "%s | VS Tutorials",
   },
   description:
-    "Premium coaching institute in Ghatkopar, Mumbai offering expert coaching for Classes 8-12, JEE, NEET & Commerce. Expert faculty, proven results since 2010.",
+    "VS Tutorials provides quality coaching, concept-based learning, regular assessments, and academic guidance for students in Ghatkopar East, Mumbai.",
   keywords: [
     "coaching institute",
-    "Ghatkopar",
+    "Ghatkopar East",
     "Mumbai",
-    "JEE coaching",
-    "NEET coaching",
-    "SSC coaching",
-    "Class 10",
-    "Class 12",
-    "Noble Classes",
+    "VS Tutorials",
+    "academic coaching",
+    "concept-based learning",
+    "student guidance",
+    "exam preparation",
+    "MHT-CET coaching",
+    "science classes",
   ],
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Noble Classes",
-    title: "Noble Classes – Shaping The Future | Coaching Institute in Ghatkopar, Mumbai",
+    siteName: "VS Tutorials",
+    title: "VS Tutorials | Coaching Classes in Ghatkopar East",
     description:
-      "Premium coaching institute in Ghatkopar, Mumbai. Expert faculty, proven results since 2010.",
+      "VS Tutorials provides quality coaching, concept-based learning, regular assessments, and academic guidance for students in Ghatkopar East, Mumbai.",
   },
 };
 
@@ -54,21 +55,29 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://nobleclasses.in" />
+        <link rel="canonical" href="https://vstutorials.in" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
-              name: "Noble Classes",
-              description: "Premium coaching institute in Ghatkopar, Mumbai",
-              url: "https://nobleclasses.in",
+              name: "VS Tutorials",
+              description: "Building Strong Concepts & Academic Excellence",
+              url: "https://vstutorials.in",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Mumbai",
-                addressRegion: "Maharashtra",
+                streetAddress: "Shop No. 11, Ground Floor, Building No. 185, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar",
+                addressLocality: "Ghatkopar East",
+                addressRegion: "Mumbai",
+                postalCode: "400075",
                 addressCountry: "IN",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                bestRating: "5.0",
+                ratingCount: "52",
               },
             }),
           }}

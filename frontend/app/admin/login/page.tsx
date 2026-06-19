@@ -39,7 +39,7 @@ const AdminLogin: React.FC = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4 border border-white/20"><GraduationCap className="w-8 h-8 text-white" /></div>
-          <h1 className="font-heading text-2xl font-bold text-white">Noble Classes</h1>
+          <h1 className="font-heading text-2xl font-bold text-white">VS Tutorials</h1>
           <p className="text-white/60 text-sm mt-1">Admin Dashboard</p>
         </div>
         <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8">
@@ -47,7 +47,7 @@ const AdminLogin: React.FC = () => {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
             <div>
               <label className="block text-sm font-medium text-white/70 mb-1.5"><span className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5" /> Email Address</span></label>
-              <input type="email" placeholder="admin@nobleclasses.in" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-white/30 text-sm" {...register('email')} />
+              <input type="email" placeholder="admin@vstutorials.in" className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-white/30 text-sm" {...register('email')} />
               {errors.email && <p className="text-red-300 text-xs mt-1">{errors.email.message}</p>}
             </div>
             <div>
@@ -60,7 +60,7 @@ const AdminLogin: React.FC = () => {
             </div>
             <button type="submit" disabled={isSubmitting} className="w-full bg-noble-gold text-noble-navy py-3.5 rounded-xl font-bold text-sm hover:bg-yellow-400 transition-all duration-200 disabled:opacity-60">{isSubmitting ? 'Signing in...' : 'Sign In to Dashboard'}</button>
           </form>
-          <p className="text-white/40 text-xs text-center mt-4">Demo: admin@nobleclasses.in / admin123</p>
+          <p className="text-white/40 text-xs text-center mt-4">Demo: admin@vstutorials.in / admin123</p>
         </div>
       </div>
     </div>

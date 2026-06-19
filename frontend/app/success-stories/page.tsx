@@ -8,18 +8,18 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const stories = [
-  { name: 'Priya Sharma', role: 'Class 10 Student – 95.6% in Boards', content: 'Noble Classes transformed my approach to studying. The faculty is incredibly supportive and the study material is top-notch. I scored 95.6% in my boards!', rating: 5, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face', result: 'SSC Board: 95.6% | Rank 3 in School' },
-  { name: 'Rahul Mehta', role: 'Class 12 Science – JEE Aspirant', content: 'The Physics and Chemistry faculty here are exceptional. Their teaching methodology helped me crack JEE with a great rank.', rating: 5, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face', result: 'JEE Mains: 97.2 Percentile' },
-  { name: 'Anita Patel', role: 'Parent of Class 9 Student', content: 'As a parent, I am extremely satisfied with Noble Classes. The regular parent-teacher meetings and progress reports keep us well informed.', rating: 5, image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face', result: 'Child improved from 72% to 91%' },
-  { name: 'Arjun Singh', role: 'NEET 2025 Qualifier', content: 'The NEET coaching at Noble Classes is outstanding. The mock test series and doubt-clearing sessions were incredibly helpful.', rating: 5, image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face', result: 'NEET 2025: AIR 2340' },
-  { name: 'Sneha Gupta', role: 'Class 12 Commerce', content: 'The commerce faculty made subjects like accountancy and economics so easy to understand. Their practical approach is amazing.', rating: 5, image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face', result: 'HSC Commerce: 94.2%' },
-  { name: 'Vikram Desai', role: 'Parent of Class 10 Student', content: 'My son improved from 65% to 92% in one year at Noble Classes. The teachers are dedicated and truly care about the students.', rating: 5, image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face', result: 'Improved from 65% to 92%' },
+  { name: 'Rahul Mehta', role: 'Student', content: 'I had a great experience with VS Tutorials. The management and teaching staff are supportive and truly focus on each student\'s growth. Their guidance helped me score well in my examinations.', rating: 5, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face', result: 'Academic Excellence Award' },
+  { name: 'Priya Sharma', role: 'Student', content: 'The teaching is well-organized and highly effective. Regular tests and doubt-solving sessions improved my confidence and overall performance.', rating: 5, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face', result: 'Top Performer Award' },
+  { name: 'Amit Joshi', role: 'Student', content: 'Supportive teachers, clear explanations, and helpful study material make VS Tutorials an excellent place for focused learning.', rating: 5, image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face', result: 'Consistent Improvement' },
+  { name: 'Sneha Patil', role: 'Student', content: 'The teaching methodology at VS Tutorials helped me understand complex concepts easily. Regular assessments and feedback kept me on track.', rating: 5, image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face', result: 'Outstanding Academic Performance' },
+  { name: 'Rohan Desai', role: 'Student', content: 'VS Tutorials provided me with the guidance and support I needed to achieve my academic goals. The faculty is dedicated and approachable.', rating: 5, image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face', result: 'Best Improvement Award' },
+  { name: 'Kavya Nair', role: 'Student', content: 'I am grateful to the teachers at VS Tutorials for their dedication and support. The study material and regular assessments were very helpful.', rating: 5, image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face', result: 'Academic Excellence Award' },
 ];
 
 const SuccessStories: React.FC = () => {
   return (
     <>
-      <PageHero title="Success Stories" subtitle="Read inspiring stories from our students and parents about their journey with Noble Classes." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Success Stories' }]} />
+      <PageHero title="Success Stories" subtitle="Read inspiring stories from our students about their journey with VS Tutorials." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Success Stories' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
