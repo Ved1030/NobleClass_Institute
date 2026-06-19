@@ -22,7 +22,7 @@ const Courses: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Our Courses" subtitle="Comprehensive coaching programs for Std 8th, 9th & 10th (State Board & CBSE) designed to build strong concepts and academic excellence." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Courses' }]} />
+      <PageHero title="Our Courses" subtitle="Expert coaching programs for Std 8th, 9th & 10th (State Board & CBSE) designed to build strong concepts and academic excellence." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Courses' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap gap-3 justify-center mb-12">

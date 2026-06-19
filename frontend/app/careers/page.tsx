@@ -16,7 +16,7 @@ const positions = [
 const Careers: React.FC = () => {
   return (
     <>
-      <PageHero title="Careers at Labbdhis Academy" subtitle="Join our team of passionate educators dedicated to shaping the academic future of students from Std 8th to 10th." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
+      <PageHero title="Careers at Labbdis Academy" subtitle="Join our team of passionate educators dedicated to shaping the academic future of students from Std 8th to 10th." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
@@ -49,7 +49,7 @@ const Careers: React.FC = () => {
           </div>
           <div className="text-center mt-10">
             <p className="text-noble-navy/60 text-sm mb-4">Interested candidates can send their resume to:</p>
-            <span className="inline-flex items-center gap-2 bg-noble-blue text-white px-6 py-3 rounded-full text-sm font-semibold">careers@labhdiacademy.in <ArrowRight className="w-4 h-4" /></span>
+            <span className="inline-flex items-center gap-2 bg-noble-blue text-white px-6 py-3 rounded-full text-sm font-semibold">careers@labbdisacademy.in <ArrowRight className="w-4 h-4" /></span>
           </div>
         </div>
       </SectionWrapper>

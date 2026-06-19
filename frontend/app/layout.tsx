@@ -19,30 +19,31 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Labbdhis Academy | Std 8th, 9th & 10th Coaching Classes (State Board & CBSE)",
-    template: "%s | Labbdhis Academy",
+    default: "Labbdis Academy | State Board & CBSE Coaching Classes in Ghatkopar West",
+    template: "%s | Labbdis Academy",
   },
   description:
-    "Labbdhis Academy provides quality coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
+    "Labbdis Academy provides expert coaching for Std 8th, 9th and 10th State Board and CBSE students. Personalized attention, concept-based learning, regular assessments, and academic excellence in Ghatkopar West, Mumbai.",
   keywords: [
-    "Labbdhis Academy",
-    "8th Standard Coaching",
+    "Labbdis Academy",
+    "State Board Coaching Ghatkopar",
+    "CBSE Coaching Ghatkopar",
     "8th Standard Coaching",
     "9th Standard Coaching",
     "10th Standard Coaching",
-    "Ghatkopar Coaching Classes",
-    "School Tuition Classes Mumbai",
-    "Ghatkopar West",
-    "Mumbai",
+    "Maths Tuition Ghatkopar",
+    "Science Classes Ghatkopar",
+    "CBSE Tuition Mumbai",
+    "State Board Classes Mumbai",
   ],
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Labbdhis Academy",
-    title: "Labbdhis Academy | Std 8th, 9th & 10th Coaching Classes (State Board & CBSE)",
+    siteName: "Labbdis Academy",
+    title: "Labbdis Academy | State Board & CBSE Coaching Classes",
     description:
-      "Labbdhis Academy provides quality coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
+      "Expert coaching for Std 8th, 9th and 10th State Board & CBSE students in Ghatkopar West, Mumbai.",
   },
 };
 
@@ -61,8 +62,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
-              name: "Labbdhis Academy",
-              description: "Shaping Young Minds Through Quality Education",
+              name: "Labbdis Academy",
+              description: "Building Strong Foundations For Academic Excellence",
               url: "https://labbdhisacademy.in",
               address: {
                 "@type": "PostalAddress",

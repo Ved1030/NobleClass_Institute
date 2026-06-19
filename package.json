@@ -2,7 +2,7 @@
   "name": "labbdhis-academy",
   "private": true,
   "version": "1.0.0",
-  "description": "Labbdhis Academy coaching institute - monorepo root",
+  "description": "Labbdis Academy coaching institute - monorepo root",
   "scripts": {
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",

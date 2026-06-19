@@ -44,7 +44,7 @@ const courses = [
 
 const testimonials = [
   { id: 1, name: 'Rohan K.', label: 'Student', content: 'The teachers explain every topic in a simple and understandable way. My concepts are now very clear and I feel confident in my studies.', rating: 5, type: 'student', initials: 'RK' },
-  { id: 2, name: 'Mrs. Deshmukh', label: 'Parent', content: 'My child\'s confidence and academic performance improved significantly after joining Labbdhis Academy. The personal attention makes a big difference.', rating: 5, type: 'parent', initials: 'MD' },
+  { id: 2, name: 'Mrs. Deshmukh', label: 'Parent', content: 'My child\'s confidence and academic performance improved significantly after joining Labbdis Academy. The personal attention makes a big difference.', rating: 5, type: 'parent', initials: 'MD' },
   { id: 3, name: 'Sneha P.', label: 'Student', content: 'Regular tests and feedback sessions help students stay on track. The doubt-solving sessions are extremely helpful for clearing concepts.', rating: 5, type: 'student', initials: 'SP' },
 ];
 
@@ -61,8 +61,8 @@ const achievements = [
 ];
 
 const faqs = [
-  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students of Std 8th, 9th & 10th (State Board & CBSE) in Mathematics, Science, and English. Our programs focus on building strong concepts and academic excellence.' },
-  { q: 'Where is Labbdhis Academy located?', a: 'Labbdhis Academy is located near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086.' },
+  { q: 'What coaching does Labbdis Academy offer?', a: 'Labbdis Academy provides coaching for students of Std 8th, 9th & 10th (State Board & CBSE) in Mathematics, Science, and English. Our programs focus on building strong concepts and academic excellence.' },
+  { q: 'Where is Labbdis Academy located?', a: 'Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai, Maharashtra.' },
   { q: 'How can I enroll?', a: 'You can fill out the inquiry form on our website or visit the academy in person. Our team will guide you through the admission process, counseling session, and enrollment formalities.' },
   { q: 'What is the class size?', a: 'We maintain small batch sizes to ensure personalized attention and effective learning. Each batch is limited to ensure every student gets the guidance they need.' },
 ];
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
               >
                 <Image
                   src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=620&fit=crop"
-                  alt="Labbdhis Academy Classroom"
+                  alt="Labbdis Academy Classroom"
                   fill
                   className="object-cover"
                   style={{ objectPosition: '35% 30%' }}
@@ -188,7 +188,7 @@ const Home: React.FC = () => {
 
                 {/* Tagline */}
                 <p className="font-heading text-2xl lg:text-3xl xl:text-[40px] leading-[1.15] font-medium mt-[20px] animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards', color: '#374151' }}>
-                  Shaping Young Minds Through Quality Education
+                  Building Strong Foundations For Academic Excellence
                 </p>
 
                 {/* Description */}
@@ -296,16 +296,16 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <span className="section-subtitle">About Labbdhis Academy</span>
+              <span className="section-subtitle">About Labbdis Academy</span>
               <h2 className="section-heading mb-6">Ghatkopar West&apos;s <span className="text-noble-blue">Trusted Coaching Academy</span></h2>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-6">
-                Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.
+                Labbdis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.
               </p>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-8">
                 Our teaching approach focuses on building strong concepts, regular assessments, and personalized mentorship to ensure every student reaches their full potential.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/about" className="btn-primary">Know More About Labbdhis <ArrowRight className="w-4 h-4" /></Link>
+                <Link href="/about" className="btn-primary">Know More About Labbdis <ArrowRight className="w-4 h-4" /></Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -445,7 +445,7 @@ const Home: React.FC = () => {
               <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-lg shadow-black/5">
                 <Image
                   src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=520&fit=crop"
-                  alt="Students at Labbdhis Academy coaching classes"
+                  alt="Students at Labbdis Academy coaching classes"
                   fill
                   className="object-cover"
                   sizes="380px"
@@ -577,7 +577,7 @@ const Home: React.FC = () => {
 
             <div className="relative z-10">
               <h3 className="text-2xl lg:text-3xl font-bold mb-3">Begin Your Academic Journey</h3>
-              <p className="text-white/80 text-lg mb-8">Join Labbdhis Academy Today.</p>
+              <p className="text-white/80 text-lg mb-8">Join Labbdis Academy Today.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   href="/contact"
@@ -594,7 +594,7 @@ const Home: React.FC = () => {
       {/* Testimonials */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Reviews" title="What People Say" desc="Hear from our students and parents about their experience at Labbdhis Academy." />
+          <SectionHeading subtitle="Reviews" title="What People Say" desc="Hear from our students and parents about their experience at Labbdis Academy." />
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <motion.div
@@ -632,7 +632,7 @@ const Home: React.FC = () => {
             <div>
               <span className="section-subtitle">Stay Updated</span>
               <h2 className="section-heading mb-4">Latest Notices & Announcements</h2>
-              <p className="text-noble-dark/60 mb-8">Stay informed about admissions, batch schedules, assessments, and important announcements from Labbdhis Academy.</p>
+              <p className="text-noble-dark/60 mb-8">Stay informed about admissions, batch schedules, assessments, and important announcements from Labbdis Academy.</p>
               <div className="space-y-4">
                 {notices.map((notice, i) => (
                   <motion.div
@@ -698,13 +698,13 @@ const Home: React.FC = () => {
       {/* Admission Steps */}
       <section className="py-20 lg:py-28 bg-noble-light">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Join Us" title="Simple Admission Process" desc="Getting started with coaching at Labbdhis Academy is easy." />
+          <SectionHeading subtitle="Join Us" title="Simple Admission Process" desc="Getting started with coaching at Labbdis Academy is easy." />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form to get started.' },
               { step: '02', title: 'Counseling Session', desc: 'Free academic counseling with our team.' },
               { step: '03', title: 'Enrollment', desc: 'Complete admission formalities and join your program.' },
-              { step: '04', title: 'Begin Learning', desc: 'Start your academic journey with Labbdhis Academy.' },
+              { step: '04', title: 'Begin Learning', desc: 'Start your academic journey with Labbdis Academy.' },
             ].map((item, i) => (
               <motion.div
                 key={item.step}
@@ -734,7 +734,7 @@ const Home: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <span className="section-subtitle">Get In Touch</span>
-              <h2 className="section-heading mb-6">Contact <span className="text-noble-blue">Labbdhis Academy</span></h2>
+              <h2 className="section-heading mb-6">Contact <span className="text-noble-blue">Labbdis Academy</span></h2>
               <p className="text-noble-dark/60 text-lg mb-8">
                 Have questions? We&apos;d love to hear from you. Reach out to us and our team will assist you.
               </p>
@@ -754,7 +754,7 @@ const Home: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Address</p>
-                    <p className="font-heading font-bold text-noble-dark">Near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086</p>
+                    <p className="font-heading font-bold text-noble-dark">Near Shreyas Cinema, Ghatkopar West, Mumbai, Maharashtra</p>
                   </div>
                 </div>
               </div>
@@ -773,15 +773,15 @@ const Home: React.FC = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Labbdhis Academy Location"
+                    title="Labbdis Academy Location"
                   />
                 </div>
                 <div className="p-6 flex items-center justify-between gap-4 flex-wrap">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-noble-blue shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-heading font-bold text-noble-dark">Labbdhis Academy</p>
-                      <p className="text-noble-dark/60 text-sm">Near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086</p>
+                    <p className="font-heading font-bold text-noble-dark">Labbdis Academy</p>
+                    <p className="text-noble-dark/60 text-sm">Near Shreyas Cinema, Ghatkopar West, Mumbai, Maharashtra</p>
                     </div>
                   </div>
                 </div>
@@ -855,7 +855,7 @@ const Home: React.FC = () => {
               Ready to Begin Your<br /><span className="text-noble-accent">Academic Journey?</span>
             </h2>
             <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
-              Join Labbdhis Academy and build strong foundations for academic success.
+               Join Labbdis Academy and build strong foundations for academic success.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link

@@ -54,10 +54,10 @@ const Header: React.FC = () => {
               </div>
               <div>
                 <span className="font-heading font-bold text-xl tracking-tight text-noble-dark">
-                  Labbdhis Academy
+                  Labbdis Academy
                 </span>
                 <span className="block text-[9px] tracking-[0.15em] uppercase text-noble-blue">
-                  Shaping Young Minds Through Quality Education
+                  Building Strong Foundations For Academic Excellence
                 </span>
               </div>
             </Link>

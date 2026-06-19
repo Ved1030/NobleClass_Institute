@@ -4,11 +4,6 @@ import { config } from '../config';
 const router = Router();
 
 const FORBIDDEN_PATTERNS = [
-  /VS\s*Tutorials/i,
-  /Excellence\s*Educare/i,
-  /Drushti\s*Sapphire/i,
-  /Pant\s*Nagar/i,
-  /Shop\s*No\.?\s*11/i,
   /97691\d{5}/,
   /99208\d{5}/,
   /4\.9.*52.*Review/i,
@@ -17,11 +12,6 @@ const FORBIDDEN_PATTERNS = [
 ];
 
 const FORBIDDEN_PHRASES = [
-  'vs tutorials',
-  'excellence educare',
-  'drushti sapphire',
-  'pant nagar',
-  'shop no. 11',
   '97691',
   '99208',
   '4.9',
@@ -62,7 +52,10 @@ function getHardcodedResponse(userMessage: string): string | null {
   return null;
 }
 
-const SYSTEM_PROMPT = `You are Labbdhis AI. You represent Labbdis Academy only.
+const SYSTEM_PROMPT = `You are Labbdis AI. You represent Labbdis Academy only.
+
+## Tagline
+Building Strong Foundations For Academic Excellence
 
 ## Academy Details
 
@@ -92,11 +85,6 @@ Features:
 ## Forbidden Content
 
 Never mention or generate information about:
-- VS Tutorials
-- Excellence Educare
-- Drushti Sapphire
-- Pant Nagar
-- Shop No. 11
 - Ghatkopar East
 - Any phone number starting with 97691
 - Any rating or review numbers

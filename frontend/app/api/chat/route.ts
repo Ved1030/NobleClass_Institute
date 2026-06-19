@@ -4,8 +4,7 @@ import { API_URL } from '@/lib/config';
 const BACKEND_URL = API_URL;
 
 const FORBIDDEN_PHRASES = [
-  'vs tutorials', 'excellence educare', 'drushti sapphire', 'pant nagar',
-  'shop no. 11', 'ghatkopar east', 'shivaji technical',
+  'ghatkopar east', 'shivaji technical',
 ];
 const FORBIDDEN_PATTERNS = [/97691\d{5}/, /99208\d{5}/, /4\.9.*52.*Review/i];
 
@@ -15,6 +14,8 @@ const SAFE_RESPONSES = {
   contact: "Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.",
   fees: "Fee details are currently being updated. Please submit an enquiry form on our website for fee information.",
 };
+
+const TAGLINE = "Building Strong Foundations For Academic Excellence";
 
 function containsForbidden(text: string): boolean {
   const lower = text.toLowerCase();

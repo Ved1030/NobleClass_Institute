@@ -25,7 +25,7 @@ const InquiryForm = dynamic(() => import('@/components/InquiryForm'), {
 });
 
 const contactInfo = [
-  { icon: MapPin, title: 'Visit Us', lines: ['Near Shreyas Cinema,', 'LBS Marg, Ghatkopar West,', 'Mumbai, Maharashtra 400086'] },
+  { icon: MapPin, title: 'Visit Us', lines: ['Near Shreyas Cinema,', 'Ghatkopar West,', 'Mumbai, Maharashtra'] },
   { icon: Phone, title: 'Call Us', lines: ['Coming Soon'] },
   { icon: Mail, title: 'Email Us', lines: ['Coming Soon'] },
   { icon: Clock, title: 'Office Hours', lines: ['Coming Soon'] },
@@ -34,7 +34,7 @@ const contactInfo = [
 const Contact: React.FC = () => {
   return (
     <>
-      <PageHero title="Contact Us" subtitle="We're here to help. Reach out to Labbdhis Academy for admissions, inquiries, or any questions about our coaching programs." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
+      <PageHero title="Contact Us" subtitle="We're here to help. Reach out to Labbdis Academy for admissions, inquiries, or any questions about our coaching programs." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
@@ -60,13 +60,13 @@ const Contact: React.FC = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Labbdhis Academy Location"
+                    title="Labbdis Academy Location"
                   />
                 </div>
                 <div className="p-4 flex items-center justify-between gap-3 flex-wrap">
                   <div className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 text-noble-blue shrink-0 mt-0.5" />
-                    <p className="text-noble-dark/60 text-sm">Near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086</p>
+                    <p className="text-noble-dark/60 text-sm">Near Shreyas Cinema, Ghatkopar West, Mumbai, Maharashtra</p>
                   </div>
                   <a
                     href="https://www.google.com/maps/search/Shreyas+Cinema+LBS+Marg+Ghatkopar+West+Mumbai"
