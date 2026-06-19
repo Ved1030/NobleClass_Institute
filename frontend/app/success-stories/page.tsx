@@ -8,18 +8,15 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const stories = [
-  { name: 'Rahul Mehta', role: 'Student', content: 'I had a great experience with VS Tutorials. The management and teaching staff are supportive and truly focus on each student\'s growth. Their guidance helped me score well in my examinations.', rating: 5, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face', result: 'Academic Excellence Award' },
-  { name: 'Priya Sharma', role: 'Student', content: 'The teaching is well-organized and highly effective. Regular tests and doubt-solving sessions improved my confidence and overall performance.', rating: 5, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face', result: 'Top Performer Award' },
-  { name: 'Amit Joshi', role: 'Student', content: 'Supportive teachers, clear explanations, and helpful study material make VS Tutorials an excellent place for focused learning.', rating: 5, image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face', result: 'Consistent Improvement' },
-  { name: 'Sneha Patil', role: 'Student', content: 'The teaching methodology at VS Tutorials helped me understand complex concepts easily. Regular assessments and feedback kept me on track.', rating: 5, image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face', result: 'Outstanding Academic Performance' },
-  { name: 'Rohan Desai', role: 'Student', content: 'VS Tutorials provided me with the guidance and support I needed to achieve my academic goals. The faculty is dedicated and approachable.', rating: 5, image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face', result: 'Best Improvement Award' },
-  { name: 'Kavya Nair', role: 'Student', content: 'I am grateful to the teachers at VS Tutorials for their dedication and support. The study material and regular assessments were very helpful.', rating: 5, image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face', result: 'Academic Excellence Award' },
+  { name: 'Arjun M.', role: 'Student', content: 'The teachers explain concepts very clearly and always encourage students to improve. The regular assessments and doubt-clearing sessions helped me gain confidence in my studies.', rating: 5, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face', result: 'Secured 92% in Std 7th Exams' },
+  { name: 'Priya S.', role: 'Student', content: 'The learning environment at the academy is supportive and helps build confidence. The structured teaching approach and personalized attention have made a huge difference in my academic performance.', rating: 5, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face', result: 'Improved from 65% to 88% in One Year' },
+  { name: 'Mrs. Sharma', role: 'Parent', content: 'Dedicated faculty and structured teaching methods make learning effective. The academy provides personal attention and regular updates regarding student progress, which gives us great confidence.', rating: 5, image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face', result: 'My child\'s confidence and grades have improved significantly' },
 ];
 
 const SuccessStories: React.FC = () => {
   return (
     <>
-      <PageHero title="Success Stories" subtitle="Read inspiring stories from our students about their journey with VS Tutorials." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Success Stories' }]} />
+      <PageHero title="Success Stories" subtitle="Read inspiring stories from our students about their journey with Labbdhis Academy." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Success Stories' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

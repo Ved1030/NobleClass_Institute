@@ -7,14 +7,12 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const faqData = [
-  { q: 'What is the batch size at VS Tutorials?', a: 'We maintain a maximum of 25 students per batch to ensure personalized attention and quality learning.' },
-  { q: 'Do you provide study material?', a: 'Yes, we provide comprehensive, exam-focused study material prepared by our expert faculty at no extra cost.' },
-  { q: 'Are there any scholarships available?', a: 'Yes, we offer merit-based scholarships for students who score above 90% in their previous exams.' },
-  { q: 'What are the timings for batches?', a: 'We offer morning (7–9 AM), afternoon (2–4 PM), and evening (5–7 PM) batches to suit different schedules.' },
-  { q: 'Is there a diagnostic test for admission?', a: 'Yes, we conduct an optional diagnostic test to assess the student\'s current level and identify areas for improvement.' },
-  { q: 'Do you offer online classes?', a: 'Yes, we offer a hybrid learning model with both in-person and online class options for flexibility.' },
-  { q: 'What is the fee structure?', a: 'Our fees vary by course and range from ₹2,000/month to ₹5,000/month. Please visit our Courses page or contact us for detailed fee information.' },
-  { q: 'How can I track my child\'s progress?', a: 'We conduct regular parent-teacher meetings, provide monthly progress reports, and offer real-time updates through our parent portal.' },
+  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students from Std 7th to Std 10th in Mathematics, Science, and English. Our programs focus on concept-based learning and academic excellence.' },
+  { q: 'Where is Labbdhis Academy located?', a: 'Labbdhis Academy is located near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086. We are easily accessible from all parts of Ghatkopar and surrounding areas.' },
+  { q: 'How can I enroll?', a: 'You can fill out the inquiry form on our website or visit the academy in person. Our team will contact you for a free academic counseling session, followed by enrollment formalities.' },
+  { q: 'What is the class size?', a: 'We maintain small batch sizes to ensure personalized attention and effective learning. Each batch is intentionally limited to allow every student to receive the guidance they need.' },
+  { q: 'What are the batch timings?', a: 'Batch timings are scheduled based on student availability and class requirements. Please contact us or fill out the inquiry form for the latest schedule information.' },
+  { q: 'Is study material provided?', a: 'Yes, comprehensive study material, practice worksheets, and test series are provided to all enrolled students as part of the program.' },
 ];
 
 const FAQ: React.FC = () => {
@@ -24,7 +22,7 @@ const FAQ: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Frequently Asked Questions" subtitle="Find answers to common questions about VS Tutorials, our programs, admissions, and more." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'FAQ' }]} />
+      <PageHero title="Frequently Asked Questions" subtitle="Find answers to common questions about Labbdhis Academy, our coaching programs, admissions, and more." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'FAQ' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
           <div className="relative mb-10">

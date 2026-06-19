@@ -1,8 +1,8 @@
 {
-  "name": "vs-tutorials",
+  "name": "labbdhis-academy",
   "private": true,
   "version": "1.0.0",
-  "description": "VS Tutorials coaching institute - monorepo root",
+  "description": "Labbdhis Academy coaching institute - monorepo root",
   "scripts": {
     "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm run build",

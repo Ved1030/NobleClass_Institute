@@ -8,10 +8,10 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const timeline = [
-  { year: '2023', title: 'Foundation', desc: 'VS Tutorials was founded with a vision to provide quality coaching and academic guidance to students in Ghatkopar East, Mumbai.' },
-  { year: '2024', title: 'Growing Community', desc: 'Our first batches received excellent feedback from students and parents, establishing our reputation.' },
-  { year: '2025', title: 'Academic Excellence', desc: 'Students achieved notable improvements in their academic performance and competitive exam preparation.' },
-  { year: '2026', title: 'Today', desc: 'Continuing to shape futures with experienced faculty and comprehensive academic programs for students.' },
+  { year: '2007', title: 'Foundation', desc: 'Labbdhis Academy was founded with a vision to provide quality education and academic guidance to students in Ghatkopar West, Mumbai with a small batch of dedicated learners.' },
+  { year: '2015', title: 'Expansion & Growth', desc: 'Expanded programs to include comprehensive academic support across multiple subjects, growing to serve over 200 students annually.' },
+  { year: '2020', title: 'Expanded Academic Programs', desc: 'Strengthened coaching programs across all standards with enhanced curriculum, assessments, and student support systems.' },
+  { year: '2026', title: '500+ Students Mentored', desc: 'Proud milestone of mentoring over 500 students with a continued focus on academic excellence, personalized guidance, and student success.' },
 ];
 
 const values = [
@@ -24,32 +24,32 @@ const values = [
 ];
 
 const team = [
-  { name: 'Prof. Rajesh Kumar', role: 'Academic Head', qualification: 'M.Sc. Mathematics, IIT Bombay', image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop&crop=face', bio: 'With 20+ years of teaching experience, Prof. Kumar leads the academic programs at VS Tutorials.' },
-  { name: 'Dr. Sunita Verma', role: 'Senior Faculty', qualification: 'Ph.D. Chemistry, Mumbai University', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face', bio: 'Dr. Verma brings expertise in curriculum development and student mentoring.' },
-  { name: 'Mr. Amit Joshi', role: 'Faculty Coordinator', qualification: 'M.Sc. Physics, VJTI Mumbai', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face', bio: 'Amit manages academic coordination and ensures quality teaching standards.' },
+  { name: 'Dr. Aniket Deshmukh', role: 'Academic Head', qualification: 'M.Sc., Ph.D.', image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop&crop=face', bio: 'Over 15 years of experience in Mathematics and Science education. Passionate about building strong academic foundations and mentoring students toward excellence.' },
+  { name: 'Ms. Neha Joshi', role: 'Senior Faculty — English', qualification: 'M.A., B.Ed.', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face', bio: 'Specializes in English language and literature with 10+ years of experience. Known for innovative teaching methods that make learning engaging and effective.' },
+  { name: 'Mr. Rajesh Iyer', role: 'Senior Faculty — Mathematics', qualification: 'M.Sc.', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face', bio: 'Expert mathematics educator with 12+ years of experience in helping students master core concepts and excel in school examinations.' },
 ];
 
 const About: React.FC = () => {
   return (
     <>
-      <PageHero title="About VS Tutorials" subtitle="A trusted coaching institute in Ghatkopar East, dedicated to building strong concepts and academic excellence through quality education and personalized guidance." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
+      <PageHero title="About Labbdhis Academy" subtitle="A trusted coaching academy since 2007 in Ghatkopar West, Mumbai, providing quality education for Std 7th to Std 10th students with concept-based learning and personal attention." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Story</span>
-              <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Building Strong Concepts & Academic Excellence</h2>
+              <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Shaping Young Minds Through Quality Education</h2>
               <div className="space-y-4 text-noble-navy/70 leading-relaxed">
-                <p>VS Tutorials is a trusted coaching institute in Ghatkopar East, Mumbai dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results. With experienced teachers, regular assessments, and personalized attention, students receive complete guidance for academic success.</p>
-                <p>Our approach focuses on understanding each student's unique learning style, addressing their weaknesses, strengthening their fundamentals, and building the confidence they need to excel in examinations.</p>
-                <p>We believe in providing quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic excellence and success in life.</p>
+                <p>Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students from Std 7th to Std 10th, helping them strengthen fundamentals and achieve outstanding academic results.</p>
+                <p>Our approach focuses on understanding each student's unique learning style, addressing their weaknesses, strengthening their fundamentals, and building the confidence they need to excel in school examinations.</p>
+                <p>We believe in providing quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic success.</p>
               </div>
             </div>
             <div className="relative">
-              <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="VS Tutorials - coaching classroom" width={600} height={450} className="rounded-3xl object-cover w-full shadow-2xl shadow-noble-blue/10" />
+                <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=450&fit=crop" alt="Labbdhis Academy - coaching classroom" width={600} height={450} className="rounded-3xl object-cover w-full shadow-2xl shadow-noble-blue/10" />
               <div className="absolute -bottom-6 -left-6 bg-noble-blue text-white rounded-2xl p-6 shadow-xl">
-                <div className="font-heading text-4xl font-bold">3+</div>
-                <div className="text-white/70 text-sm">Years of Excellence</div>
+                <div className="font-heading text-4xl font-bold">2007</div>
+                <div className="text-white/70 text-sm">Founded</div>
               </div>
             </div>
           </div>
@@ -61,12 +61,12 @@ const About: React.FC = () => {
             <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="bg-gradient-to-br from-noble-blue to-noble-navy rounded-3xl p-10 text-white">
               <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center mb-6"><Target className="w-6 h-6 text-white" /></div>
               <h2 className="font-heading text-3xl font-bold mb-4">Our Mission</h2>
-              <p className="text-white/80 leading-relaxed">To provide accessible, high-quality coaching that empowers every student to achieve their academic goals, build lifelong learning habits, and develop the confidence to succeed in competitive examinations and beyond.</p>
+              <p className="text-white/80 leading-relaxed">To provide quality education that helps students build strong academic foundations, develop critical thinking, and achieve their full potential through structured learning and personalized guidance.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="bg-white rounded-3xl p-10 border border-noble-blue/10 shadow-lg">
               <div className="w-12 h-12 bg-noble-blue/8 rounded-2xl flex items-center justify-center mb-6"><Eye className="w-6 h-6 text-noble-blue" /></div>
               <h2 className="font-heading text-3xl font-bold text-noble-navy mb-4">Our Vision</h2>
-              <p className="text-noble-navy/70 leading-relaxed">To be recognized as India's most student-centric coaching institute — where academic excellence meets holistic development, and where every student leaves not just with better grades, but with a better version of themselves.</p>
+              <p className="text-noble-navy/70 leading-relaxed">To be recognized as a trusted educational institute where academic excellence meets holistic development, and where every student builds the foundation for a successful future.</p>
             </motion.div>
           </div>
         </div>

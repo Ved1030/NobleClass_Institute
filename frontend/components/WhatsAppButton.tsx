@@ -6,8 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const WhatsAppButton: React.FC = () => {
   const [visible, setVisible] = useState(false);
-  // TODO: Owner to update WhatsApp number
-  const whatsappUrl = `https://wa.me/919769113425?text=${encodeURIComponent('Hello! I would like to know more about VS Tutorials.')}`;
+  const whatsappUrl = `https://wa.me/919920859870?text=${encodeURIComponent('Hello! I would like to know more about Labbdhis Academy.')}`;
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 400);

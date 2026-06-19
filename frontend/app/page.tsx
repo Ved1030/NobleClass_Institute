@@ -30,80 +30,55 @@ const InquiryForm = dynamic(() => import('@/components/InquiryForm'), {
 });
 
 const stats = [
-  { label: 'Students Enrolled', value: 200, suffix: '+', icon: Users },
-  { label: 'Years Of Excellence', value: 3, suffix: '+', icon: Award },
-  { label: 'Success Rate', value: 92, suffix: '%', icon: TrendingUp },
-  { label: 'Expert Faculty', value: 8, suffix: '+', icon: BookOpen },
+  { label: 'Years of Excellence', value: 18, suffix: '+', icon: Trophy },
+  { label: 'Students Mentored', value: 500, suffix: '+', icon: Users },
+  { label: 'Parent Satisfaction', value: 95, suffix: '%', icon: Award },
+  { label: 'Student-Centric Learning', value: 100, suffix: '%', icon: Star },
 ];
 
-const coursesData: Record<string, any[]> = {
-  'JEE': [
-    { icon: Target, name: 'JEE Main Program', badge: 'POPULAR', tag: 'JEE', color: '#C62828', desc: 'Comprehensive preparation for JEE Main with conceptual clarity, problem-solving techniques, and extensive mock tests.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Adv. Problem Sets' } },
-    { icon: Target, name: 'JEE Advanced Program', badge: 'JEE SPECIAL', tag: 'JEE', color: '#C62828', desc: 'Rigorous IIT-JEE Advanced coaching with advanced problem-solving, PYQ analysis, and mock tests.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Adv. Problem Sets' } },
-    { icon: Target, name: 'Crash Course JEE', badge: 'TOP PICK', tag: 'JEE', color: '#C62828', desc: 'Intensive revision program for JEE Main & Advanced with focused topic-wise sessions.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Revision Kit' } },
-    { icon: Target, name: 'JEE + Board Combo', badge: 'BEST RESULTS', tag: 'JEE', color: '#C62828', desc: 'Integrated program covering XII board exam and JEE preparation simultaneously.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'IIT Alumni', material: 'Combo Kit' } },
-  ],
-  'NEET': [
-    { icon: HeartPulse, name: 'NEET UG Program', badge: 'NEET SPECIAL', tag: 'NEET', color: '#16A34A', desc: 'Comprehensive NEET coaching with focus on biology, physics and chemistry for medical entrance.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Medical Experts', material: 'NEET Q. Bank' } },
-    { icon: HeartPulse, name: 'NEET Crash Course', badge: 'TOP PICK', tag: 'NEET', color: '#16A34A', desc: 'Fast-track revision program for NEET UG with topic-wise tests and doubt sessions.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Medical Experts', material: 'Revision Kit' } },
-    { icon: HeartPulse, name: 'NEET + Board Combo', badge: 'BEST RESULTS', tag: 'NEET', color: '#16A34A', desc: 'Dual preparation for XII boards and NEET with integrated curriculum.', subjects: ['Biology', 'Physics', 'Chemistry'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Comprehensive Kit' } },
-    { icon: HeartPulse, name: 'Biology Specialization', badge: 'POPULAR', tag: 'NEET', color: '#16A34A', desc: 'In-depth biology coaching for NEET with diagram-based learning and mock tests.', subjects: ['Botany', 'Zoology', 'Genetics'], stats: { days: '5 Days/Week', faculty: 'PhD Faculty', material: 'Bio Manual' } },
-  ],
-  'MHT-CET + Science': [
-    { icon: GraduationCap, name: 'MHT-CET Program', badge: 'POPULAR', tag: 'CET', color: '#005DAA', desc: 'Focused preparation for MHT-CET with state board syllabus alignment.', subjects: ['Physics', 'Chemistry', 'Mathematics'], stats: { days: '6 Days/Week', faculty: 'Expert Faculty', material: 'CET Kit' } },
-    { icon: GraduationCap, name: 'XI Science', badge: 'POPULAR', tag: 'Science', color: '#005DAA', desc: 'PCB/PCM streams with lab-based learning for board and competitive exams.', subjects: ['Physics', 'Chemistry', 'Biology/Maths'], stats: { days: '6 Days/Week', faculty: 'PhD Faculty', material: 'Lab Manuals' } },
-    { icon: GraduationCap, name: 'XII Science', badge: 'TOP PICK', tag: 'Science', color: '#005DAA', desc: 'Board-aligned curriculum with simultaneous competitive exam preparation.', subjects: ['Physics', 'Chemistry', 'Biology/Maths'], stats: { days: '6 Days/Week', faculty: 'Senior Faculty', material: 'Board Prep Kit' } },
-    { icon: GraduationCap, name: 'Foundation Program', badge: 'NEW', tag: 'Science', color: '#005DAA', desc: 'Early preparation for IX-X students aiming for JEE/NEET/MHT-CET with strong fundamentals.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: '4 Days/Week', faculty: 'Expert Faculty', material: 'Practice Sets' } },
-  ],
-};
-
-const faculty = [
-  { id: 1, name: 'Prof. Rajesh Kumar', subject: 'Mathematics', qualification: 'M.Sc. Mathematics, IIT Bombay', experience: '15 years', initials: 'RK', achievements: ['IIT Bombay Alumni', '500+ students mentored', 'Author of 3 textbooks'] },
-  { id: 2, name: 'Dr. Sunita Verma', subject: 'Chemistry', qualification: 'Ph.D. Chemistry, Mumbai University', experience: '12 years', initials: 'SV', achievements: ['PhD from Mumbai University', 'NEET specialist', '300+ NEET qualifiers'] },
-  { id: 3, name: 'Mr. Amit Joshi', subject: 'Physics', qualification: 'M.Sc. Physics, VJTI Mumbai', experience: '10 years', initials: 'AJ', achievements: ['JEE Advanced qualifier', 'Physics Olympiad coach', '200+ JEE qualifiers'] },
-  { id: 4, name: 'Prof. Sneha Kulkarni', subject: 'Biology', qualification: 'M.Sc. Biology, Pune University', experience: '11 years', initials: 'SK', achievements: ['Gold Medalist', 'NEET Biology expert', '400+ medical seats'] },
-];
-
-const toppers = [
-  { name: 'Rahul Mehta', score: '97.2 %ile', exam: 'JEE Mains 2025', rank: 'AIR 1240', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face' },
-  { name: 'Priya Sharma', score: '680/720', exam: 'NEET 2025', rank: 'AIR 890', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face' },
-  { name: 'Amit Joshi', score: '99.56 %ile', exam: 'MHT-CET 2025', rank: 'Top 100', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face' },
-  { name: 'Sneha Patil', score: '720/720', exam: 'NEET 2025', rank: 'AIR 234', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face' },
+const courses = [
+  { icon: BookOpen, name: 'Std 7th Coaching', badge: 'FOUNDATION', tag: 'Academic', color: '#005DAA', desc: 'Strong foundation building in Mathematics, Science, English, and core academic subjects with concept-based learning.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Expert Teachers', material: 'Study Material' } },
+  { icon: BookOpen, name: 'Std 8th Coaching', badge: 'POPULAR', tag: 'Academic', color: '#2563EB', desc: 'Concept-focused learning with regular assessments, doubt-solving sessions, and performance tracking to ensure steady progress.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Subject Experts', material: 'Practice Sheets' } },
+  { icon: Target, name: 'Std 9th Coaching', badge: 'ADVANCED', tag: 'Academic', color: '#C62828', desc: 'Advanced preparation with detailed subject understanding, exam strategies, and comprehensive coverage of the academic curriculum.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Advanced Prep', faculty: 'Senior Faculty', material: 'Exam Kit' } },
+  { icon: Trophy, name: 'Std 10th Coaching', badge: 'BOARD FOCUS', tag: 'Board Prep', color: '#16A34A', desc: 'Board exam-focused preparation, revision programs, intensive practice sessions, and mock tests for academic excellence.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Board Prep', faculty: 'Exam Experts', material: 'Board Kit' } },
 ];
 
 const testimonials = [
-  { id: 1, name: 'Rahul Mehta', label: 'Student, JEE Aspirant', content: 'I had a great experience with VS Tutorials. The management and teaching staff are supportive and truly focus on each student\'s growth. Their guidance helped me score well in my examinations.', rating: 5, type: 'student', initials: 'RM' },
-  { id: 2, name: 'Priya Sharma', label: 'Student, NEET Aspirant', content: 'The teaching is well-organized and highly effective. Regular tests and doubt-solving sessions improved my confidence and overall performance.', rating: 5, type: 'student', initials: 'PS' },
-  { id: 3, name: 'Amit Joshi', label: 'Student, MHT-CET', content: 'Supportive teachers, clear explanations, and helpful study material make VS Tutorials an excellent place for focused learning.', rating: 5, type: 'student', initials: 'AJ' },
-  { id: 4, name: 'Sneha Patil', label: 'Student, Science', content: 'The teaching methodology at VS Tutorials helped me understand complex concepts easily. Regular assessments and feedback kept me on track throughout the year.', rating: 5, type: 'student', initials: 'SP' },
+  { id: 1, name: 'Rohan K.', label: 'Student', content: 'The teachers explain every topic in a simple and understandable way. My concepts are now very clear and I feel confident in my studies.', rating: 5, type: 'student', initials: 'RK' },
+  { id: 2, name: 'Mrs. Deshmukh', label: 'Parent', content: 'My child\'s confidence and academic performance improved significantly after joining Labbdhis Academy. The personal attention makes a big difference.', rating: 5, type: 'parent', initials: 'MD' },
+  { id: 3, name: 'Sneha P.', label: 'Student', content: 'Regular tests and feedback sessions help students stay on track. The doubt-solving sessions are extremely helpful for clearing concepts.', rating: 5, type: 'student', initials: 'SP' },
 ];
 
 const notices = [
-  { id: 1, title: 'New Batch Starting – June 2026', date: '15 May 2026', type: 'Admission', desc: 'Admissions open for the new batch starting June 2026. Limited seats available.' },
-  { id: 2, title: 'Academic Year 2025-26 Results', date: '10 May 2026', type: 'Result', desc: 'Our students achieved excellent academic results with notable improvements.' },
-  { id: 3, title: 'Summer Crash Course', date: '5 May 2026', type: 'Batch', desc: 'Intensive 45-day crash course covering complete syllabus with daily tests.' },
+  { id: 1, title: 'Admissions Open For Std 7th, 8th, 9th & 10th', date: '01 Jun 2026', type: 'Admission', desc: 'Enrollments are now open for all standards. Limited seats available. Early bird discounts available for early registrations.' },
+  { id: 2, title: 'New Academic Batch Starting Soon', date: '05 Jun 2026', type: 'Batch', desc: 'New academic batches starting from next month. Small batch sizes ensure personalized attention for every student.' },
+  { id: 3, title: 'Weekly Assessment Schedule Released', date: '10 Jun 2026', type: 'Exam', desc: 'Weekly unit test schedule has been released. Regular assessments help track progress and identify areas for improvement.' },
 ];
 
 const achievements = [
-  { year: '2025', title: 'Strong Academic Results', desc: 'Students achieved notable improvements in board and competitive exams', icon: Trophy },
-  { year: '2024', title: 'Growing Student Community', desc: 'Trusted by 150+ students and parents in Ghatkopar East', icon: Target },
-  { year: '2023', title: 'Quality Education Recognized', desc: 'Established as a trusted coaching institute in the community', icon: Award },
+  { year: '2007', title: 'Strong Academic Results Every Year', desc: 'Consistent track record of helping students achieve excellent academic outcomes year after year.', icon: Trophy },
+  { year: '2015', title: 'Comprehensive Subject Support', desc: 'Expanded to offer complete academic support across Mathematics, Science, and English for all standards.', icon: Star },
+  { year: '2026', title: 'Personalized Student Guidance', desc: 'Dedicated to providing individual attention and mentorship to every student for their academic growth.', icon: Users },
 ];
 
 const faqs = [
-  { q: 'What is the batch size at VS Tutorials?', a: 'We maintain a maximum of 25 students per batch to ensure personalized attention and quality learning.' },
-  { q: 'Do you provide study material?', a: 'Yes, we provide comprehensive, exam-focused study material prepared by our expert faculty at no extra cost.' },
-  { q: 'Are there any scholarships available?', a: 'Yes, we offer merit-based scholarships for students who score above 90% in their previous exams.' },
-  { q: 'What are the timings for batches?', a: 'We offer morning (7-9 AM), afternoon (2-4 PM), and evening (5-7 PM) batches to suit different schedules.' },
+  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students from Std 7th to Std 10th in Mathematics, Science, and English. Our programs focus on building strong concepts and academic excellence.' },
+  { q: 'Where is Labbdhis Academy located?', a: 'Labbdhis Academy is located near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086.' },
+  { q: 'How can I enroll?', a: 'You can fill out the inquiry form on our website or visit the academy in person. Our team will guide you through the admission process, counseling session, and enrollment formalities.' },
+  { q: 'What is the class size?', a: 'We maintain small batch sizes to ensure personalized attention and effective learning. Each batch is limited to ensure every student gets the guidance they need.' },
 ];
 
 const whyUs = [
-  { title: 'Experienced Faculty', desc: 'Qualified teachers with years of experience in guiding students.' },
-  { title: 'Concept-Based Learning', desc: 'Focus on building strong fundamentals and conceptual clarity.' },
-  { title: 'Small Batch Size', desc: 'Maximum 25 students per batch for personalized attention.' },
-  { title: 'Regular Assessments', desc: 'Weekly tests, monthly assessments, and full mock exams.' },
-  { title: 'Quality Study Material', desc: 'Comprehensive, exam-focused study material prepared by experts.' },
-  { title: 'Student Progress Tracking', desc: 'Regular feedback and progress updates for students and parents.' },
+  { title: 'Experienced Faculty', desc: 'Learn from qualified and experienced educators dedicated to student success.' },
+  { title: 'Small Batch Sizes', desc: 'Limited students per batch to ensure individual attention and effective learning.' },
+  { title: 'Personal Attention', desc: 'Every student receives focused guidance to address their unique learning needs.' },
+  { title: 'Regular Unit Tests', desc: 'Frequent assessments to track progress and identify areas for improvement.' },
+  { title: 'Doubt Solving Sessions', desc: 'Dedicated sessions for clearing doubts and strengthening conceptual understanding.' },
+  { title: 'Progress Tracking', desc: 'Consistent monitoring of academic performance and learning milestones.' },
+  { title: 'Parent Feedback Meetings', desc: 'Regular parent-teacher interactions to discuss student progress and growth.' },
+  { title: 'Exam-Oriented Preparation', desc: 'Structured preparation aligned with school examinations and academic requirements.' },
+  { title: 'Concept-Based Teaching', desc: 'Strong emphasis on building clear understanding of core academic concepts.' },
+  { title: 'Academic Mentorship', desc: 'Personal mentorship to guide students through their academic journey.' },
 ];
 
 const staggeredFade = (i: number) => ({
@@ -123,7 +98,6 @@ const SectionHeading: React.FC<{ subtitle: string; title: string; desc?: string;
 
 const Home: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [activeTab, setActiveTab] = useState('JEE');
 
   return (
     <>
@@ -147,7 +121,7 @@ const Home: React.FC = () => {
               >
                 <Image
                   src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&h=620&fit=crop"
-                  alt="VS Tutorials Coaching Classroom"
+                  alt="Labbdhis Academy Classroom"
                   fill
                   className="object-cover"
                   style={{ objectPosition: '35% 30%' }}
@@ -160,9 +134,9 @@ const Home: React.FC = () => {
             {/* Floating Achievement Cards */}
             <div className="absolute top-[15%] right-0 flex flex-col gap-4 z-20">
               {[
-                { icon: Trophy, color: '#F4B400', value: '98%', label: 'Success Rate', delay: 0.2 },
-                { icon: Users, color: '#2563EB', value: '5000+', label: 'Students', delay: 0.4 },
-                { icon: TrendingUp, color: '#EF4444', value: 'Top', label: 'Coaching Institute', delay: 0.6 },
+                { icon: Award, color: '#005DAA', value: 'Since 2007', label: 'Established', delay: 0.2 },
+                { icon: Users, color: '#2563EB', value: 'Focused', label: 'Student Guidance', delay: 0.4 },
+                { icon: Star, color: '#F4B400', value: 'Excellence', label: 'Academic Focus', delay: 0.6 },
               ].map((card, idx) => (
                 <div
                   key={card.label}
@@ -187,7 +161,7 @@ const Home: React.FC = () => {
                     <card.icon className="w-[16px] h-[16px]" style={{ color: card.color }} />
                   </div>
                   <div>
-                    <p className="font-bold leading-none" style={{ fontSize: '22px', color: '#1E293B' }}>{card.value}</p>
+                    <p className="font-bold leading-none" style={{ fontSize: '18px', color: '#1E293B' }}>{card.value}</p>
                     <p className="font-medium leading-tight mt-0.5"                      style={{ fontSize: '12px', color: '#64748B' }}>{card.label}</p>
                   </div>
                 </div>
@@ -204,49 +178,49 @@ const Home: React.FC = () => {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 border border-noble-blue rounded-full px-4 py-1.5 text-noble-blue text-xs font-semibold tracking-wide uppercase mb-8 animate-slide-up" style={{ animationDelay: '0.1s', animationFillMode: 'backwards' }}>
                   <span className="w-1.5 h-1.5 rounded-full bg-noble-blue" />
-                  Admissions Open For 2026-27
+                  Established Since 2007
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="font-heading text-5xl lg:text-6xl xl:text-[64px] font-bold leading-[0.95] animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'backwards' }}>
-                  <span className="text-noble-blue">VS</span>{" "}
-                  <span style={{ color: '#C62828' }}>Tutorials</span>
+                <h1 className="font-heading text-3xl lg:text-5xl xl:text-[56px] font-bold leading-[1.05] animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'backwards' }}>
+                  <span className="text-noble-blue">Expert Coaching for</span>{" "}
+                  <span style={{ color: '#C62828' }}>Std 7th, 8th, 9th &amp; 10th Students</span>
                 </h1>
 
                 {/* Tagline */}
-                <p className="font-heading text-3xl lg:text-4xl xl:text-[48px] leading-[1.1] font-medium mt-[20px] animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards', color: '#374151' }}>
-                  Building Strong Concepts & Academic Excellence
+                <p className="font-heading text-2xl lg:text-3xl xl:text-[40px] leading-[1.15] font-medium mt-[20px] animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards', color: '#374151' }}>
+                  Shaping Young Minds Through Quality Education
                 </p>
 
                 {/* Description */}
-                <p className="text-gray-600 text-lg lg:text-xl xl:text-[20px] leading-[1.8] mt-[28px] max-w-[540px] animate-slide-up" style={{ animationDelay: '0.25s', animationFillMode: 'backwards' }}>
-                  VS Tutorials is a trusted coaching institute dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results with experienced teachers and regular assessments.
+                <p className="text-gray-600 text-base lg:text-lg xl:text-[20px] leading-[1.8] mt-[28px] max-w-[540px] animate-slide-up" style={{ animationDelay: '0.25s', animationFillMode: 'backwards' }}>
+                  Build strong concepts, improve academic performance, and prepare confidently for school examinations with personalized guidance and experienced faculty.
                 </p>
 
                 {/* CTA Buttons */}
                 <div className="flex flex-wrap gap-5 mt-[36px] animate-slide-up" style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}>
                   <Link
-                    href="/admissions"
+                    href="/contact"
                     className="inline-flex items-center gap-2 px-10 h-[60px] rounded-lg font-bold text-base text-white hover:opacity-90 transition-all duration-200 shadow-lg shadow-red-600/20"
                     style={{ backgroundColor: '#C62828' }}
                   >
-                    Apply For Admission <ArrowRight className="w-5 h-5" />
+                    Enquire Now <ArrowRight className="w-5 h-5" />
                   </Link>
-              <a
-                href="tel:+919769113425"
+                  <Link
+                    href="/courses"
                     className="inline-flex items-center gap-2 border-2 border-noble-blue text-noble-blue px-10 h-[60px] rounded-lg font-semibold text-base bg-white hover:bg-noble-blue hover:text-white transition-all duration-200"
                   >
-                    <Phone className="w-5 h-5" /> Call Now
-                  </a>
+                    Join a Demo Class
+                  </Link>
                 </div>
 
                 {/* Trust Strip – single horizontal component */}
                 <div className="mt-[36px] animate-slide-up" style={{ animationDelay: '0.35s', animationFillMode: 'backwards' }}>
                   <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex items-center divide-x divide-gray-100">
                     {[
-                      { icon: Star, value: '4.9', label: 'Google Rating' },
-                      { icon: Users, value: '200+', label: 'Students' },
-                      { icon: Trophy, value: '3+', label: 'Years Experience' },
+                      { icon: Award, value: 'Since 2007', label: 'Established' },
+                      { icon: Users, value: 'Focused', label: 'Student Guidance' },
+                      { icon: Star, value: 'Excellence', label: 'Academic Focus' },
                     ].map((item) => (
                       <div key={item.value} className="flex items-center gap-3 px-5 first:pl-2 last:pr-2 w-1/3">
                         <div className="w-10 h-10 rounded-lg bg-noble-blue/10 flex items-center justify-center shrink-0">
@@ -266,6 +240,31 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Announcements Ticker */}
+      <section className="bg-gradient-to-r from-noble-blue to-noble-blue-dark py-3 overflow-hidden border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="flex items-center gap-6 overflow-hidden">
+            <span className="text-yellow-300 text-sm font-bold whitespace-nowrap shrink-0">📢 Announcements:</span>
+            <div className="overflow-hidden flex-1">
+              <motion.div
+                animate={{ x: ['100%', '-100%'] }}
+                transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+                className="whitespace-nowrap flex gap-12"
+              >
+                <span className="text-white/90 text-sm">📢 Admissions Open For Std 7th, 8th, 9th &amp; 10th</span>
+                <span className="text-white/90 text-sm">📢 New Academic Batch Starting Soon</span>
+                <span className="text-white/90 text-sm">📢 Weekly Assessment Schedule Released</span>
+                <span className="text-white/90 text-sm">📢 Free Career Counseling Session Available</span>
+                <span className="text-white/90 text-sm">📢 Admissions Open For Std 7th, 8th, 9th &amp; 10th</span>
+                <span className="text-white/90 text-sm">📢 New Academic Batch Starting Soon</span>
+                <span className="text-white/90 text-sm">📢 Weekly Assessment Schedule Released</span>
+                <span className="text-white/90 text-sm">📢 Free Career Counseling Session Available</span>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Bar - premium full-width stats ribbon */}
       <section className="bg-noble-blue h-[140px] flex items-center">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
@@ -275,7 +274,15 @@ const Home: React.FC = () => {
                 <Icon className="w-7 h-7 lg:w-8 lg:h-8 text-white/80 shrink-0" />
                 <div>
                   <div className="font-heading text-xl lg:text-2xl font-bold text-white">
-                    <AnimatedCounter end={value} suffix={suffix} />
+                    {label === 'Years of Excellence' ? (
+                      <AnimatedCounter end={18} suffix="+" />
+                    ) : label === 'Students Mentored' ? (
+                      <AnimatedCounter end={500} suffix="+" />
+                    ) : label === 'Parent Satisfaction' ? (
+                      <AnimatedCounter end={95} suffix="%" />
+                    ) : (
+                      <AnimatedCounter end={100} suffix="%" />
+                    )}
                   </div>
                   <div className="text-blue-200 text-xs lg:text-sm whitespace-nowrap font-medium">{label}</div>
                 </div>
@@ -290,16 +297,16 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
-              <span className="section-subtitle">About VS Tutorials</span>
-              <h2 className="section-heading mb-6">Ghatkopar East&apos;s Trusted <span className="text-noble-blue">Coaching Institute</span></h2>
+              <span className="section-subtitle">About Labbdhis Academy</span>
+              <h2 className="section-heading mb-6">Ghatkopar West&apos;s <span className="text-noble-blue">Trusted Coaching Academy</span></h2>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-6">
-                VS Tutorials is a trusted coaching institute in Ghatkopar East dedicated to helping students build strong concepts, improve confidence, and achieve excellent academic results. With experienced teachers, regular assessments, and personalized attention, students receive complete guidance for academic success.
+                Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students from Std 7th to Std 10th, helping them strengthen fundamentals and achieve outstanding academic results.
               </p>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-8">
-                Our mission is to provide quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic excellence and success in life.
+                Our teaching approach focuses on building strong concepts, regular assessments, and personalized mentorship to ensure every student reaches their full potential.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/about" className="btn-primary">Know More About VS Tutorials <ArrowRight className="w-4 h-4" /></Link>
+                <Link href="/about" className="btn-primary">Know More About Labbdhis <ArrowRight className="w-4 h-4" /></Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -332,39 +339,14 @@ const Home: React.FC = () => {
           >
             <span className="section-subtitle">Academic Programs</span>
             <h2 className="section-heading">Courses We Offer</h2>
-            <p className="text-noble-dark/60 text-lg mt-4">Comprehensive programs designed for JEE, NEET, MHT-CET and Science students.</p>
-          </motion.div>
-
-          {/* Stream Tabs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="flex justify-center mb-12"
-          >
-            <div className="inline-flex bg-white rounded-2xl p-1.5 shadow-sm border border-gray-100">
-              {['JEE', 'NEET', 'MHT-CET + Science'].map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                    activeTab === tab
-                      ? 'bg-noble-blue text-white shadow-md shadow-noble-blue/20'
-                      : 'text-noble-dark/50 hover:text-noble-dark'
-                  }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
+            <p className="text-noble-dark/60 text-lg mt-4">Comprehensive coaching for Std 7th, 8th, 9th, and 10th students with expert faculty and personalized guidance.</p>
           </motion.div>
 
           {/* Content Grid + Image */}
           <div className="flex gap-10 items-start">
             {/* Cards Grid */}
             <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6">
-              {coursesData[activeTab].map((course: any, i: number) => (
+              {courses.map((course: any, i: number) => (
                 <motion.div
                   key={course.name}
                   layout
@@ -401,8 +383,8 @@ const Home: React.FC = () => {
                       <span
                         className="text-[11px] font-bold px-3 py-1.5 rounded-lg whitespace-nowrap"
                         style={{
-                          backgroundColor: course.badge === 'POPULAR' ? '#005DAA12' : course.badge === 'BEST RESULTS' || course.badge === 'TOP PICK' ? '#16A34A12' : '#C6282812',
-                          color: course.badge === 'POPULAR' ? '#005DAA' : course.badge === 'BEST RESULTS' || course.badge === 'TOP PICK' ? '#16A34A' : '#C62828'
+                          backgroundColor: course.badge === 'POPULAR' ? '#005DAA12' : '#16A34A12',
+                          color: course.badge === 'POPULAR' ? '#005DAA' : '#16A34A'
                         }}
                       >
                         {course.badge}
@@ -464,7 +446,7 @@ const Home: React.FC = () => {
               <div className="relative h-[520px] rounded-2xl overflow-hidden shadow-lg shadow-black/5">
                 <Image
                   src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=520&fit=crop"
-                  alt="Students studying at VS Tutorials"
+                  alt="Students at Labbdhis Academy coaching classes"
                   fill
                   className="object-cover"
                   sizes="380px"
@@ -484,37 +466,30 @@ const Home: React.FC = () => {
       {/* Faculty */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Meet The Team" title="Our Expert Faculty" desc="Learn from the best — IIT alumni, PhD holders, and seasoned educators dedicated to your success." />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {faculty.map((f, i) => (
+          <SectionHeading subtitle="Meet The Team" title="Our Faculty" desc="Experienced educators dedicated to student success and academic excellence." />
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { name: 'Dr. Aniket Deshmukh', role: 'Academic Head', qualification: 'M.Sc., Ph.D.', initials: 'AD', desc: 'Over 15 years of teaching experience in Mathematics and Science. Passionate about building strong academic foundations.' },
+              { name: 'Ms. Neha Joshi', role: 'Senior Faculty — English', qualification: 'M.A., B.Ed.', initials: 'NJ', desc: 'Specializes in English language and literature with 10+ years of experience in guiding students toward academic excellence.' },
+              { name: 'Mr. Rajesh Iyer', role: 'Senior Faculty — Mathematics', qualification: 'M.Sc.', initials: 'RI', desc: 'Expert mathematics educator with 12+ years of experience in helping students master core concepts and excel in examinations.' },
+            ].map((faculty, i) => (
               <motion.div
-                key={f.id}
-                {...staggeredFade(i)}
-                className="bg-noble-light rounded-xl overflow-hidden border border-gray-200 hover:border-noble-blue/30 transition-all duration-300"
+                key={faculty.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-noble-light rounded-xl p-6 border border-gray-200 text-center"
               >
-                <div className="h-48 bg-gradient-to-br from-noble-blue to-noble-blue-dark flex items-center justify-center">
-                  <div className="w-24 h-24 rounded-full bg-white/20 flex items-center justify-center">
-                    <span className="font-heading text-3xl font-bold text-white">{f.initials}</span>
-                  </div>
+                <div className="w-16 h-16 bg-noble-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-lg">{faculty.initials}</span>
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-heading font-bold text-noble-dark">{f.name}</h3>
-                    <span className="px-2 py-0.5 bg-noble-blue/10 text-noble-blue text-[10px] font-semibold rounded">{f.subject}</span>
-                  </div>
-                  <p className="text-noble-dark/50 text-xs mb-1">{f.qualification}</p>
-                  <p className="text-noble-blue text-xs font-semibold mb-3">{f.experience}</p>
-                  <div className="flex flex-wrap gap-1.5">
-                    {f.achievements.map((a, j) => (
-                      <span key={j} className="text-[10px] text-noble-dark/60 bg-white px-2 py-1 rounded border border-gray-100">{a}</span>
-                    ))}
-                  </div>
-                </div>
+                <h3 className="font-heading font-bold text-noble-dark text-lg mb-1">{faculty.name}</h3>
+                <p className="text-noble-blue text-sm font-semibold mb-1">{faculty.role}</p>
+                <p className="text-noble-dark/50 text-xs mb-4">{faculty.qualification}</p>
+                <p className="text-noble-dark/60 text-sm leading-relaxed">{faculty.desc}</p>
               </motion.div>
             ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/faculty" className="btn-outline">Meet All Faculty <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
       </section>
@@ -524,39 +499,9 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-14 lg:mb-16">
-            <span className="text-noble-blue text-sm font-semibold uppercase tracking-[0.2em]">Hall Of Fame</span>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold mt-3 mb-4 leading-tight text-[#111827]">Our Toppers 2025</h2>
-            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-[#6B7280]">Celebrating the brilliant minds who made VS Tutorials proud.</p>
-          </div>
-
-          {/* Topper Cards */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-            {toppers.map((topper, i) => {
-              const rankColors = ['#F4B400', '#9CA3AF', '#CD7F32', '#2563EB'];
-              return (
-                <motion.div
-                  key={topper.name}
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="bg-white border border-[#E5E7EB] rounded-[24px] p-6 text-center shadow-md hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="relative inline-block mb-4">
-                    <Image src={topper.image} alt={topper.name} width={100} height={100} className="w-[100px] h-[100px] rounded-full object-cover border-[3px] mx-auto" style={{ borderColor: rankColors[i] }} />
-                    {i === 0 && (
-                      <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full flex items-center justify-center shadow-sm" style={{ backgroundColor: rankColors[i] }}>
-                        <Trophy className="w-3.5 h-3.5 text-white" />
-                      </div>
-                    )}
-                  </div>
-                  <h3 className="font-heading font-bold text-[#111827] mb-1">{topper.name}</h3>
-                  <div className="font-bold text-[42px] leading-tight mb-1" style={{ color: '#005DAA' }}>{topper.score}</div>
-                  <p className="text-[#6B7280] text-xs mb-2">{topper.exam}</p>
-                  <span className="text-xs px-3 py-1 rounded-full font-semibold text-white" style={{ backgroundColor: rankColors[i] }}>{topper.rank}</span>
-                </motion.div>
-              );
-            })}
+            <span className="text-noble-blue text-sm font-semibold uppercase tracking-[0.2em]">Achievements</span>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold mt-3 mb-4 leading-tight text-[#111827]">Our Milestones</h2>
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-[#6B7280]">Celebrating years of academic excellence and student achievements.</p>
           </div>
 
           {/* Section Divider */}
@@ -632,21 +577,15 @@ const Home: React.FC = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[1px] bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
             <div className="relative z-10">
-              <h3 className="text-2xl lg:text-3xl font-bold mb-3">Want To Be Our Next Topper?</h3>
-              <p className="text-white/80 text-lg mb-8">Join VS Tutorials Today.</p>
+              <h3 className="text-2xl lg:text-3xl font-bold mb-3">Begin Your Academic Journey</h3>
+              <p className="text-white/80 text-lg mb-8">Join Labbdhis Academy Today.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
-                  href="/admissions"
+                  href="/contact"
                   className="inline-flex items-center gap-2 h-[56px] px-8 rounded-xl bg-white text-noble-blue font-bold text-base hover:bg-blue-50 transition-all duration-200 shadow-lg"
                 >
-                  Apply For Admission <ArrowRight className="w-5 h-5" />
+                  Enquire Now <ArrowRight className="w-5 h-5" />
                 </Link>
-                  <a
-                    href="tel:+919769113425"
-                    className="inline-flex items-center gap-2 h-[56px] px-8 rounded-xl border-2 border-white/30 text-white font-semibold text-base hover:bg-white/10 transition-all duration-200"
-                  >
-                    <Phone className="w-5 h-5" /> Contact Us
-                  </a>
               </div>
             </div>
           </motion.div>
@@ -656,8 +595,8 @@ const Home: React.FC = () => {
       {/* Testimonials */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Success Stories" title="What Our Community Says" desc="Real stories from real students who experienced the VS Tutorials difference." />
-          <div className="grid md:grid-cols-2 gap-6">
+          <SectionHeading subtitle="Reviews" title="What People Say" desc="Hear from our students and parents about their experience at Labbdhis Academy." />
+          <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <motion.div
                 key={t.id}
@@ -678,17 +617,11 @@ const Home: React.FC = () => {
                     <h4 className="font-heading font-bold text-noble-dark text-sm">{t.name}</h4>
                     <p className="text-noble-dark/40 text-xs">
                       {t.label}
-                      <span className={`ml-2 px-2 py-0.5 rounded text-[10px] font-medium ${t.type === 'parent' ? 'bg-noble-secondary/10 text-noble-secondary' : 'bg-noble-blue/10 text-noble-blue'}`}>
-                        {t.type === 'parent' ? 'Parent' : 'Student'}
-                      </span>
                     </p>
                   </div>
                 </div>
               </motion.div>
             ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/success-stories" className="btn-outline">Read More Stories <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
       </section>
@@ -700,7 +633,7 @@ const Home: React.FC = () => {
             <div>
               <span className="section-subtitle">Stay Updated</span>
               <h2 className="section-heading mb-4">Latest Notices & Announcements</h2>
-              <p className="text-noble-dark/60 mb-8">Stay informed about upcoming batches, exam schedules, results, and important announcements.</p>
+              <p className="text-noble-dark/60 mb-8">Stay informed about admissions, batch schedules, assessments, and important announcements from Labbdhis Academy.</p>
               <div className="space-y-4">
                 {notices.map((notice, i) => (
                   <motion.div
@@ -709,11 +642,7 @@ const Home: React.FC = () => {
                     className="bg-noble-light rounded-xl p-5 border-l-4 border-noble-blue"
                   >
                     <div className="flex items-center gap-2 mb-1">
-                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded ${
-                        notice.type === 'Result' ? 'bg-green-100 text-green-700' :
-                        notice.type === 'Admission' ? 'bg-blue-100 text-blue-700' :
-                        'bg-orange-100 text-orange-700'
-                      }`}>{notice.type}</span>
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-blue-100 text-blue-700">{notice.type}</span>
                       <span className="text-xs text-noble-dark/40">{notice.date}</span>
                     </div>
                     <h4 className="font-heading font-bold text-noble-dark text-sm mb-1">{notice.title}</h4>
@@ -730,8 +659,8 @@ const Home: React.FC = () => {
             <div>
               <div className="bg-noble-light rounded-xl p-6 lg:p-8 border border-gray-200">
                 <span className="section-subtitle">Quick Inquiry</span>
-                <h3 className="font-heading text-2xl font-bold text-noble-dark mb-2">Get Free Counseling</h3>
-                <p className="text-noble-dark/60 text-sm mb-6">Fill the form and our team will contact you within 24 hours.</p>
+                <h3 className="font-heading text-2xl font-bold text-noble-dark mb-2">Send an Enquiry</h3>
+                <p className="text-noble-dark/60 text-sm mb-6">Fill the form and our team will contact you.</p>
                 <InquiryForm />
               </div>
             </div>
@@ -739,16 +668,44 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Events */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <SectionHeading subtitle="Stay Ahead" title="Upcoming Events" desc="Mark your calendar for our upcoming academic events and activities." />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { date: '15 July 2026', title: 'Career Guidance Seminar', desc: 'Expert-led session to help students explore academic and career pathways after school education.' },
+              { date: '20 July 2026', title: 'Parent Interaction Session', desc: 'An interactive session for parents to discuss student progress, learning strategies, and academic planning.' },
+              { date: '28 July 2026', title: 'Academic Excellence Workshop', desc: 'Workshop focused on effective study techniques, time management, and exam preparation strategies.' },
+              { date: '5 August 2026', title: 'Revision Program For Final Exams', desc: 'Intensive revision program covering key topics and practice sessions for upcoming final examinations.' },
+            ].map((event, i) => (
+              <motion.div
+                key={event.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="bg-noble-light rounded-2xl p-6 border border-gray-200 hover:shadow-md transition-shadow"
+              >
+                <div className="text-noble-blue text-sm font-bold mb-3">{event.date}</div>
+                <h3 className="font-heading font-bold text-noble-dark mb-2">{event.title}</h3>
+                <p className="text-noble-dark/60 text-sm leading-relaxed">{event.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Admission Steps */}
       <section className="py-20 lg:py-28 bg-noble-light">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <SectionHeading subtitle="Join Us" title="Simple Admission Process" desc="Getting started at VS Tutorials is easy. Follow these simple steps to begin your journey." />
+          <SectionHeading subtitle="Join Us" title="Simple Admission Process" desc="Getting started with coaching at Labbdhis Academy is easy." />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form or visit our center.' },
-              { step: '02', title: 'Counseling Session', desc: 'Free academic counseling with our expert team.' },
-              { step: '03', title: 'Diagnostic Test', desc: 'Optional assessment to identify learning gaps.' },
-              { step: '04', title: 'Enrollment', desc: 'Complete admission formalities and join your batch.' },
+              { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form to get started.' },
+              { step: '02', title: 'Counseling Session', desc: 'Free academic counseling with our team.' },
+              { step: '03', title: 'Enrollment', desc: 'Complete admission formalities and join your program.' },
+              { step: '04', title: 'Begin Learning', desc: 'Start your academic journey with Labbdhis Academy.' },
             ].map((item, i) => (
               <motion.div
                 key={item.step}
@@ -765,8 +722,8 @@ const Home: React.FC = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/admissions" className="btn-primary text-base px-10 py-4">
-              Start Admission Process <ArrowRight className="w-4 h-4" />
+            <Link href="/contact" className="btn-primary text-base px-10 py-4">
+              Enquire Now <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -778,9 +735,9 @@ const Home: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
               <span className="section-subtitle">Get In Touch</span>
-              <h2 className="section-heading mb-6">Contact <span className="text-noble-blue">VS Tutorials</span></h2>
+              <h2 className="section-heading mb-6">Contact <span className="text-noble-blue">Labbdhis Academy</span></h2>
               <p className="text-noble-dark/60 text-lg mb-8">
-                Have questions? We&apos;d love to hear from you. Reach out to us and our academic counselors will assist you.
+                Have questions? We&apos;d love to hear from you. Reach out to us and our team will assist you.
               </p>
               <div className="space-y-5 mb-8">
                 <div className="flex items-center gap-4 p-4 bg-noble-light rounded-xl">
@@ -789,7 +746,7 @@ const Home: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Phone</p>
-                    <p className="font-heading font-bold text-noble-dark text-lg">+91 97691 13425</p>
+                    <p className="font-heading font-bold text-noble-dark text-lg">Coming Soon</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-noble-light rounded-xl">
@@ -798,7 +755,7 @@ const Home: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs text-noble-dark/40 uppercase tracking-wider">Address</p>
-                    <p className="font-heading font-bold text-noble-dark">Shop No. 11, Ground Floor, Building No. 185, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai - 400075</p>
+                    <p className="font-heading font-bold text-noble-dark">Near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086</p>
                   </div>
                 </div>
               </div>
@@ -810,32 +767,24 @@ const Home: React.FC = () => {
               <div className="bg-white rounded-[24px] shadow-lg overflow-hidden h-full flex flex-col">
                 <div className="w-full h-[350px] lg:h-[400px]">
                   <iframe
-                    src="https://www.google.com/maps?q=19.0850138,72.9131446&output=embed"
+                    src="https://www.google.com/maps?q=Shreyas+Cinema+LBS+Marg+Ghatkopar+West+Mumbai&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="VS Tutorials Location"
+                    title="Labbdhis Academy Location"
                   />
                 </div>
                 <div className="p-6 flex items-center justify-between gap-4 flex-wrap">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-noble-blue shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-heading font-bold text-noble-dark">VS Tutorials</p>
-                      <p className="text-noble-dark/60 text-sm">Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai 400075</p>
+                      <p className="font-heading font-bold text-noble-dark">Labbdhis Academy</p>
+                      <p className="text-noble-dark/60 text-sm">Near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086</p>
                     </div>
                   </div>
-                  <a
-                    href="https://www.google.com/maps/place/VS+TUTORIALS/@19.0850138,72.9107628,18z/data=!4m10!1m2!2m1!1sShop+No.+11,+Ground+Floor,+Building+No.+185,+Drushti+Sapphire,+Opp.+Shivaji+Technical+School,+Gaurishankar+Wadi,+Pant+Nagar,+Ghatkopar+East,+Mumbai+-+400075!3m6!1s0x3be7c633b3536911:0x573755102c273c49!8m2!3d19.0850138!4d72.9131446!15sCpwBU2hvcCBOby4gMTEsIEdyb3VuZCBGbG9vciwgQnVpbGRpbmcgTm8uIDE4NSwgRHJ1c2h0aSBTYXBwaGlyZSwgT3BwLiBTaGl2YWppIFRlY2huaWNhbCBTY2hvb2wsIEdhdXJpc2hhbmthciBXYWRpLCBQYW50IE5hZ2FyLCBHaGF0a29wYXIgRWFzdCwgTXVtYmFpIC0gNDAwMDc1WpIBIo8Bc2hvcCBubyAxMSBncm91bmQgZmxvb3IgYnVpbGRpbmcgbm8gMTg1IGRydXNodGkgc2FwcGhpcmUgb3BwIHNoaXZhamkgdGVjaG5pY2FsIHNjaG9vbCBnYXVyaXNoYW5rYXIgd2FkaSBwYW50IG5hZ2FyIGdoYXRrb3BhciBlYXN0IG11bWJhaSA0MDAwNzWSARBlZHVjYXRpb25fY2VudGVymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJwR1ZGTlZNWEJUUlVaSlpEQjBkV05zWkRWTmVrSXlXbTFHTms1SFl4QULgAQD6AQQITBBD!16s%2Fg%2F11gbnk_bds?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-noble-blue text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-noble-blue-dark transition-all duration-200 shadow-md shrink-0"
-                  >
-                    <ExternalLink className="w-4 h-4" /> Open In Google Maps
-                  </a>
                 </div>
               </div>
             </div>
@@ -904,27 +853,21 @@ const Home: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              Ready to Begin Your<br /><span className="text-noble-accent">Success Journey?</span>
+              Ready to Begin Your<br /><span className="text-noble-accent">Academic Journey?</span>
             </h2>
             <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
-              Join 200+ students who have transformed their academic performance with VS Tutorials. Limited seats available for 2026-27.
+              Join Labbdhis Academy and build strong foundations for academic success.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
-                href="/admissions"
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-white text-noble-blue px-8 py-4 rounded-lg font-bold text-sm hover:bg-blue-50 transition-all duration-200 shadow-xl"
               >
-                Apply Now - Free Counseling <ArrowRight className="w-4 h-4" />
+                Enquire Now <ArrowRight className="w-4 h-4" />
               </Link>
-                  <a
-                    href="tel:+919769113425"
-                className="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold text-sm hover:bg-white/10 transition-all duration-200"
-              >
-                <Phone className="w-4 h-4" /> Call Now
-              </a>
             </div>
             <div className="flex items-center justify-center gap-2 mt-8 text-white/50 text-sm">
-              <MapPin className="w-4 h-4" /> Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai - 400075
+              <MapPin className="w-4 h-4" /> Ghatkopar West, Mumbai, Maharashtra
             </div>
           </motion.div>
         </div>

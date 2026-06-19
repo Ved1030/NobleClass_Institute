@@ -1,69 +1,48 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Award, BookOpen, Star, Mail } from 'lucide-react';
+import { GraduationCap, BookOpen, Award } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const facultyList = [
-  { name: 'Prof. Rajesh Kumar', subject: 'Mathematics', qualification: 'M.Sc. Mathematics, IIT Bombay', experience: '20 years', image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&crop=face', achievements: ['IIT Bombay Alumni', '500+ students mentored', 'Concept clarity expert', 'Academic excellence award'], bio: 'Prof. Kumar brings 20 years of teaching experience. His unique approach to mathematics makes complex concepts simple and enjoyable.', rating: 5.0, students: '500+' },
-  { name: 'Dr. Sunita Verma', subject: 'Chemistry', qualification: 'Ph.D. Chemistry, Mumbai University', experience: '15 years', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face', achievements: ['PhD from Mumbai University', 'Academic specialist', 'Student mentoring expert', 'Research publications'], bio: 'Dr. Verma specializes in making chemistry accessible and interesting. Her teaching approach helps students build strong fundamentals.', rating: 4.9, students: '400+' },
-  { name: 'Mr. Amit Joshi', subject: 'Physics', qualification: 'M.Sc. Physics, VJTI Mumbai', experience: '12 years', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face', achievements: ['Physics expert', 'Student mentor', '200+ successful students', 'Innovative teaching methods'], bio: 'Mr. Joshi\'s passion for physics and problem-solving approach helps students excel in their academic journey.', rating: 4.9, students: '350+' },
-  { name: 'Ms. Priya Desai', subject: 'Biology', qualification: 'M.Sc. Zoology, Mumbai University', experience: '10 years', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face', achievements: ['Biology specialist', 'Visual teaching expert', 'Student engagement', 'Academic guidance'], bio: 'Ms. Desai\'s visual and diagram-based approach to biology has helped students master complex biological concepts with ease.', rating: 4.8, students: '280+' },
-  { name: 'Mr. Vikram Nair', subject: 'Mathematics', qualification: 'M.Sc. Mathematics, IIT Bombay', experience: '8 years', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face', achievements: ['IIT Bombay Alumni', 'Mathematics expert', 'Problem-solving specialist', '150+ successful students'], bio: 'Mr. Nair\'s deep understanding of mathematics helps students master even the most challenging problems with ease.', rating: 4.8, students: '250+' },
-  { name: 'Ms. Kavita Sharma', subject: 'English', qualification: 'M.A. English Literature, Delhi University', experience: '11 years', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face', achievements: ['Delhi University Gold Medalist', 'Communication skills expert', 'Grammar specialist', 'Student mentor'], bio: 'Ms. Sharma\'s comprehensive approach to English covers grammar, literature, and communication skills, ensuring students excel in all aspects.', rating: 4.7, students: '400+' },
+  { name: 'Dr. Aniket Deshmukh', role: 'Academic Head', qualification: 'M.Sc., Ph.D.', initials: 'AD', icon: Award, desc: 'Over 15 years of teaching experience in Mathematics and Science. Dedicated to building strong academic foundations through conceptual teaching and personalized mentoring.' },
+  { name: 'Ms. Neha Joshi', role: 'Senior Faculty — English', qualification: 'M.A., B.Ed.', initials: 'NJ', icon: BookOpen, desc: '10+ years of experience in English language and literature. Known for innovative teaching methods that make learning engaging, interactive, and effective.' },
+  { name: 'Mr. Rajesh Iyer', role: 'Senior Faculty — Mathematics', qualification: 'MBA, B.E.', initials: 'RI', icon: GraduationCap, desc: 'Experienced mathematics educator known for making complex topics simple and building strong problem-solving skills in students across all standards.' },
+  { name: 'Ms. Sneha Patil', role: 'Faculty — Mathematics', qualification: 'M.Sc.', initials: 'SP', icon: Award, desc: 'Passionate mathematics educator with 8+ years of experience. Specializes in making complex mathematical concepts simple and accessible for all students.' },
+  { name: 'Mr. Vikram Singh', role: 'Faculty — Science', qualification: 'M.Sc., B.Ed.', initials: 'VS', icon: BookOpen, desc: 'Experienced science educator with a focus on practical learning and experimental approaches to build strong conceptual understanding.' },
+  { name: 'Ms. Pooja Mehta', role: 'Faculty — English', qualification: 'MBA', initials: 'PM', icon: GraduationCap, desc: 'Skilled English language faculty with expertise in grammar, literature, and communication skills development for school students.' },
 ];
 
 const Faculty: React.FC = () => {
   return (
     <>
-      <PageHero title="Our Expert Faculty" subtitle="Learn from the best — IIT alumni, PhD holders, and seasoned educators dedicated to your academic success." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Faculty' }]} />
+      <PageHero title="Our Faculty" subtitle="Experienced educators dedicated to student success, academic excellence, and building strong foundations for the future." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Faculty' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">The Team</span>
-            <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-4">Meet Our Faculty</h2>
-            <p className="text-noble-navy/60 max-w-2xl mx-auto">Each faculty member at VS Tutorials is carefully selected for their subject expertise, teaching ability, and dedication to student success.</p>
+            <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Meet The Team</span>
+            <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-4">Our Faculty</h2>
+            <p className="max-w-2xl mx-auto text-noble-navy/60">Our team of experienced educators is committed to helping every student achieve academic success through personalized guidance and structured learning.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {facultyList.map((faculty, i) => (
-              <motion.div key={faculty.name} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="group bg-white rounded-2xl border border-noble-blue/10 overflow-hidden hover:shadow-xl hover:shadow-noble-blue/8 hover:-translate-y-1 transition-all duration-300">
-                <div className="relative overflow-hidden">
-                  <Image src={faculty.image} alt={faculty.name} width={400} height={280} className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-noble-navy/70 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                    <span className="bg-noble-blue text-white text-xs font-semibold px-3 py-1 rounded-full">{faculty.subject}</span>
-                    <div className="flex items-center gap-1 bg-white/20 backdrop-blur-sm rounded-full px-2.5 py-1"><Star className="w-3 h-3 text-noble-gold fill-noble-gold" /><span className="text-white text-xs font-semibold">{faculty.rating}</span></div>
-                  </div>
+              <motion.div
+                key={faculty.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.08 }}
+                className="bg-white rounded-2xl p-6 border border-noble-blue/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="w-14 h-14 bg-noble-blue rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-lg">{faculty.initials}</span>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-heading text-lg font-bold text-noble-navy mb-1">{faculty.name}</h3>
-                  <p className="text-noble-blue text-sm font-medium mb-1">{faculty.qualification}</p>
-                  <div className="flex items-center gap-4 text-xs text-noble-navy/50 mb-4">
-                    <span className="flex items-center gap-1.5"><BookOpen className="w-3.5 h-3.5" />{faculty.experience}</span>
-                    <span className="flex items-center gap-1.5"><Award className="w-3.5 h-3.5" />{faculty.students} students</span>
-                  </div>
-                  <p className="text-noble-navy/60 text-sm leading-relaxed mb-4">{faculty.bio}</p>
-                  <div className="space-y-1.5 mb-4">{faculty.achievements.slice(0, 2).map((a) => <div key={a} className="flex items-center gap-2 text-xs text-noble-navy/60"><Award className="w-3.5 h-3.5 text-noble-gold shrink-0" />{a}</div>)}</div>
-                  <span className="flex items-center gap-2 text-noble-blue text-sm font-medium"><Mail className="w-4 h-4" /> info@vstutorials.in</span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </SectionWrapper>
-      <SectionWrapper className="py-20 bg-noble-light">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Approach</span>
-          <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Teaching Philosophy</h2>
-          <p className="text-noble-navy/70 text-lg leading-relaxed mb-8">At VS Tutorials, we believe that great teaching goes beyond delivering content. Our faculty focuses on building conceptual understanding, developing problem-solving skills, and nurturing the confidence that students need to excel in any examination.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {[{ title: 'Concept First', desc: 'We ensure every student understands the "why" before the "how".' }, { title: 'Practice Driven', desc: 'Regular tests and practice sessions to reinforce learning.' }, { title: 'Student Centered', desc: 'Every student\'s pace and learning style is respected and accommodated.' }].map((item, i) => (
-              <motion.div key={item.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: i * 0.1 }} className="bg-white rounded-2xl p-6 border border-noble-blue/10">
-                <h3 className="font-heading font-bold text-noble-navy mb-2">{item.title}</h3>
-                <p className="text-noble-navy/60 text-sm">{item.desc}</p>
+                <h3 className="font-heading font-bold text-noble-navy text-lg mb-1">{faculty.name}</h3>
+                <p className="text-noble-blue text-sm font-semibold mb-1">{faculty.role}</p>
+                <p className="text-noble-navy/50 text-xs mb-4">{faculty.qualification}</p>
+                <p className="text-noble-navy/60 text-sm leading-relaxed">{faculty.desc}</p>
               </motion.div>
             ))}
           </div>

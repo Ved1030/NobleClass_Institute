@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Admin",
-    "email": "admin@vstutorials.in",
+    "email": "admin@labbdhisacademy.in",
     "password": "$2b$10$placeholder_admin123_hash",
     "role": "admin",
     "createdAt": "2026-01-01T00:00:00.000Z",

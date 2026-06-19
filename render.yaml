@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: vs-tutorials-backend
+    name: labbdis-academy-backend
     runtime: node
     region: singapore
     plan: free

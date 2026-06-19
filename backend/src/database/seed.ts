@@ -23,7 +23,7 @@ async function seed(): Promise<void> {
     {
       id: 1,
       name: 'Admin',
-      email: 'admin@vstutorials.in',
+      email: 'admin@labbdhisacademy.in',
       password: adminPassword,
       role: 'admin',
       createdAt: new Date().toISOString(),
@@ -32,23 +32,13 @@ async function seed(): Promise<void> {
   ]);
 
   ensureFile('courses', [
-    { id: 1, title: 'Class VIII', description: 'Foundation building with strong conceptual clarity across all subjects.', class: '8', category: 'School', subjects: 'Mathematics,Science,English,Social Studies', duration: '4 days/week', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 2, title: 'Class IX', description: 'Advanced curriculum strengthening fundamentals for board preparation.', class: '9', category: 'School', subjects: 'Mathematics,Physics,Chemistry,Biology,English', duration: '5 days/week', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 3, title: 'Class X', description: 'Intensive board exam preparation with mock tests and personalized mentoring.', class: '10', category: 'School', subjects: 'All Subjects,Mock Tests,Revision', duration: '6 days/week', badge: 'Popular', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 4, title: 'Class XI Commerce', description: 'Comprehensive foundation in Accountancy, Economics, and Business Studies.', class: '11', category: 'Commerce', subjects: 'Accountancy,Economics,Business Studies,Mathematics', duration: '5 days/week', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 5, title: 'Class XII Commerce', description: 'Board-focused preparation with practical problem-solving and case studies.', class: '12', category: 'Commerce', subjects: 'Accountancy,Economics,Business Studies,Mathematics', duration: '6 days/week', badge: 'Popular', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 6, title: 'Class XI Science', description: 'Rigorous foundation for PCM/B with early JEE/NEET orientation.', class: '11', category: 'Science', subjects: 'Physics,Chemistry,Mathematics,Biology', duration: '5 days/week', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 7, title: 'Class XII Science', description: 'Advanced preparation for board exams and competitive exams simultaneously.', class: '12', category: 'Science', subjects: 'Physics,Chemistry,Mathematics,Biology', duration: '6 days/week', badge: 'Popular', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 8, title: 'JEE Advanced', description: 'Specialized coaching targeting IIT-JEE with problem-solving and test series.', class: '12', category: 'Competitive', subjects: 'Physics,Chemistry,Mathematics', duration: '6 days/week + Tests', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 9, title: 'NEET UG', description: 'Comprehensive NEET preparation with focus on Biology, Physics, and Chemistry.', class: '12', category: 'Competitive', subjects: 'Physics,Chemistry,Biology,English', duration: '6 days/week + Tests', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+    { id: 1, title: 'Std 7th Coaching', description: 'Strong foundation building in Mathematics, Science, English, and core academic subjects with concept-based learning.', class: '7', category: 'Programs', subjects: 'Mathematics,Science,English', duration: 'Academic Year', badge: 'Foundation', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+    { id: 2, title: 'Std 8th Coaching', description: 'Concept-focused learning with regular assessments, doubt-solving sessions, and performance tracking.', class: '8', category: 'Programs', subjects: 'Mathematics,Science,English', duration: 'Academic Year', badge: 'Popular', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+    { id: 3, title: 'Std 9th Coaching', description: 'Advanced preparation with detailed subject understanding, exam strategies, and comprehensive curriculum coverage.', class: '9', category: 'Programs', subjects: 'Mathematics,Science,English', duration: 'Academic Year', badge: 'Advanced', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+    { id: 4, title: 'Std 10th Coaching', description: 'Board exam-focused preparation, revision programs, intensive practice sessions, and mock tests for academic excellence.', class: '10', category: 'Programs', subjects: 'Mathematics,Science,English', duration: 'Academic Year', badge: 'Board Focus', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
   ]);
 
-  ensureFile('faculty', [
-    { id: 1, name: 'Prof. Rajesh Kumar', qualification: 'M.Sc. Mathematics, IIT Bombay', experience: '15 years', image: '', subject: 'Mathematics', achievements: 'IIT Bombay Alumni,500+ students mentored,Author of 3 textbooks', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 2, name: 'Dr. Sunita Verma', qualification: 'Ph.D. Chemistry, Mumbai University', experience: '12 years', image: '', subject: 'Chemistry', achievements: 'PhD from Mumbai University,NEET specialist,300+ NEET qualifiers', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 3, name: 'Mr. Amit Joshi', qualification: 'M.Sc. Physics, VJTI Mumbai', experience: '10 years', image: '', subject: 'Physics', achievements: 'JEE Advanced qualifier,Physics Olympiad coach,200+ JEE qualifiers', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-    { id: 4, name: 'Prof. Sneha Kulkarni', qualification: 'M.Sc. Biology, Pune University', experience: '11 years', image: '', subject: 'Biology', achievements: 'Gold Medalist,NEET Biology expert,400+ medical seats', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
-  ]);
+  ensureFile('faculty', []);
 
   ensureFile('results', [
     { id: 1, studentName: 'Aryan Shah', percentage: '98.4%', year: '2025', image: '', exam: 'SSC Board 2025', rank: '1st in School', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },

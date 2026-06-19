@@ -25,16 +25,16 @@ const InquiryForm = dynamic(() => import('@/components/InquiryForm'), {
 });
 
 const contactInfo = [
-  { icon: MapPin, title: 'Visit Us', lines: ['Shop No. 11, Ground Floor,', 'Building No. 185, Drushti Sapphire,', 'Opp. Shivaji Technical School,', 'Gaurishankar Wadi, Pant Nagar,', 'Ghatkopar East, Mumbai – 400075'] },
-  { icon: Phone, title: 'Call Us', lines: ['+91 97691 13425'] },
-  { icon: Mail, title: 'Email Us', lines: ['info@vstutorials.in'] },
-  { icon: Clock, title: 'Office Hours', lines: ['Mon – Sat: 7:00 AM – 9:00 PM', 'Sunday: 10:00 AM – 2:00 PM'] },
+  { icon: MapPin, title: 'Visit Us', lines: ['Near Shreyas Cinema,', 'LBS Marg, Ghatkopar West,', 'Mumbai, Maharashtra 400086'] },
+  { icon: Phone, title: 'Call Us', lines: ['Coming Soon'] },
+  { icon: Mail, title: 'Email Us', lines: ['Coming Soon'] },
+  { icon: Clock, title: 'Office Hours', lines: ['Coming Soon'] },
 ];
 
 const Contact: React.FC = () => {
   return (
     <>
-      <PageHero title="Contact Us" subtitle="We're here to help. Reach out to us for admissions, inquiries, or any questions about our programs." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
+      <PageHero title="Contact Us" subtitle="We're here to help. Reach out to Labbdhis Academy for admissions, inquiries, or any questions about our coaching programs." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Contact' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
@@ -53,23 +53,23 @@ const Contact: React.FC = () => {
               <div className="bg-white rounded-[24px] shadow-lg overflow-hidden border border-gray-200">
                 <div className="w-full h-[300px]">
                   <iframe
-                    src="https://www.google.com/maps?q=19.0850138,72.9131446&output=embed"
+                    src="https://www.google.com/maps?q=Shreyas+Cinema+LBS+Marg+Ghatkopar+West+Mumbai&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="VS Tutorials Location"
+                    title="Labbdhis Academy Location"
                   />
                 </div>
                 <div className="p-4 flex items-center justify-between gap-3 flex-wrap">
                   <div className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 text-noble-blue shrink-0 mt-0.5" />
-                    <p className="text-noble-dark/60 text-sm">Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai 400075</p>
+                    <p className="text-noble-dark/60 text-sm">Near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086</p>
                   </div>
                   <a
-                    href="https://www.google.com/maps/place/VS+TUTORIALS/@19.0850138,72.9107628,18z/data=!4m10!1m2!2m1!1sShop+No.+11,+Ground+Floor,+Building+No.+185,+Drushti+Sapphire,+Opp.+Shivaji+Technical+School,+Gaurishankar+Wadi,+Pant+Nagar,+Ghatkopar+East,+Mumbai+-+400075!3m6!1s0x3be7c633b3536911:0x573755102c273c49!8m2!3d19.0850138!4d72.9131446!15sCpwBU2hvcCBOby4gMTEsIEdyb3VuZCBGbG9vciwgQnVpbGRpbmcgTm8uIDE4NSwgRHJ1c2h0aSBTYXBwaGlyZSwgT3BwLiBTaGl2YWppIFRlY2huaWNhbCBTY2hvb2wsIEdhdXJpc2hhbmthciBXYWRpLCBQYW50IE5hZ2FyLCBHaGF0a29wYXIgRWFzdCwgTXVtYmFpIC0gNDAwMDc1WpIBIo8Bc2hvcCBubyAxMSBncm91bmQgZmxvb3IgYnVpbGRpbmcgbm8gMTg1IGRydXNodGkgc2FwcGhpcmUgb3BwIHNoaXZhamkgdGVjaG5pY2FsIHNjaG9vbCBnYXVyaXNoYW5rYXIgd2FkaSBwYW50IG5hZ2FyIGdoYXRrb3BhciBlYXN0IG11bWJhaSA0MDAwNzWSARBlZHVjYXRpb25fY2VudGVymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJwR1ZGTlZNWEJUUlVaSlpEQjBkV05zWkRWTmVrSXlXbTFHTms1SFl4QULgAQD6AQQITBBD!16s%2Fg%2F11gbnk_bds?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+                    href="https://www.google.com/maps/search/Shreyas+Cinema+LBS+Marg+Ghatkopar+West+Mumbai"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 bg-noble-blue text-white px-4 py-2 rounded-xl font-semibold text-xs hover:bg-noble-blue-dark transition-all duration-200 shrink-0"
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="mt-6"><a href="https://wa.me/919769113425" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-[#25D366] text-white px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-[#20b858] transition-colors duration-200 w-fit"><MessageCircle className="w-4 h-4" />Chat on WhatsApp</a></div>
+              <div className="mt-6"><a href="https://wa.me/919920859870" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 bg-[#25D366] text-white px-6 py-3.5 rounded-full font-semibold text-sm hover:bg-[#20b858] transition-colors duration-200 w-fit"><MessageCircle className="w-4 h-4" />Chat on WhatsApp</a></div>
             </div>
             <div>
               <div className="bg-white rounded-3xl border border-noble-blue/10 p-8 shadow-xl shadow-noble-blue/5">

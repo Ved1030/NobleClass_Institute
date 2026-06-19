@@ -28,7 +28,7 @@ const steps = [
   { step: '01', title: 'Submit Inquiry', desc: 'Fill the online inquiry form or visit our center in Ghatkopar East.', icon: FileText },
   { step: '02', title: 'Free Counseling', desc: 'Our academic counselors will guide you on the best course for your child.', icon: Users },
   { step: '03', title: 'Diagnostic Test', desc: 'Optional assessment to identify learning gaps and customize the learning plan.', icon: CheckCircle },
-  { step: '04', title: 'Enrollment', desc: 'Complete admission formalities, pay fees, and join your batch.', icon: ArrowRight },
+  { step: '04', title: 'Enrollment', desc: 'Complete admission formalities and join your batch.', icon: ArrowRight },
 ];
 
 const documents = [
@@ -50,7 +50,7 @@ const batches = [
 const Admissions: React.FC = () => {
   return (
     <>
-      <PageHero title="Admissions 2026–27" subtitle="Begin your journey to academic excellence. Admissions are now open for all courses. Limited seats available." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Admissions' }]} />
+      <PageHero title="Admissions" subtitle="Begin your academic journey with Labbdhis Academy. Admissions open for Std 7th, 8th, 9th & 10th. Limited seats available." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Admissions' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">

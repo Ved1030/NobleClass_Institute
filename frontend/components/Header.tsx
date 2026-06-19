@@ -37,10 +37,10 @@ const Header: React.FC = () => {
     <>
       <div className={`hidden lg:flex fixed top-0 left-0 right-0 z-50 bg-noble-blue text-white text-xs h-[40px] transition-all duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between w-full">
-          <span>Coaching Classes in Ghatkopar East, Mumbai</span>
+          <span>Established Since 2007 | Ghatkopar West, Mumbai</span>
           <div className="flex items-center gap-4">
             <span className="hover:text-white/80 transition-colors flex items-center gap-1 text-xs">
-              +91 97691 13425
+              +91 99208 59870
             </span>
           </div>
         </div>
@@ -54,10 +54,10 @@ const Header: React.FC = () => {
               </div>
               <div>
                 <span className="font-heading font-bold text-xl tracking-tight text-noble-dark">
-                  VS Tutorials
+                  Labbdhis Academy
                 </span>
                 <span className="block text-[9px] tracking-[0.15em] uppercase text-noble-blue">
-                  Building Strong Concepts & Academic Excellence
+                  Shaping Young Minds Through Quality Education
                 </span>
               </div>
             </Link>
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
                 className="flex items-center gap-2 text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:opacity-90 transition-all duration-200 shadow-lg"
                 style={{ backgroundColor: '#C62828' }}
               >
-                <Phone className="w-4 h-4" /> Enquire Now
+                Enquire Now
               </Link>
             </div>
             <button
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
                 ))}
                 <div className="border-t border-gray-100 pt-3 mt-3 space-y-2">
                   <span className="flex items-center gap-2 px-4 py-2.5 text-sm text-noble-dark/70 rounded-xl">
-                    <Phone className="w-4 h-4 text-noble-blue" /> +91 97691 13425
+                    <Phone className="w-4 h-4 text-noble-blue" /> +91 99208 59870
                   </span>
                   <Link
                     href="/contact"

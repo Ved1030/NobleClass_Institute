@@ -8,19 +8,19 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop', alt: 'Modern classroom', category: 'Classroom', span: 'col-span-2 row-span-2' },
-  { src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop', alt: 'Students studying', category: 'Students' },
-  { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop', alt: 'Award ceremony', category: 'Events' },
-  { src: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=300&fit=crop', alt: 'Science lab', category: 'Classroom' },
-  { src: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&h=300&fit=crop', alt: 'Group study session', category: 'Students' },
-  { src: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop', alt: 'Seminar hall', category: 'Events', span: 'col-span-2' },
-  { src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop', alt: 'Teacher explaining', category: 'Classroom' },
-  { src: 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=400&h=300&fit=crop', alt: 'Student writing exam', category: 'Students' },
-  { src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=300&fit=crop', alt: 'Celebration event', category: 'Events' },
-  { src: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop', alt: 'Library reading', category: 'Classroom' },
+  { src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop', alt: 'Classroom Learning', category: 'Classroom', span: 'col-span-2 row-span-2' },
+  { src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop', alt: 'Student Activities', category: 'Students' },
+  { src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop', alt: 'Faculty Guidance', category: 'Faculty' },
+  { src: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=400&h=300&fit=crop', alt: 'Exam Preparation Sessions', category: 'Exams' },
+  { src: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=400&h=300&fit=crop', alt: 'Group Discussions', category: 'Students' },
+  { src: 'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop', alt: 'Academic Workshops', category: 'Workshops', span: 'col-span-2' },
+  { src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop', alt: 'Teacher explaining concepts', category: 'Faculty' },
+  { src: 'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=400&h=300&fit=crop', alt: 'Student writing exam', category: 'Exams' },
+  { src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=300&fit=crop', alt: 'Learning Environment', category: 'Classroom' },
+  { src: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop', alt: 'Study session', category: 'Students' },
 ];
 
-const categories = ['All', 'Classroom', 'Students', 'Events'];
+const categories = ['All', 'Classroom', 'Students', 'Faculty', 'Exams', 'Workshops'];
 
 const Gallery: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -29,7 +29,7 @@ const Gallery: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Gallery" subtitle="A glimpse into life at VS Tutorials — classrooms, events, celebrations, and the moments that define our journey." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Gallery' }]} />
+      <PageHero title="Gallery" subtitle="A glimpse into life at Labbdhis Academy — classrooms, events, and the moments that define our journey." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Gallery' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap gap-3 justify-center mb-12">

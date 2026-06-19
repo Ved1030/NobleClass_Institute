@@ -22,23 +22,23 @@ const SUGGESTED_QUESTIONS = [
 ];
 
 const QUESTION_MAP: Record<string, string> = {
-  'Admission Process': 'Can you tell me about the admission process at VS Tutorials?',
-  'Courses Offered': 'What courses do you offer at VS Tutorials?',
-  'Academic Programs': 'What academic programs are available at VS Tutorials?',
-  'Contact Details': 'What are the contact details for VS Tutorials?',
-  'Faculty Information': 'Tell me about the faculty at VS Tutorials.',
-  'Fee Structure': 'What is the fee structure at VS Tutorials?',
+  'Admission Process': 'Can you tell me about the admission process at Labbdhis Academy?',
+  'Courses Offered': 'What courses do you offer at Labbdhis Academy?',
+  'Academic Programs': 'What academic programs are available at Labbdhis Academy?',
+  'Contact Details': 'What are the contact details for Labbdhis Academy?',
+  'Faculty Information': 'Tell me about the faculty at Labbdhis Academy.',
+  'Fee Structure': 'What is the fee structure at Labbdhis Academy?',
 };
 
 const WELCOME_MESSAGE =
-  "Hello! I'm VS AI, your virtual admission counselor. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about VS Tutorials.";
+  "Hello! I'm Labbdhis AI, your virtual assistant. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about Labbdhis Academy.";
 
 const UNAVAILABLE_MESSAGE =
-  "VS AI is currently unavailable.\n\nPlease contact us through our inquiry form or visit us at our Ghatkopar East center.";
+  "Labbdhis AI is currently unavailable.\n\nPlease contact us through our inquiry form.";
 
 const LOADING_MESSAGES = {
-  initial: 'Connecting to VS AI...',
-  slow: 'Waking up VS AI...',
+  initial: 'Connecting to Labbdhis AI...',
+  slow: 'Waking up Labbdhis AI...',
   slowDetail: 'This may take a few moments.',
 };
 
@@ -265,7 +265,7 @@ export default function VSAI() {
             onClick={openChat}
             className="fixed bottom-[96px] right-6 md:bottom-[104px] md:right-6 z-[9999] w-14 h-14 md:w-16 md:h-16 bg-[#005DAA] text-white rounded-[20px] flex items-center justify-center cursor-pointer"
             style={{ boxShadow: '0 10px 25px rgba(0,93,170,0.25)' }}
-            aria-label="Ask VS AI"
+            aria-label="Ask Labbdhis AI"
           >
             <Sparkles className="w-7 h-7 md:w-8 md:h-8" />
           </motion.button>
@@ -309,7 +309,7 @@ export default function VSAI() {
                 <GraduationCap className="w-5 h-5" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-base">VS AI</h3>
+                <h3 className="font-semibold text-base">Labbdhis AI</h3>
                 <p className="text-xs text-white/80 truncate">
                   Your Virtual Admission Counselor
                 </p>
@@ -338,7 +338,7 @@ export default function VSAI() {
                         {(hasContactInfo(message.content) || hasUnavailableMessage(message.content)) && (
                         <div className="flex gap-2 mt-3 pt-3 border-t border-gray-200">
                           <a
-                            href="https://www.google.com/maps/place/VS+TUTORIALS/@19.0850138,72.9107628,18z/data=!4m10!1m2!2m1!1sShop+No.+11,+Ground+Floor,+Building+No.+185,+Drushti+Sapphire,+Opp.+Shivaji+Technical+School,+Gaurishankar+Wadi,+Pant+Nagar,+Ghatkopar+East,+Mumbai+-+400075!3m6!1s0x3be7c633b3536911:0x573755102c273c49!8m2!3d19.0850138!4d72.9131446!15sCpwBU2hvcCBOby4gMTEsIEdyb3VuZCBGbG9vciwgQnVpbGRpbmcgTm8uIDE4NSwgRHJ1c2h0aSBTYXBwaGlyZSwgT3BwLiBTaGl2YWppIFRlY2huaWNhbCBTY2hvb2wsIEdhdXJpc2hhbmthciBXYWRpLCBQYW50IE5hZ2FyLCBHaGF0a29wYXIgRWFzdCwgTXVtYmFpIC0gNDAwMDc1WpIBIo8Bc2hvcCBubyAxMSBncm91bmQgZmxvb3IgYnVpbGRpbmcgbm8gMTg1IGRydXNodGkgc2FwcGhpcmUgb3BwIHNoaXZhamkgdGVjaG5pY2FsIHNjaG9vbCBnYXVyaXNoYW5rYXIgd2FkaSBwYW50IG5hZ2FyIGdoYXRrb3BhciBlYXN0IG11bWJhaSA0MDAwNzWSARBlZHVjYXRpb25fY2VudGVymgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJwR1ZGTlZNWEJUUlVaSlpEQjBkV05zWkRWTmVrSXlXbTFHTms1SFl4QULgAQD6AQQITBBD!16s%2Fg%2F11gbnk_bds?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+                            href="https://www.google.com/maps/search/Ghatkopar+West+Mumbai"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-1.5 text-xs font-medium text-noble-blue bg-noble-blue/10 px-3 py-2 rounded-lg hover:bg-noble-blue/20 transition-colors"

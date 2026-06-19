@@ -1,57 +1,35 @@
 [
   {
     "id": 1,
-    "studentName": "Rahul Sharma",
-    "review": "VS Tutorials helped me achieve excellent results in my examinations. The faculty is extremely supportive and the study material is excellent.",
+    "studentName": "Arjun M.",
+    "review": "The teachers explain concepts very clearly and always encourage students to improve. I have gained so much confidence in my studies.",
     "role": "Student",
     "rating": 5,
     "image": null,
-    "result": "Academic Excellence",
-    "createdAt": "2026-01-15T00:00:00.000Z",
-    "updatedAt": "2026-01-15T00:00:00.000Z"
+    "result": "Secured 92% in Std 7th Exams",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
   },
   {
     "id": 2,
-    "studentName": "Priya Patel",
-    "review": "The academic guidance at VS Tutorials is outstanding. I improved my performance significantly and secured good marks in my examinations.",
+    "studentName": "Priya S.",
+    "review": "The learning environment is supportive and helps build confidence. Regular assessments and doubt-clearing sessions have made a huge difference.",
     "role": "Student",
     "rating": 5,
     "image": null,
-    "result": "Top Performer",
-    "createdAt": "2026-01-10T00:00:00.000Z",
-    "updatedAt": "2026-01-10T00:00:00.000Z"
+    "result": "Improved from 65% to 88%",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
   },
   {
     "id": 3,
-    "studentName": "Amit Verma",
-    "review": "Best coaching institute for students. The faculty are amazing and the teaching methodology is highly effective.",
-    "role": "Student",
+    "studentName": "Mrs. Sharma",
+    "review": "The academy provides personal attention and regular updates regarding student progress. Dedicated faculty and structured teaching methods make learning effective.",
+    "role": "Parent",
     "rating": 5,
     "image": null,
-    "result": "Outstanding Performance",
-    "createdAt": "2026-01-05T00:00:00.000Z",
-    "updatedAt": "2026-01-05T00:00:00.000Z"
-  },
-  {
-    "id": 4,
-    "studentName": "Sneha Desai",
-    "review": "I improved significantly in just one year at VS Tutorials. The personalized attention and doubt-clearing sessions made all the difference.",
-    "role": "Student",
-    "rating": 5,
-    "image": null,
-    "result": "Best Improvement",
-    "createdAt": "2025-12-20T00:00:00.000Z",
-    "updatedAt": "2025-12-20T00:00:00.000Z"
-  },
-  {
-    "id": 5,
-    "studentName": "Rohan Gupta",
-    "review": "Excellent coaching at VS Tutorials. The regular tests and doubt-solving sessions were particularly helpful in improving my understanding.",
-    "role": "Student",
-    "rating": 4,
-    "image": null,
-    "result": "Consistent Performer",
-    "createdAt": "2025-12-15T00:00:00.000Z",
-    "updatedAt": "2025-12-15T00:00:00.000Z"
+    "result": "My child\'s confidence has improved significantly",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
   }
 ]

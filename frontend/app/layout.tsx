@@ -19,31 +19,30 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "VS Tutorials | Coaching Classes in Ghatkopar East",
-    template: "%s | VS Tutorials",
+    default: "Labbdhis Academy | Std 7th, 8th, 9th & 10th Coaching Classes",
+    template: "%s | Labbdhis Academy",
   },
   description:
-    "VS Tutorials provides quality coaching, concept-based learning, regular assessments, and academic guidance for students in Ghatkopar East, Mumbai.",
+    "Labbdhis Academy provides quality coaching for Std 7th, 8th, 9th, and 10th students with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
   keywords: [
-    "coaching institute",
-    "Ghatkopar East",
+    "Labbdhis Academy",
+    "7th Standard Coaching",
+    "8th Standard Coaching",
+    "9th Standard Coaching",
+    "10th Standard Coaching",
+    "Ghatkopar Coaching Classes",
+    "School Tuition Classes Mumbai",
+    "Ghatkopar West",
     "Mumbai",
-    "VS Tutorials",
-    "academic coaching",
-    "concept-based learning",
-    "student guidance",
-    "exam preparation",
-    "MHT-CET coaching",
-    "science classes",
   ],
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "VS Tutorials",
-    title: "VS Tutorials | Coaching Classes in Ghatkopar East",
+    siteName: "Labbdhis Academy",
+    title: "Labbdhis Academy | Std 7th, 8th, 9th & 10th Coaching Classes",
     description:
-      "VS Tutorials provides quality coaching, concept-based learning, regular assessments, and academic guidance for students in Ghatkopar East, Mumbai.",
+      "Labbdhis Academy provides quality coaching for Std 7th, 8th, 9th, and 10th students with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
   },
 };
 
@@ -55,30 +54,23 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://vstutorials.in" />
+        <link rel="canonical" href="https://labbdhisacademy.in" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
-              name: "VS Tutorials",
-              description: "Building Strong Concepts & Academic Excellence",
-              url: "https://vstutorials.in",
+              name: "Labbdhis Academy",
+              description: "Shaping Young Minds Through Quality Education",
+              url: "https://labbdhisacademy.in",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Shop No. 11, Ground Floor, Building No. 185, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar",
-                addressLocality: "Ghatkopar East",
+                addressLocality: "Ghatkopar West",
                 addressRegion: "Mumbai",
-                postalCode: "400075",
                 addressCountry: "IN",
               },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                bestRating: "5.0",
-                ratingCount: "52",
-              },
+              foundingDate: "2007",
             }),
           }}
         />
