@@ -29,7 +29,7 @@ const Gallery: React.FC = () => {
 
   return (
     <>
-      <PageHero title="Gallery" subtitle="A glimpse into life at Labbdis Academy — classrooms, events, and the moments that define our journey." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Gallery' }]} />
+      <PageHero title="Gallery" subtitle="A glimpse into life at Labbdhis Academy — classrooms, events, and the moments that define our journey." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Gallery' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap gap-3 justify-center mb-12">

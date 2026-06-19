@@ -16,7 +16,7 @@ const positions = [
 const Careers: React.FC = () => {
   return (
     <>
-      <PageHero title="Careers at Labbdis Academy" subtitle="Join our team of passionate educators dedicated to shaping the academic future of students from Std 8th to 10th." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
+      <PageHero title="Careers at Labbdhis Academy" subtitle="Join our team of passionate educators dedicated to shaping the academic future of students from Std 8th to 10th." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">

@@ -22,7 +22,7 @@ const sections = [
 const Sitemap: React.FC = () => {
   return (
     <>
-      <PageHero title="Sitemap" subtitle="Navigate through all pages of Labbdis Academy website." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Sitemap' }]} />
+      <PageHero title="Sitemap" subtitle="Navigate through all pages of Labbdhis Academy website." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Sitemap' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

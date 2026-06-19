@@ -19,13 +19,13 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Labbdis Academy | State Board & CBSE Coaching Classes in Ghatkopar West",
-    template: "%s | Labbdis Academy",
+    default: "Labbdhis Academy | State Board & CBSE Coaching Classes in Ghatkopar West",
+    template: "%s | Labbdhis Academy",
   },
   description:
-    "Labbdis Academy provides expert coaching for Std 8th, 9th and 10th State Board and CBSE students. Personalized attention, concept-based learning, regular assessments, and academic excellence in Ghatkopar West, Mumbai.",
+    "Labbdhis Academy provides expert coaching for Std 8th, 9th and 10th State Board and CBSE students. Personalized attention, concept-based learning, regular assessments, and academic excellence in Ghatkopar West, Mumbai.",
   keywords: [
-    "Labbdis Academy",
+    "Labbdhis Academy",
     "State Board Coaching Ghatkopar",
     "CBSE Coaching Ghatkopar",
     "8th Standard Coaching",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "Labbdis Academy",
-    title: "Labbdis Academy | State Board & CBSE Coaching Classes",
+    siteName: "Labbdhis Academy",
+    title: "Labbdhis Academy | State Board & CBSE Coaching Classes",
     description:
       "Expert coaching for Std 8th, 9th and 10th State Board & CBSE students in Ghatkopar West, Mumbai.",
   },
@@ -62,7 +62,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
-              name: "Labbdis Academy",
+              name: "Labbdhis Academy",
               description: "Building Strong Foundations For Academic Excellence",
               url: "https://labbdhisacademy.in",
               address: {

@@ -13,7 +13,7 @@ const FORBIDDEN_PATTERNS = [/97691\d{5}/, /99208\d{5}/, /4\.9.*52.*Review/i];
 
 const HARDCODED_RESPONSES: Record<string, string> = {
   courses: "We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence.",
-  location: "Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
+  location: "Labbdhis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
   contact: "Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.",
   fees: "Fee details are currently being updated. Please submit an enquiry form on our website for fee information.",
 };
@@ -50,23 +50,23 @@ const SUGGESTED_QUESTIONS = [
 ];
 
 const QUESTION_MAP: Record<string, string> = {
-  'Admission Process': 'Can you tell me about the admission process at Labbdis Academy?',
-  'Courses Offered': 'What courses do you offer at Labbdis Academy?',
-  'Academic Programs': 'What academic programs are available at Labbdis Academy?',
-  'Contact Details': 'What are the contact details for Labbdis Academy?',
-  'Faculty Information': 'Tell me about the faculty at Labbdis Academy.',
-  'Fee Structure': 'What is the fee structure at Labbdis Academy?',
+  'Admission Process': 'Can you tell me about the admission process at Labbdhis Academy?',
+  'Courses Offered': 'What courses do you offer at Labbdhis Academy?',
+  'Academic Programs': 'What academic programs are available at Labbdhis Academy?',
+  'Contact Details': 'What are the contact details for Labbdhis Academy?',
+  'Faculty Information': 'Tell me about the faculty at Labbdhis Academy.',
+  'Fee Structure': 'What is the fee structure at Labbdhis Academy?',
 };
 
 const WELCOME_MESSAGE =
-  "Hello! I'm Labbdis AI, your virtual assistant. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about Labbdis Academy.";
+  "Hello! I'm Labbdhis AI, your virtual assistant. How can I help you today? Feel free to ask me about courses, admissions, faculty, or anything else about Labbdhis Academy.";
 
 const UNAVAILABLE_MESSAGE =
-  "Labbdis AI is currently unavailable.\n\nPlease contact us through our inquiry form.";
+  "Labbdhis AI is currently unavailable.\n\nPlease contact us through our inquiry form.";
 
 const LOADING_MESSAGES = {
-  initial: 'Connecting to Labbdis AI...',
-  slow: 'Waking up Labbdis AI...',
+  initial: 'Connecting to Labbdhis AI...',
+  slow: 'Waking up Labbdhis AI...',
   slowDetail: 'This may take a few moments.',
 };
 
@@ -115,7 +115,7 @@ export default function NobleAI() {
 
   useEffect(() => {
     if (hasInteracted) return;
-    const timer = setTimeout(() => setTooltipText('Ask Labbdis AI'), 8000);
+    const timer = setTimeout(() => setTooltipText('Ask Labbdhis AI'), 8000);
     return () => clearTimeout(timer);
   }, [hasInteracted]);
 
@@ -277,7 +277,7 @@ export default function NobleAI() {
   }
 
   function hasUnavailableMessage(content: string): boolean {
-    return content.includes('Labbdis AI is currently unavailable');
+    return content.includes('Labbdhis AI is currently unavailable');
   }
 
   return (
@@ -302,7 +302,7 @@ export default function NobleAI() {
             onClick={openChat}
             className="fixed bottom-[96px] right-6 md:bottom-[104px] md:right-6 z-[9999] w-14 h-14 md:w-16 md:h-16 bg-[#005DAA] text-white rounded-[20px] flex items-center justify-center cursor-pointer"
             style={{ boxShadow: '0 10px 25px rgba(0,93,170,0.25)' }}
-            aria-label="Ask Labbdis AI"
+            aria-label="Ask Labbdhis AI"
           >
             <Sparkles className="w-7 h-7 md:w-8 md:h-8" />
           </motion.button>
@@ -346,7 +346,7 @@ export default function NobleAI() {
                 <GraduationCap className="w-5 h-5" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-base">Labbdis AI</h3>
+                <h3 className="font-semibold text-base">Labbdhis AI</h3>
                 <p className="text-xs text-white/80 truncate">
                   Your Virtual Admission Counselor
                 </p>

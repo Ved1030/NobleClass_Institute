@@ -50,7 +50,7 @@ const batches = [
 const Admissions: React.FC = () => {
   return (
     <>
-      <PageHero title="Admissions" subtitle="Begin your academic journey with Labbdis Academy. Admissions open for Std 8th, 9th & 10th (State Board & CBSE). Limited seats available." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Admissions' }]} />
+      <PageHero title="Admissions" subtitle="Begin your academic journey with Labbdhis Academy. Admissions open for Std 8th, 9th & 10th (State Board & CBSE). Limited seats available." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Admissions' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
