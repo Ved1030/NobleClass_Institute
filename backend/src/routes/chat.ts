@@ -77,7 +77,7 @@ router.post('/', async (req: Request, res: Response) => {
     if (!config.sarvam.apiKey) {
       console.warn('Sarvam API key not configured');
       return res.json({
-        reply: "Sorry, I'm currently unavailable. Please submit an inquiry form on our website or visit our center in Ghatkopar East.",
+        reply: "Sorry, I'm currently unavailable. Please submit an inquiry form on our website or visit our center in Ghatkopar West.",
       });
     }
 
@@ -100,7 +100,7 @@ router.post('/', async (req: Request, res: Response) => {
       const errorData = await response.json().catch(() => ({}));
       console.error('Sarvam API error:', response.status, errorData);
       return res.json({
-        reply: "Sorry, I'm currently unavailable. Please submit an inquiry form on our website or visit our center in Ghatkopar East.",
+        reply: "Sorry, I'm currently unavailable. Please submit an inquiry form on our website or visit our center in Ghatkopar West.",
       });
     }
 
@@ -109,7 +109,7 @@ router.post('/', async (req: Request, res: Response) => {
 
     if (!reply) {
       return res.json({
-        reply: "Sorry, I'm currently unavailable. Please submit an inquiry form on our website or visit our center in Ghatkopar East.",
+        reply: "Sorry, I'm currently unavailable. Please submit an inquiry form on our website or visit our center in Ghatkopar West.",
       });
     }
 

@@ -62,7 +62,7 @@ async function fetchWithTimeout<T>(
   ]);
 }
 
-export default function VSAI() {
+export default function NobleAI() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
