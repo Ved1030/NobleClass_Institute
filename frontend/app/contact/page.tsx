@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
               <div className="bg-white rounded-[24px] shadow-lg overflow-hidden border border-gray-200">
                 <div className="w-full h-[300px]">
                   <iframe
-                    src="https://www.google.com/maps?q=19.1147,72.9293&output=embed"
+                    src="https://www.google.com/maps?q=19.085946,72.914451&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                     <p className="text-noble-dark/60 text-sm">Shop No. 11, Drushti Sapphire, Opp. Shivaji Technical School, Gaurishankar Wadi, Pant Nagar, Ghatkopar East, Mumbai 400075</p>
                   </div>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=19.1147,72.9293"
+                    href="https://www.google.com/maps/search/?api=1&query=19.085946,72.914451"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 bg-noble-blue text-white px-4 py-2 rounded-xl font-semibold text-xs hover:bg-noble-blue-dark transition-all duration-200 shrink-0"

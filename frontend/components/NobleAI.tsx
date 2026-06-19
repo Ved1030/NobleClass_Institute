@@ -338,7 +338,7 @@ export default function VSAI() {
                         {(hasContactInfo(message.content) || hasUnavailableMessage(message.content)) && (
                         <div className="flex gap-2 mt-3 pt-3 border-t border-gray-200">
                           <a
-                            href="https://maps.google.com/?q=19.1147,72.9293"
+                            href="https://maps.google.com/?q=19.085946,72.914451"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-1.5 text-xs font-medium text-noble-blue bg-noble-blue/10 px-3 py-2 rounded-lg hover:bg-noble-blue/20 transition-colors"

@@ -810,7 +810,7 @@ const Home: React.FC = () => {
               <div className="bg-white rounded-[24px] shadow-lg overflow-hidden h-full flex flex-col">
                 <div className="w-full h-[350px] lg:h-[400px]">
                   <iframe
-                    src="https://www.google.com/maps?q=19.1147,72.9293&output=embed"
+                    src="https://www.google.com/maps?q=19.085946,72.914451&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -829,7 +829,7 @@ const Home: React.FC = () => {
                     </div>
                   </div>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=19.1147,72.9293"
+                    href="https://www.google.com/maps/search/?api=1&query=19.085946,72.914451"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-noble-blue text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-noble-blue-dark transition-all duration-200 shadow-md shrink-0"

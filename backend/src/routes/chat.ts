@@ -23,7 +23,7 @@ Ghatkopar East,
 Mumbai,
 Maharashtra 400075
 
-Google Maps Location: 19.1147, 72.9293
+Google Maps Location: 19.085946, 72.914451
 Google Rating: 4.9★ (52 Reviews)
 
 Phone: +91 97691 13425
