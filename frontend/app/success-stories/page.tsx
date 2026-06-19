@@ -8,7 +8,7 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const stories = [
-  { name: 'Arjun M.', role: 'Student', content: 'The teachers explain concepts very clearly and always encourage students to improve. The regular assessments and doubt-clearing sessions helped me gain confidence in my studies.', rating: 5, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face', result: 'Secured 92% in Std 7th Exams' },
+  { name: 'Arjun M.', role: 'Student', content: 'The teachers explain concepts very clearly and always encourage students to improve. The regular assessments and doubt-clearing sessions helped me gain confidence in my studies.', rating: 5, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face', result: 'Secured 92% in Std 10th Board Exams' },
   { name: 'Priya S.', role: 'Student', content: 'The learning environment at the academy is supportive and helps build confidence. The structured teaching approach and personalized attention have made a huge difference in my academic performance.', rating: 5, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face', result: 'Improved from 65% to 88% in One Year' },
   { name: 'Mrs. Sharma', role: 'Parent', content: 'Dedicated faculty and structured teaching methods make learning effective. The academy provides personal attention and regular updates regarding student progress, which gives us great confidence.', rating: 5, image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face', result: 'My child\'s confidence and grades have improved significantly' },
 ];

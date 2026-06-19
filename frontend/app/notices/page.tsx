@@ -7,7 +7,7 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const allNotices = [
-  { id: 1, title: 'Admissions Open For Std 7th, 8th, 9th & 10th', date: '01 Jun 2026', category: 'Batch', excerpt: 'Enrollments are now open for all standards. Limited seats available. Early bird discounts available for early registrations.', isNew: true },
+  { id: 1, title: 'Admissions Open For Std 8th, 9th & 10th', date: '01 Jun 2026', category: 'Batch', excerpt: 'Enrollments are now open for all standards. Limited seats available. Early bird discounts available for early registrations.', isNew: true },
   { id: 2, title: 'New Academic Batch Starting Soon', date: '05 Jun 2026', category: 'Batch', excerpt: 'New academic batches starting from next month for all standards. Small batch sizes ensure personalized attention for every student.', isNew: true },
   { id: 3, title: 'Weekly Assessment Schedule Released', date: '10 Jun 2026', category: 'Exam', excerpt: 'Weekly unit test schedule has been released for all standards. Regular assessments help track progress and identify areas for improvement.', isNew: true },
   { id: 4, title: 'Parent-Teacher Meeting This Month', date: '15 Jun 2026', category: 'General', excerpt: 'Regular parent-teacher meetings are scheduled to discuss student progress, learning strategies, and academic planning.', isNew: false },

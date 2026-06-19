@@ -10,7 +10,7 @@ const FORBIDDEN_PHRASES = [
 const FORBIDDEN_PATTERNS = [/97691\d{5}/, /99208\d{5}/, /4\.9.*52.*Review/i];
 
 const SAFE_RESPONSES = {
-  courses: "We offer coaching for Std 7th, 8th, 9th and 10th students. Our teaching focuses on concept clarity, regular practice, and academic excellence.",
+  courses: "We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence.",
   location: "Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
   contact: "Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.",
   fees: "Fee details are currently being updated. Please submit an enquiry form on our website for fee information.",

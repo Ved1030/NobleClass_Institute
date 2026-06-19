@@ -1,24 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Std 7th Coaching",
-    "description": "Strong foundation building in Mathematics, Science, English, and core academic subjects with concept-based learning.",
-    "class": "7",
-    "category": "Programs",
-    "subtitle": "Foundation Building",
-    "subjects": "Mathematics,Science,English",
-    "duration": "Academic Year",
-    "students": "Enrolling Now",
-    "rating": 5.0,
-    "fee": "Contact For Fee",
-    "badge": "Foundation",
-    "createdAt": "2026-01-01T00:00:00.000Z",
-    "updatedAt": "2026-01-01T00:00:00.000Z"
-  },
-  {
-    "id": 2,
-    "title": "Std 8th Coaching",
-    "description": "Concept-focused learning with regular assessments, doubt-solving sessions, and performance tracking.",
+    "title": "Std 8th Coaching (State Board & CBSE)",
+    "description": "Concept-focused learning for State Board and CBSE students with regular assessments, doubt-solving sessions, and performance tracking.",
     "class": "8",
     "category": "Programs",
     "subtitle": "Concept Mastery",
@@ -32,9 +16,9 @@
     "updatedAt": "2026-01-01T00:00:00.000Z"
   },
   {
-    "id": 3,
-    "title": "Std 9th Coaching",
-    "description": "Advanced preparation with detailed subject understanding, exam strategies, and comprehensive curriculum coverage.",
+    "id": 2,
+    "title": "Std 9th Coaching (State Board & CBSE)",
+    "description": "Advanced preparation for State Board and CBSE students with detailed subject understanding, exam strategies, and comprehensive curriculum coverage.",
     "class": "9",
     "category": "Programs",
     "subtitle": "Advanced Preparation",
@@ -48,9 +32,9 @@
     "updatedAt": "2026-01-01T00:00:00.000Z"
   },
   {
-    "id": 4,
-    "title": "Std 10th Coaching",
-    "description": "Board exam-focused preparation, revision programs, intensive practice sessions, and mock tests for academic excellence.",
+    "id": 3,
+    "title": "Std 10th Coaching (State Board & CBSE)",
+    "description": "Board exam-focused preparation for State Board and CBSE students with revision programs, intensive practice sessions, and mock tests.",
     "class": "10",
     "category": "Programs",
     "subtitle": "Board Exam Focus",

@@ -39,12 +39,12 @@ const ACADEMY_INFO = {
   name: 'Labbdis Academy',
   established: '2007',
   location: 'Near Shreyas Cinema, Ghatkopar West, Mumbai',
-  courses: ['Std 7th Coaching', 'Std 8th Coaching', 'Std 9th Coaching', 'Std 10th Coaching'],
+  courses: ['Std 8th Coaching (State Board & CBSE)', 'Std 9th Coaching (State Board & CBSE)', 'Std 10th Coaching (State Board & CBSE)'],
 };
 
 const HARDCODED_RESPONSES: Record<string, string> = {
   courses:
-    "We offer coaching for Std 7th, 8th, 9th and 10th students. Our teaching focuses on concept clarity, regular practice, and academic excellence.",
+    "We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence.",
   location:
     "Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.",
   contact:
@@ -77,10 +77,9 @@ Established:
 2007
 
 Courses:
-- Std 7th Coaching
-- Std 8th Coaching
-- Std 9th Coaching
-- Std 10th Coaching
+- Std 8th Coaching (State Board & CBSE)
+- Std 9th Coaching (State Board & CBSE)
+- Std 10th Coaching (State Board & CBSE)
 
 Features:
 - Small Batch Sizes
@@ -106,7 +105,7 @@ Never mention or generate information about:
 ## Exact Responses
 
 If user asks about courses:
-"We offer coaching for Std 7th, 8th, 9th and 10th students. Our teaching focuses on concept clarity, regular practice, and academic excellence."
+"We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence."
 
 If user asks about location or address:
 "Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai."
@@ -120,7 +119,7 @@ If user asks about fees:
 ## Few-Shot Examples
 
 User: What courses do you offer?
-Assistant: We offer coaching for Std 7th, 8th, 9th and 10th students. Our teaching focuses on concept clarity, regular practice, and academic excellence.
+Assistant: We offer coaching for Std 8th, 9th and 10th students (State Board & CBSE). Our teaching focuses on concept clarity, regular practice, and academic excellence.
 
 User: Where are you located?
 Assistant: Labbdis Academy is located near Shreyas Cinema, Ghatkopar West, Mumbai.
@@ -129,7 +128,7 @@ User: What is your phone number?
 Assistant: Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.
 
 User: Tell me about your programs.
-Assistant: We provide coaching for Std 7th, 8th, 9th and 10th students with a focus on concept clarity, academic excellence, and personalized attention. Our features include small batch sizes, regular tests, doubt solving sessions, and parent feedback meetings.
+Assistant: We provide coaching for Std 8th, 9th and 10th students (State Board & CBSE) with a focus on concept clarity, academic excellence, and personalized attention. Our features include small batch sizes, regular tests, doubt solving sessions, and parent feedback meetings.
 
 User: What is your email?
 Assistant: Official contact details are currently being updated. Please submit an enquiry form on the website and our team will contact you.

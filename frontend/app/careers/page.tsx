@@ -7,16 +7,16 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const positions = [
-  { title: 'Mathematics Teacher (Std 7th to 10th)', type: 'Full-Time', location: 'Ghatkopar West', desc: 'We are looking for an experienced Mathematics teacher who can make concepts easy to understand and inspire students to excel in academics.' },
+  { title: 'Mathematics Teacher (Std 8th to 10th)', type: 'Full-Time', location: 'Ghatkopar West', desc: 'We are looking for an experienced Mathematics teacher to teach State Board and CBSE students from Std 8th to 10th.' },
   { title: 'Academic Counselor', type: 'Full-Time', location: 'Ghatkopar West', desc: 'Looking for a dedicated academic counselor to guide students and parents through program selection and learning pathways.' },
-  { title: 'English Language Faculty', type: 'Part-Time', location: 'Ghatkopar West', desc: 'We need a passionate English faculty to teach language, grammar, and literature to Std 7th to 10th students.' },
-  { title: 'Science Teacher (Std 7th to 10th)', type: 'Full-Time', location: 'Ghatkopar West', desc: 'Seeking an experienced Science teacher to teach Physics, Chemistry, and Biology with a focus on conceptual understanding and practical learning.' },
+  { title: 'English Language Faculty', type: 'Part-Time', location: 'Ghatkopar West', desc: 'We need a passionate English faculty to teach language, grammar, and literature to Std 8th to 10th students (State Board & CBSE).' },
+  { title: 'Science Teacher (Std 8th to 10th)', type: 'Full-Time', location: 'Ghatkopar West', desc: 'Seeking an experienced Science teacher to teach Physics, Chemistry, and Biology for State Board and CBSE curriculum.' },
 ];
 
 const Careers: React.FC = () => {
   return (
     <>
-      <PageHero title="Careers at Labbdhis Academy" subtitle="Join our team of passionate educators dedicated to shaping the academic future of students from Std 7th to 10th." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
+      <PageHero title="Careers at Labbdhis Academy" subtitle="Join our team of passionate educators dedicated to shaping the academic future of students from Std 8th to 10th." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'Careers' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">

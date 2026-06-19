@@ -7,7 +7,7 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const faqData = [
-  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students from Std 7th to Std 10th in Mathematics, Science, and English. Our programs focus on concept-based learning and academic excellence.' },
+  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students of Std 8th, 9th & 10th (State Board & CBSE) in Mathematics, Science, and English. Our programs focus on concept-based learning and academic excellence.' },
   { q: 'Where is Labbdhis Academy located?', a: 'Labbdhis Academy is located near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086. We are easily accessible from all parts of Ghatkopar and surrounding areas.' },
   { q: 'How can I enroll?', a: 'You can fill out the inquiry form on our website or visit the academy in person. Our team will contact you for a free academic counseling session, followed by enrollment formalities.' },
   { q: 'What is the class size?', a: 'We maintain small batch sizes to ensure personalized attention and effective learning. Each batch is intentionally limited to allow every student to receive the guidance they need.' },

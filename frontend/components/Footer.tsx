@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               </div>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-sm">
-              Labbdhis Academy has been guiding students since 2007 in Ghatkopar West, Mumbai, providing quality coaching for Std 7th to Std 10th with concept-based learning, personal attention, and academic excellence.
+              Labbdhis Academy has been guiding students since 2007 in Ghatkopar West, Mumbai, providing quality coaching for Std 8th, 9th & 10th (State Board & CBSE) with concept-based learning, personal attention, and academic excellence.
             </p>
             <div className="flex items-center gap-3">
               <span className="text-white/50 text-sm">+91 99208 59870</span>
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
             <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-white/80 mb-5">Courses</h3>
             <ul className="space-y-2.5">
               {[
-                { label: 'Std 7th Coaching', path: '/courses' },
+                { label: 'Std 8th Coaching', path: '/courses' },
                 { label: 'Std 8th Coaching', path: '/courses' },
                 { label: 'Std 9th Coaching', path: '/courses' },
                 { label: 'Std 10th Coaching', path: '/courses' },

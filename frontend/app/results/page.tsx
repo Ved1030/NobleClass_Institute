@@ -7,7 +7,7 @@ import PageHero from '@/components/PageHero';
 import SectionWrapper from '@/components/SectionWrapper';
 
 const resultsData = [
-  { year: '2025-26', title: 'Std 7th Academic Excellence', desc: 'Students demonstrated outstanding performance with an average improvement of 22% in overall academic scores.', icon: Trophy, color: '#005DAA' },
+  { year: '2026-27', title: 'Std 10th Board Toppers', desc: 'Our Std 10th students achieved outstanding results in board exams with multiple students scoring above 90%.', icon: Trophy, color: '#005DAA' },
   { year: '2025-26', title: 'Std 10th Board Preparation', desc: 'Our Std 10th students showed exceptional progress in board exam preparation with intensive practice and mock tests.', icon: Star, color: '#C62828' },
   { year: '2024-25', title: 'Top Scorers Recognition', desc: 'Multiple students secured top percentile rankings in school examinations with scores above 90%.', icon: Award, color: '#F4B400' },
   { year: '2024-25', title: 'Consistent Academic Growth', desc: 'Over 85% of students showed measurable improvement in their academic performance throughout the year.', icon: Users, color: '#2563EB' },

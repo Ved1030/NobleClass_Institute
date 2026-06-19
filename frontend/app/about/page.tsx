@@ -32,7 +32,7 @@ const team = [
 const About: React.FC = () => {
   return (
     <>
-      <PageHero title="About Labbdhis Academy" subtitle="A trusted coaching academy since 2007 in Ghatkopar West, Mumbai, providing quality education for Std 7th to Std 10th students with concept-based learning and personal attention." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
+      <PageHero title="About Labbdhis Academy" subtitle="A trusted coaching academy since 2007 in Ghatkopar West, Mumbai, providing quality coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning and personal attention." breadcrumbs={[{ label: 'Home', path: '/' }, { label: 'About Us' }]} />
       <SectionWrapper className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -40,7 +40,7 @@ const About: React.FC = () => {
               <span className="text-noble-blue text-sm font-semibold uppercase tracking-widest">Our Story</span>
               <h2 className="font-heading text-4xl font-bold text-noble-navy mt-2 mb-6">Shaping Young Minds Through Quality Education</h2>
               <div className="space-y-4 text-noble-navy/70 leading-relaxed">
-                <p>Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students from Std 7th to Std 10th, helping them strengthen fundamentals and achieve outstanding academic results.</p>
+                <p>Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.</p>
                 <p>Our approach focuses on understanding each student's unique learning style, addressing their weaknesses, strengthening their fundamentals, and building the confidence they need to excel in school examinations.</p>
                 <p>We believe in providing quality education that goes beyond textbooks — nurturing critical thinking, building character, and preparing students for academic success.</p>
               </div>

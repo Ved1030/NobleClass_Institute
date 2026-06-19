@@ -37,7 +37,7 @@ const stats = [
 ];
 
 const courses = [
-  { icon: BookOpen, name: 'Std 7th Coaching', badge: 'FOUNDATION', tag: 'Academic', color: '#005DAA', desc: 'Strong foundation building in Mathematics, Science, English, and core academic subjects with concept-based learning.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Expert Teachers', material: 'Study Material' } },
+  { icon: BookOpen, name: 'Std 8th Coaching', badge: 'FOUNDATION', tag: 'Academic', color: '#005DAA', desc: 'Strong foundation building in Mathematics, Science, English, and core academic subjects with concept-based learning.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Expert Teachers', material: 'Study Material' } },
   { icon: BookOpen, name: 'Std 8th Coaching', badge: 'POPULAR', tag: 'Academic', color: '#2563EB', desc: 'Concept-focused learning with regular assessments, doubt-solving sessions, and performance tracking to ensure steady progress.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Regular Classes', faculty: 'Subject Experts', material: 'Practice Sheets' } },
   { icon: Target, name: 'Std 9th Coaching', badge: 'ADVANCED', tag: 'Academic', color: '#C62828', desc: 'Advanced preparation with detailed subject understanding, exam strategies, and comprehensive coverage of the academic curriculum.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Advanced Prep', faculty: 'Senior Faculty', material: 'Exam Kit' } },
   { icon: Trophy, name: 'Std 10th Coaching', badge: 'BOARD FOCUS', tag: 'Board Prep', color: '#16A34A', desc: 'Board exam-focused preparation, revision programs, intensive practice sessions, and mock tests for academic excellence.', subjects: ['Mathematics', 'Science', 'English'], stats: { days: 'Board Prep', faculty: 'Exam Experts', material: 'Board Kit' } },
@@ -50,7 +50,7 @@ const testimonials = [
 ];
 
 const notices = [
-  { id: 1, title: 'Admissions Open For Std 7th, 8th, 9th & 10th', date: '01 Jun 2026', type: 'Admission', desc: 'Enrollments are now open for all standards. Limited seats available. Early bird discounts available for early registrations.' },
+  { id: 1, title: 'Admissions Open For Std 8th, 9th & 10th', date: '01 Jun 2026', type: 'Admission', desc: 'Enrollments are now open for all standards. Limited seats available. Early bird discounts available for early registrations.' },
   { id: 2, title: 'New Academic Batch Starting Soon', date: '05 Jun 2026', type: 'Batch', desc: 'New academic batches starting from next month. Small batch sizes ensure personalized attention for every student.' },
   { id: 3, title: 'Weekly Assessment Schedule Released', date: '10 Jun 2026', type: 'Exam', desc: 'Weekly unit test schedule has been released. Regular assessments help track progress and identify areas for improvement.' },
 ];
@@ -62,7 +62,7 @@ const achievements = [
 ];
 
 const faqs = [
-  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students from Std 7th to Std 10th in Mathematics, Science, and English. Our programs focus on building strong concepts and academic excellence.' },
+  { q: 'What coaching does Labbdhis Academy offer?', a: 'Labbdhis Academy provides coaching for students of Std 8th, 9th & 10th (State Board & CBSE) in Mathematics, Science, and English. Our programs focus on building strong concepts and academic excellence.' },
   { q: 'Where is Labbdhis Academy located?', a: 'Labbdhis Academy is located near Shreyas Cinema, LBS Marg, Ghatkopar West, Mumbai, Maharashtra 400086.' },
   { q: 'How can I enroll?', a: 'You can fill out the inquiry form on our website or visit the academy in person. Our team will guide you through the admission process, counseling session, and enrollment formalities.' },
   { q: 'What is the class size?', a: 'We maintain small batch sizes to ensure personalized attention and effective learning. Each batch is limited to ensure every student gets the guidance they need.' },
@@ -184,7 +184,7 @@ const Home: React.FC = () => {
                 {/* Main Heading */}
                 <h1 className="font-heading text-3xl lg:text-5xl xl:text-[56px] font-bold leading-[1.05] animate-slide-up" style={{ animationDelay: '0.15s', animationFillMode: 'backwards' }}>
                   <span className="text-noble-blue">Expert Coaching for</span>{" "}
-                  <span style={{ color: '#C62828' }}>Std 7th, 8th, 9th &amp; 10th Students</span>
+                  <span style={{ color: '#C62828' }}>Std 8th, 9th &amp; 10th Students</span>
                 </h1>
 
                 {/* Tagline */}
@@ -251,11 +251,11 @@ const Home: React.FC = () => {
                 transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
                 className="whitespace-nowrap flex gap-12"
               >
-                <span className="text-white/90 text-sm">📢 Admissions Open For Std 7th, 8th, 9th &amp; 10th</span>
+                <span className="text-white/90 text-sm">📢 Admissions Open For Std 8th, 9th &amp; 10th</span>
                 <span className="text-white/90 text-sm">📢 New Academic Batch Starting Soon</span>
                 <span className="text-white/90 text-sm">📢 Weekly Assessment Schedule Released</span>
                 <span className="text-white/90 text-sm">📢 Free Career Counseling Session Available</span>
-                <span className="text-white/90 text-sm">📢 Admissions Open For Std 7th, 8th, 9th &amp; 10th</span>
+                <span className="text-white/90 text-sm">📢 Admissions Open For Std 8th, 9th &amp; 10th</span>
                 <span className="text-white/90 text-sm">📢 New Academic Batch Starting Soon</span>
                 <span className="text-white/90 text-sm">📢 Weekly Assessment Schedule Released</span>
                 <span className="text-white/90 text-sm">📢 Free Career Counseling Session Available</span>
@@ -300,7 +300,7 @@ const Home: React.FC = () => {
               <span className="section-subtitle">About Labbdhis Academy</span>
               <h2 className="section-heading mb-6">Ghatkopar West&apos;s <span className="text-noble-blue">Trusted Coaching Academy</span></h2>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-6">
-                Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students from Std 7th to Std 10th, helping them strengthen fundamentals and achieve outstanding academic results.
+                Labbdhis Academy has been guiding students since 2007 with a focus on academic excellence, concept clarity, and individual attention. We provide coaching for students of Std 8th, 9th & 10th (State Board & CBSE), helping them strengthen fundamentals and achieve outstanding academic results.
               </p>
               <p className="text-noble-dark/60 text-lg leading-relaxed mb-8">
                 Our teaching approach focuses on building strong concepts, regular assessments, and personalized mentorship to ensure every student reaches their full potential.
@@ -339,7 +339,7 @@ const Home: React.FC = () => {
           >
             <span className="section-subtitle">Academic Programs</span>
             <h2 className="section-heading">Courses We Offer</h2>
-            <p className="text-noble-dark/60 text-lg mt-4">Comprehensive coaching for Std 7th, 8th, 9th, and 10th students with expert faculty and personalized guidance.</p>
+            <p className="text-noble-dark/60 text-lg mt-4">Comprehensive coaching for Std 8th, 9th & 10th (State Board & CBSE) with expert faculty and personalized guidance.</p>
           </motion.div>
 
           {/* Content Grid + Image */}

@@ -19,14 +19,14 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Labbdhis Academy | Std 7th, 8th, 9th & 10th Coaching Classes",
+    default: "Labbdhis Academy | Std 8th, 9th & 10th Coaching Classes (State Board & CBSE)",
     template: "%s | Labbdhis Academy",
   },
   description:
-    "Labbdhis Academy provides quality coaching for Std 7th, 8th, 9th, and 10th students with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
+    "Labbdhis Academy provides quality coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
   keywords: [
     "Labbdhis Academy",
-    "7th Standard Coaching",
+    "8th Standard Coaching",
     "8th Standard Coaching",
     "9th Standard Coaching",
     "10th Standard Coaching",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "Labbdhis Academy",
-    title: "Labbdhis Academy | Std 7th, 8th, 9th & 10th Coaching Classes",
+    title: "Labbdhis Academy | Std 8th, 9th & 10th Coaching Classes (State Board & CBSE)",
     description:
-      "Labbdhis Academy provides quality coaching for Std 7th, 8th, 9th, and 10th students with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
+      "Labbdhis Academy provides quality coaching for Std 8th, 9th & 10th students (State Board & CBSE) with concept-based learning, personal attention, and academic excellence in Ghatkopar West, Mumbai.",
   },
 };
 
